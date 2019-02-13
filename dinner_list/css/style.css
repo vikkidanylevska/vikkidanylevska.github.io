@@ -44,6 +44,8 @@ ul{
     height: 60px;
     line-height: 60px;
     border: 3px solid transparent;
+    border-right: none;
+    border-left: none;
    }
 
 li:nth-child(2n){
@@ -68,12 +70,10 @@ label span {
     list-style: none;
     line-height: 20px;
  }        
-.filter-input:hover, .filter-input:focus {
+li:hover, li:focus {
     background-color: #625e77;
     border-top: 3px solid white;
-    border-right: none;
     border-bottom: 3px solid white;
-    border-left: none;
 }
 
 input[type=checkbox] {
@@ -102,7 +102,7 @@ input[type=checkbox]:checked + label:before {
 
 input[type=checkbox]:checked ~ label {  /*перечеркнутый текст при выборе пункта меню*/
     text-decoration: line-through;
-    color: rgba(222,222,222,0.5)
+    color: rgba(222,222,222,0.5);
 } 
 
 label:hover {
