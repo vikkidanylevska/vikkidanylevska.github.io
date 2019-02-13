@@ -1,74 +1,86 @@
 * {
-	font-family: Helvetica;
-	box-sizing: border-box;
+    font-family: Helvetica;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-
 
 form {
-	background: #3b3f45;
-	border: 18px solid #f3f3f3;
-	width: 55%;
-	position: absolute; 
-	top: 10%; 
-	left:20%;
-	
-}
-
-h1 {
-	color:#eb7e7f;
-	font-size: 35px;
-	margin-bottom: 5px;
+    background: rgb(59,63,69);
+    border: 18px solid rgb(255,255,240);
+    width: 60%;
+    position: relative; 
+    top: 20px; 
+    left:20%;
+    
 }
 
 legend {
-	background-color: #4a4f56;
-	text-align: center;
+    background-color: rgb(74,79,86);
+    text-align: center;
+    height: 108px;
+}
+
+h1 {
+    color:rgb(235,126,124);
+    font-size: 35px;
+    padding-top: 20px;
+    margin-bottom: 5px;
+}
+
+legend span{
+    font-size: 23px;
 }
 
 ul{
-	width: 700px;
-    margin-left: 160px;
+    width: 700px;
+    margin-top: 40px;
+    margin-left: 13%;
 }
 
  li {
     list-style-type: none;
-    background: #88839e;
-    padding-top: 18px;
-    padding-bottom: 18px;
-    margin-top: 0;
-    margin-bottom: 0;
+    background: rgb(136,131,158);
+    height: 60px;
+    line-height: 60px;
     border: 3px solid transparent;
    }
 
+li:nth-child(2n){
+    background: #7a7593;
+}
+
 label {
-	font-size: 22px;
+    font-size: 22px;
+    text-align: center;
+}
+
+label span {
+    font-size: 15px;
+    
 }
 
 .invitation{
-	color:#eb7e7f;
+    color:#eb7e7f;
 }
  
  .filter ul{
- 	color: #f3f3f3;
- 	list-style: none;
- 	line-height: 20px;
+    color: #f3f3f3;
+    list-style: none;
+    line-height: 20px;
  }        
 
 .filter-input:hover ,
 .filter-input:focus {
-	background-color: #625e77;
-	border-top: 3px solid white;
- 	border-right: 3px solid transparent;
- 	border-bottom: 3px solid white;
- 	border-left: 3px solid transparent;
-}
-
-label:checked {
-	background-color: #7a7593;
+    background-color: #625e77;
+    border-top: 3px solid white;
+    border-right: 3px solid transparent;
+    border-bottom: 3px solid white;
+    border-left: 3px solid transparent;
 }
 
 input[type=checkbox] {
-	display: none;}
+    display: none;}
 
 input[type=checkbox] + label:before {
     content: "\2713";
@@ -76,7 +88,8 @@ input[type=checkbox] + label:before {
     background-color: white;
     display: inline-block;
     border: 1px solid #fff;
-    font-size: 15px;      
+    font-size: 15px; 
+    font-weight: bold;     
     line-height: 22px;
     margin: 0 10px 0 10px;
     height: 20px;
@@ -90,14 +103,19 @@ input[type=checkbox]:checked + label:before {
     color: black;
 }
 
+input[type=checkbox]:checked ~ label {  /*перечеркнутый текст при выборе пункта меню*/
+    text-decoration: line-through;
+    color: rgba(222,222,222,0.5)
+} 
 input[type="button"] {
-	border:none;
-	background: #4a4f56;
-	height: 50px;
-    width: 660px;
-    margin-top: 12px;
+    border:none;
+    background: rgb(74,79,86);
+    height: 50px;
+    width: 700px;
+    margin-top: 40px;
     margin-bottom: 80px;
-    margin-left: 200px ;
+    margin-left: 13% ;
     font-size: 25px;
-    color: #eb7e7f;
+    color: rgb(235,126,124);
 }
+
