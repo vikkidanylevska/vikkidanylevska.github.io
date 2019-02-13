@@ -57,7 +57,6 @@ label {
 
 label span {
     font-size: 15px;
-    
 }
 
 .invitation{
@@ -69,14 +68,12 @@ label span {
     list-style: none;
     line-height: 20px;
  }        
-
-.filter-input:hover ,
-.filter-input:focus {
+.filter-input:hover, .filter-input:focus {
     background-color: #625e77;
     border-top: 3px solid white;
-    border-right: 3px solid transparent;
+    border-right: none;
     border-bottom: 3px solid white;
-    border-left: 3px solid transparent;
+    border-left: none;
 }
 
 input[type=checkbox] {
@@ -88,7 +85,7 @@ input[type=checkbox] + label:before {
     background-color: white;
     display: inline-block;
     border: 1px solid #fff;
-    font-size: 15px; 
+    font-size: inherit; 
     font-weight: bold;     
     line-height: 22px;
     margin: 0 10px 0 10px;
@@ -107,6 +104,11 @@ input[type=checkbox]:checked ~ label {  /*перечеркнутый текст 
     text-decoration: line-through;
     color: rgba(222,222,222,0.5)
 } 
+
+label:hover {
+    cursor: pointer;
+}
+
 input[type="button"] {
     border:none;
     background: rgb(74,79,86);
