@@ -52,12 +52,16 @@ li:nth-child(2n){
     background: #7a7593;
 }
 
-label {
+li label {
+    display:inline-block;
+    height: 60px;
+    width: 700px;
     font-size: 22px;
-    text-align: center;
+    text-align: left;
 }
 
 label span {
+    
     font-size: 15px;
 }
 
