@@ -55,7 +55,7 @@ li:nth-child(2n){
 li label {
     display:inline-block;
     height: 60px;
-    width: 700px;
+    width: 100%;
     font-size: 22px;
     text-align: left;
 }
