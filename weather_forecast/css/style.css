@@ -34,16 +34,16 @@ h1 {
 section {
  	width:55%;
     margin-left: 23%;
-    transition: all . 1s ease-in;
+    
 }
 
 ul{
 	list-style: none;
 	text-align: center;
 	font-size: 0;
-	
 	width: 100%;
  	border:2px solid white;
+ 	transition: all . 3s ease-in;
 }
 
 li{
@@ -68,8 +68,7 @@ span{
 	padding-bottom: 35px;
 }
 
-.lisbon, .francisco{
-	
+.lisbon, .francisco {	
 	width: 50%;
 }
 
@@ -125,14 +124,8 @@ span{
 	background-color: rgb(102,102,153);
 }
 
-section:hover{
-	opacity: 0.5;
-}
-
-.paris, .belgrade, .moscow,
-.telaviv, .cair, .newyork,
-.newdelhi, .tokyo :hover{
-	opacity: 1;
+section:hover li:not(:hover){
+    opacity: 0.5;
 }
 
 p {
