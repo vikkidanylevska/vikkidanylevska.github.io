@@ -1,0 +1,145 @@
+* {
+    font-family: “Lucida Sans Unicode”, “Lucida Grande”, sans-serif;
+    box-sizing: border-box;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+*, 
+*:before,
+*:after{
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+			box-sizing: border-box;
+}
+
+article {
+	background: rgb(51,153,204);
+    border: 15px solid rgb(43,129,172);
+    width: 100%;
+
+}
+
+h1 {
+	color: white;				
+	font-size: 25px;
+	font-weight: 550;
+	color: rgb(255,255,255);
+	margin-top: 2%;
+	margin-left: 23%;
+	margin-bottom: 2%
+}	
+
+section {
+ 	width:55%;
+    margin-left: 23%;
+    transition: all . 1s ease-in;
+}
+
+ul{
+	list-style: none;
+	text-align: center;
+	font-size: 0;
+	
+	width: 100%;
+ 	border:2px solid white;
+}
+
+li{
+	display: inline-block;
+	border: inherit;
+	
+}
+
+h2{
+	font-size: 20px;
+	color: rgb(255,255,255);
+	padding-top: 30px;
+	padding-bottom: 10px;
+	width: 100%;
+}
+
+span{
+	display: inline-block;
+	font-size: 18px;
+	color: rgba(255,255,255,0.5);
+	width: 100%;
+	padding-bottom: 35px;
+}
+
+.lisbon, .francisco{
+	
+	width: 50%;
+}
+
+.paris, .belgrade, .moscow,
+.telaviv, .cair, .newyork,
+.newdelhi, .tokyo {
+	width: 25%;
+}
+
+.sydney {
+	width: 100%;
+}
+
+.lisbon{
+	background-color: rgb(51,153,204);
+}
+
+.paris{
+	background-color: rgb(51,204,204);
+}
+
+.belgrade{
+	background-color: rgb(153,102,153);
+}
+
+.moscow{
+	background-color: rgb(194,71,71);
+}
+
+.telaviv{
+	background-color: rgb(226,103,74);
+}
+
+.cair{
+	background-color: rgb(255,204,102);
+}
+
+.newyork{
+	background-color: rgb(153,204,153);
+}
+.newdelhi{
+	background-color: rgb(102,153,153);
+}
+.francisco{
+	background-color: rgb(204,102,153);
+}
+
+.tokyo{
+	background-color: rgb(51,153,102);
+}
+
+.sydney{
+	background-color: rgb(102,102,153);
+}
+
+section:hover{
+	opacity: 0.5;
+}
+
+.paris, .belgrade, .moscow,
+.telaviv, .cair, .newyork,
+.newdelhi, .tokyo :hover{
+	opacity: 1;
+}
+
+p {
+	font-size: 18px;
+	color: rgb(255,255,255);
+	margin-top: 1%;
+	margin-left: 23%;
+	margin-bottom: 5%;
+}
+
