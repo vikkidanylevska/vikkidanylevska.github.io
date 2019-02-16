@@ -80,7 +80,7 @@ input[type=checkbox] {
 }
 
 input[type=checkbox] + label:before {
-    content: "\2720";
+    content: "\2714";
     color: transparent;
     background-color: white;
     display: inline-block;
