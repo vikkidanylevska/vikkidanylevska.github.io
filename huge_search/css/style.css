@@ -1,0 +1,139 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+    padding: 0;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	font-weight: 600;
+	color: rgb(194,194,194);
+	background-color: rgb(241,241,241);
+	width: 100%;
+	max-width: 1170px;
+	margin: 0 auto;	
+}
+
+.top_header {	
+	padding: 10px 0;
+}
+
+.hidden{
+	display: none;
+}
+
+.search_form {
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.search_form_input,
+.search_form_button {
+	border: none;
+}
+
+.search_form_input{	
+	font-family: Arial, sans-serif;
+	font-size: 90px;
+	font-weight: 600;
+	color: rgb(194,194,194);
+	background-color: rgb(241,241,241);
+	width: 85%;
+}
+
+.search_form_input:focus {
+	outline: none;
+	font-weight: normal;
+	/* font-size: 50px; */
+	color: rgb(236,90,98);
+}
+
+.search_form_button {
+	width: 15%;
+	background-color: rgb(241,241,241);
+	cursor: pointer;
+}
+
+.search_form_button img {
+	width: 40%;
+	height: 40%;
+}
+
+.search_form_button:focus{
+	outline: none;
+	background-color: rgba(118,117,128,0.1);
+}
+
+main {
+	width: 80%;
+	margin: 20px auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.people, .popular, .recent{
+	width: 30%;
+}
+
+.heading{
+	font-weight: 800;
+	margin-bottom: 20px;
+}
+
+.people_list__item, .popular_list__item, 
+.recent_list__item{
+	font-size: 13px;
+	background-color: rgba(118,117,128,0.05);
+	border-radius: 7px;
+	margin-top: 5px;
+	padding-top: 10px;
+	padding-left: 10px;
+	height: 60px;
+	min-width: 260px;
+}
+
+.people_list__item:hover{
+	background-color: rgba(118,117,128,0.1);
+}
+
+.popular_list__item:hover{
+	background-color: rgba(118,117,128,0.1);
+
+}
+
+.recent_list__item:hover{
+	background-color: rgba(118,117,128,0.1);
+}
+
+a {
+	color: rgb(194,194,194);
+	display: block;
+	text-decoration: none;
+	position: relative;
+}
+
+a:hover{
+	color: rgb(236,90,98); 
+}
+
+span {
+	position: absolute;
+	top: 35%;
+	left: 20%;
+}
+
+img {
+	height: 40px;
+	width: 40px;
+}
+
+.round {
+	border-radius: 100px;
+}
+
+
+
