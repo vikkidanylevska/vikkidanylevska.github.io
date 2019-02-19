@@ -6,80 +6,73 @@
     padding: 0;
 }
 
-*, 
-*:before,
-*:after{
-	-webkit-box-sizing: border-box;
-	   -moz-box-sizing: border-box;
-			box-sizing: border-box;
-}
-
-article {
+main {
 	background: rgb(51,153,204);
     border: 15px solid rgb(43,129,172);
     width: 100%;
-
+    margin: 0 auto;
 }
 
 h1 {
 	color: white;				
 	font-size: 25px;
-	font-weight: 550;
+	font-weight: 600;
 	color: rgb(255,255,255);
 	margin-top: 2%;
 	margin-left: 23%;
 	margin-bottom: 2%
 }	
 
-section {
- 	width:55%;
-    margin-left: 23%;
-    
-}
-
 ul{
-	list-style: none;
-	text-align: center;
 	font-size: 0;
-	width: 100%;
+	width:55%;
+    margin-left: 23%;
  	border:2px solid white;
  	transition: all . 3s ease-in;
 }
 
-li{
+
+.lisbon, .sanfrancisco {	
+	width: 50%;
 	display: inline-block;
 	border: inherit;
-	
-}
 
-h2{
-	font-size: 20px;
-	color: rgb(255,255,255);
-	padding-top: 30px;
-	padding-bottom: 10px;
-	width: 100%;
-}
-
-span{
-	display: inline-block;
-	font-size: 18px;
-	color: rgba(255,255,255,0.5);
-	width: 100%;
-	padding-bottom: 35px;
-}
-
-.lisbon, .francisco {	
-	width: 50%;
 }
 
 .paris, .belgrade, .moscow,
 .telaviv, .cair, .newyork,
 .newdelhi, .tokyo {
 	width: 25%;
+	display: inline-block;
+	border: inherit;
+	margin: auto;
 }
 
 .sydney {
 	width: 100%;
+}
+
+[class*="link"] {
+	display: block;
+	text-decoration: none;
+	font-size: 20px;
+	color: white;
+	text-align: center;
+	padding-top: 20px;
+}
+
+
+span{
+	display: inline-block;
+	font-size: 18px;
+	color: rgba(255,255,255,0.5);
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 35px;
+}
+
+a:hover {
+	cursor: pointer;
 }
 
 .lisbon{
@@ -124,7 +117,7 @@ span{
 	background-color: rgb(102,102,153);
 }
 
-section:hover li:not(:hover){
+main:hover li:not(:hover){
     opacity: 0.5;
 }
 
