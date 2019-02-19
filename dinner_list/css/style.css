@@ -4,6 +4,9 @@
     margin: 0;
     padding: 0;
 }
+html, body{
+    height: 100%
+}
 
 form {
     background: rgb(59,63,69);
