@@ -9,7 +9,7 @@
 main {
 	background: rgb(51,153,204);
     border: 15px solid rgb(43,129,172);
-    width: 100%;
+    max-width: 100%;
     margin: 0 auto;
 }
 
