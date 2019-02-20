@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+html,body {
+	height: 100%;
+}
+
 body {
 	font-family: Arial, sans-serif;
 	font-weight: 600;
@@ -23,7 +27,7 @@ body {
 }
 
 .search_form {
-	width: 80%;
+	max-width: 80%;
 	margin: 0 auto;
 	display: flex;
 	flex-direction: row;
@@ -35,34 +39,28 @@ body {
 	border: none;
 }
 
-.search_form_input{	
+.search_form_input {	
 	font-family: Arial, sans-serif;
 	font-size: 90px;
 	font-weight: 600;
 	color: rgb(194,194,194);
 	background-color: rgb(241,241,241);
-	width: 85%;
+	max-width: 85%;
 }
 
 .search_form_input:focus {
 	outline: none;
-	font-weight: normal;
-	/* font-size: 50px; */
 	color: rgb(236,90,98);
 }
 
 .search_form_button {
 	width: 15%;
 	background-color: rgb(241,241,241);
+	background-image: url(../images/magnifier.svg);
 	cursor: pointer;
 }
 
-.search_form_button img {
-	width: 40%;
-	height: 40%;
-}
-
-.search_form_button:focus{
+.search_form_button:focus {
 	outline: none;
 	background-color: rgba(118,117,128,0.1);
 }
@@ -75,56 +73,59 @@ main {
 	justify-content: space-between;
 }
 
-.people, .popular, .recent{
-	width: 30%;
+.people, .popular, .recent {
+	width: 31%;
 }
 
-.heading{
+.heading {
 	font-weight: 800;
 	margin-bottom: 20px;
 }
 
+ul {
+	height: 350px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
 .people_list__item, .popular_list__item, 
-.recent_list__item{
-	font-size: 13px;
+.recent_list__item {	
 	background-color: rgba(118,117,128,0.05);
 	border-radius: 7px;
-	margin-top: 5px;
-	padding-top: 10px;
-	padding-left: 10px;
-	height: 60px;
-	min-width: 260px;
+	min-height: 55px;
 }
 
-.people_list__item:hover{
+.people_list__item:hover {
 	background-color: rgba(118,117,128,0.1);
 }
 
-.popular_list__item:hover{
+.popular_list__item:hover {
 	background-color: rgba(118,117,128,0.1);
-
 }
 
-.recent_list__item:hover{
+.recent_list__item:hover {
 	background-color: rgba(118,117,128,0.1);
 }
 
 a {
+	font-size: 13px;
 	color: rgb(194,194,194);
-	display: block;
 	text-decoration: none;
-	position: relative;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 }
 
 a:hover{
 	color: rgb(236,90,98); 
 }
 
-span {
-	position: absolute;
-	top: 35%;
-	left: 20%;
-}
+/* span {
+	text-align: center;
+	margin: 0 auto;
+} */
 
 img {
 	height: 40px;
@@ -132,7 +133,7 @@ img {
 }
 
 .round {
-	border-radius: 100px;
+	border-radius: 50%;
 }
 
 
