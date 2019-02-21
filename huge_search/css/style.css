@@ -17,7 +17,7 @@ body {
 }
 
 main {
-	width: 80%;
+	width: 100%;
     margin: 0 auto;
     padding-top: 30px;
     max-width: 1170px;
@@ -35,7 +35,7 @@ main {
 
 .search_form {
 	height: 100%;
-	position: relative;
+	font-size: 0;
 	margin-bottom: 50px;
 }
 
@@ -58,6 +58,7 @@ input {
 }
 
 input[type='submit'] {
+	font-size: 90px;
 	background-color: rgb(241,241,241);
 	background-size: 60% 60%;
 	background-image: url('../images/magnifier.svg');
@@ -65,7 +66,6 @@ input[type='submit'] {
 	background-position: center;
 	color: transparent;
 	display: inline-block;
-	position: absolute;
 	height: 103px; 
 	width: 103px;
 	cursor: pointer;
