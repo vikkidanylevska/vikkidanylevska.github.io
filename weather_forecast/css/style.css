@@ -1,6 +1,5 @@
 * {
     box-sizing: border-box;
-    font-weight: normal;
     margin: 0;
     padding: 0;
 }
@@ -11,6 +10,7 @@ html, body{
 
 body {
 	font-family: “Lucida Sans Unicode”, “Lucida Grande”, sans-serif;
+	font-weight: normal;
 	background: rgb(51,153,204);
     border: 15px solid rgb(43,129,172);
     max-width: 100%;
@@ -18,7 +18,7 @@ body {
 
 section {
 	max-width: 70%;
-    margin: 40px auto;
+    margin: 80px auto;
     max-height: 100%;	
 }
 
@@ -27,6 +27,7 @@ h1 {
 	font-weight: 600;
 	color: rgb(255,255,255);
 	max-width: 100%;
+	margin-bottom: 40px;
 }	
 
 ul{
