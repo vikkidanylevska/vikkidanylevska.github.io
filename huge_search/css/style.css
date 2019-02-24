@@ -6,7 +6,7 @@
 
 html,body {
 	height: 100%;
-	width: 100%;	
+	/* width: 100%;	 */
 }
 
 body {
@@ -19,7 +19,7 @@ body {
 main {
 	width: 100%;
     margin: 0 auto;
-    padding-top: 30px;
+    padding: 50px 50px 0 50px;
     max-width: 1170px;
   }
 
@@ -47,7 +47,7 @@ input {
 	font-family: Arial, sans-serif;
 	font-size: 90px;
 	font-weight: 600;
-	color: rgb(194,194,194);
+	color:  #ec5a62;
 	background-color: rgb(241,241,241);
 	width: calc(100% - 103px);
 }
@@ -60,11 +60,10 @@ input {
 input[type='submit'] {
 	font-size: 90px;
 	background-color: rgb(241,241,241);
-	background-size: 60% 60%;
+	background-size: 60% /* 60% */;
 	background-image: url('../images/magnifier.svg');
 	background-repeat: no-repeat;
 	background-position: center;
-	color: transparent;
 	display: inline-block;
 	height: 103px; 
 	width: 103px;
@@ -84,8 +83,8 @@ section {
 	display: inline-block;	
 }
 
-section > *:not(:first-child) {
-	margin-left: 4.11%;
+section > *:not(:last-child) {
+	margin-right: 4.11%;
 }
 
 .heading {
