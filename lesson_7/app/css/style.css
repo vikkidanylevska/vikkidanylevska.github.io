@@ -1,0 +1,46 @@
+*
+{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+}
+
+html,
+body
+{
+    min-height: 100vh;
+}
+
+.first-screen
+{
+    min-height: 100vh;
+
+    background-image: url('../img/img.png');
+    background-size: cover;
+}
+.first-screen__menu
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    margin: auto;
+
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+.first-screen-item
+{
+    list-style: none;
+}
+.first-screen-link
+{
+    display: block; 
+
+    padding: 15px;
+
+    text-decoration: none;
+
+    color: black;
+}
