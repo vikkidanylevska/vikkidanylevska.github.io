@@ -6,12 +6,6 @@
     padding: 0;
 }
 
-html,
-body
-{
-    min-height: 100vh;
-}
-
 @font-face
 {
     font-family: 'Big Jonh';
@@ -24,6 +18,12 @@ body
     font-family: 'Slim Joe';
 
     src: url('../fonts/Slim+Joe.otf') format('opentype');
+}
+
+html,
+body
+{
+    min-height: 100vh;
 }
 
 body
@@ -54,7 +54,7 @@ body
     min-height: 100vh;
 
     color: white; 
-    background: #525d67 url('../img/header-img.jpg') no-repeat;
+    background: #3c4955 url('../img/header-img.jpg') no-repeat;
     background-size: cover;
 }
 .first-screen .row:first-child
