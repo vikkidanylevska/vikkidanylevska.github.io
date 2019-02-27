@@ -179,20 +179,39 @@ a {
 		flex-direction: row;
 		justify-content: center;
 		flex-wrap: wrap;
+	}
 
-		li {
-			margin-bottom: 40px;			
+		// li {
+
+		// 	margin-bottom: 40px;	}	
+
+.speaker div {
+			display: block;
+			// width: 500px;
+			// height: 100px;
+			//  background-color: red;
+			background-image: url("../img/speaker.png");
 		}
 
-	// a {
-	// 	background-image: url();
+	img {
+		position: relative;
+		z-index: 1;
+
+
+	}
+
+img:hover{
+	position: absolute;
+	z-index: 2;
+	background-color: red;
+}
+		
+
+	// a:not([class $="onright"]) {
+	// 	// display: block;
+	// 	margin-right: 35px;	
 	// }
 
-	a:not([class $="onright"]) {
-		// display: block;
-		margin-right: 35px;	
-	}
-}
 
 
 

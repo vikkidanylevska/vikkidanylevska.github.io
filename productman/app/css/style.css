@@ -235,11 +235,24 @@ a
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
 }
-.images li
+
+.speaker div
 {
-    margin-bottom: 40px;
+    display: block;
+
+    background-image: url('../img/speaker.png');
 }
-.images a:not([class$='onright'])
+
+img
 {
-    margin-right: 35px;
+    position: relative;
+    z-index: 1;
+}
+
+img:hover
+{
+    position: absolute;
+    z-index: 2;
+
+    background-color: red;
 }
