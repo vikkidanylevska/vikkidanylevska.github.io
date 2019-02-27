@@ -14,15 +14,24 @@ body
 
 body
 {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 100%;
 
     background-color: #f0f0f0;
 }
 
+main
+{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
 a
 {
     text-decoration: none;
+
+    color: black;
 }
 
 .navigation
@@ -31,18 +40,26 @@ a
     display: -ms-flexbox;
     display: flex;
 
-    width: 100%;
-    max-width: 1140px;
-    margin: auto;
-    padding-top: 35px;
+    margin-bottom: 105px; 
+    padding-top: 60px;
 }
-.navigation_logo
+.navigation a:hover
 {
+    color: red;
+}
+.navigation .logo
+{
+    font-size: 48px;
+    font-weight: 900;
+    line-height: .56;
+
     display: block;
 
-    width: 30%;
+    width: 30%; 
+
+    color: black;
 }
-.navigation_list
+.navigation .menu
 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -56,66 +73,23 @@ a
     -ms-flex-preferred-size: 70%;
     flex-basis: 70%;
 }
-.navigation_list__item
+.navigation .menu__item:not(:last-child)
 {
-    width: 30%;
+    padding-right: 45px;
+}
+.navigation .menu__link
+{
+    font-size: 18px;
+    line-height: 1.5;
 
-    text-align: right;
+    display: block;
+
+    text-align: right; 
+
+    color: black;
 }
 
 .slider
-{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; 
-
-    width: 100%;
-    max-width: 1140px;
-    margin: 0 auto 80px auto;
-}
-.slider_blackwhite
-{
-    width: 50%;
-
-    text-align: right;
-}
-.slider_blackwhite_title
-{
-    font-size: 100px;
-    font-weight: bold;
-    line-height: 100px;
-
-    padding-bottom: 40px;
-}
-.slider_blackwhite_text
-{
-    padding-bottom: 20px;
-}
-
-.product
-{
-    width: 100%;
-    max-width: 1140px;
-    margin: auto;
-    padding-top: 30px;
-
-    background-color: white;
-}
-.product_contaner
-{
-    width: 50%;
-    margin: auto;
-}
-.product_contaner > *
-{
-    text-align: center;
-}
-.product_contaner_title
-{
-    font-size: 30px;
-    font-weight: bold;
-}
-.product_images__list
 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -123,4 +97,149 @@ a
 
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+}
+.slider_blackwhite
+{
+    width: 50%;
+    padding-bottom: 90px; 
+
+    text-align: right;
+}
+.slider_blackwhite_title
+{
+    font-family: 'Raleway', sans-serif;
+    font-size: 150px;
+    font-weight: 900;
+    line-height: 1;
+
+    padding-bottom: 40px; 
+
+    text-transform: uppercase;
+}
+.slider_blackwhite_text
+{
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.5;
+
+    padding-bottom: 20px; 
+    padding-left: 40px;
+}
+.slider_blackwhite_link
+{
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.5; 
+
+    color: black;
+}
+.slider_blackwhite_link:hover
+{
+    color: red;
+}
+.slider_image
+{
+    display: block;
+
+    margin: auto;
+}
+.slider .ellipse
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    width: 100%;
+
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.slider .ellipse li
+{
+    width: 20px;
+    height: 20px; 
+    margin-bottom: 100px;
+}
+.slider .ellipse li:not(:last-child)
+{
+    padding-right: 10px;
+}
+.slider .ellipse a
+{
+    display: block;
+
+    width: 10px;
+    height: 10px;
+
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background-color: black;
+}
+.slider .ellipse a:hover
+{
+    background-color: red;
+}
+
+.product
+{
+    margin-bottom: 50px; 
+    padding-top: 110px;
+    padding-bottom: 30px;
+
+    background-color: white;
+}
+
+.product_contaner
+{
+    font-family: 'Raleway', sans-serif;
+
+    width: 50%;
+    margin: auto;
+    padding-bottom: 75px; 
+
+    text-align: center;
+}
+.product_contaner h2
+{
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 3.13;
+}
+.product_contaner img
+{
+    padding-bottom: 15px;
+}
+.product_contaner p
+{
+    font-size: 18px;
+    line-height: 1.33;
+}
+
+.images
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+        flex-direction: row;
+
+    width: 90%;
+    margin: 0 auto;
+
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+.images li
+{
+    margin-bottom: 40px;
+}
+.images a:not([class$='onright'])
+{
+    margin-right: 35px;
 }
