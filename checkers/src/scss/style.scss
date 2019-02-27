@@ -1,29 +1,87 @@
-.block {
-    position: absolute;
-    top: 0;
-    right: 0;
-    background: gray;
+* {
+	margin: 0;
+	padding: 0;
 }
 
+main {
+	max-width: 1200px;
+	width: 100%;
+	margin: auto;
+}
 
-// .white {
-// 	// position: relative;
-	// background-color: white;
-// 	width: 50px;
-// 	height: 50px;
-// }
+.white {
+    position: relative;
+    width: 800px;
+    height: 800px;
+    background: white;
+    border: 10px solid brown; 
+}
 
-// .black {
-// 	// position: absolute;
-// 	max-width: 90%;
-//     height: auto;
-//     position: absolute;
-//     top: 0;
-//     bottom: 0;
-//     left: 0;
-//     right: 0;
-//     margin: auto;
-// 	background-color: black;
-// 	width: 50px;
-// 	height: 50px;
-// }
+[class^="b"] {
+	position: absolute;
+	display: block;
+	background-color: black;	
+	width: 100px;
+	height: 100px;
+}
+
+ul {
+	margin: auto;
+
+.b1, .b9, .b17, .b25 { 
+	left: 100px;
+}
+
+.b6, .b14, .b22, .b30 { 
+	left: 200px;
+}
+
+.b2, .b10, .b18, .b26 { 
+	left: 300px;
+}
+
+.b7, .b15, .b23, .b31 { 
+	left: 400px;
+}
+
+.b3, .b11, .b19, .b27 { 
+	left: 500px;
+}
+
+.b8, .b16, .b24, .b32 { 
+	left: 600px;
+}
+
+.b4, .b12, .b20, .b28 { 
+	left: 700px;
+}
+
+.b5, .b6, .b7, .b8 { 
+	top: 100px;
+}
+
+.b9, .b10, .b11, .b12 { 
+	top: 200px;
+}
+
+.b13, .b14, .b15, .b16 { 
+	top: 300px;
+}
+
+.b17, .b18, .b19, .b20 { 
+	top: 400px;
+}
+
+.b21, .b22, .b23, .b24 { 
+	top: 500px;
+}
+
+.b25, .b26, .b27, .b28 { 
+	top: 600px;
+}
+
+.b29, .b30, .b31, .b32 { 
+	top: 700px;
+}
+
+}
