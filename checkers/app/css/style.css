@@ -4,7 +4,16 @@
     padding: 0;
 }
 
-main
+section
+{
+    width: 100%;
+    max-width: 1300px;
+    margin: auto;
+
+    background-color: gray;
+}
+
+div
 {
     max-width: 800px;
     margin: auto;

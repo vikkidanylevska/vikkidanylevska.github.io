@@ -3,7 +3,14 @@
 	padding: 0;
 }
 
-main {
+section {
+	max-width: 1300px;	
+	width: 100%;
+	margin: auto;
+	background-color: gray;
+}
+
+div {
 	max-width: 800px;
 	margin: auto;
 	border: 10px solid brown;
