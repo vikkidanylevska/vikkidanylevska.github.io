@@ -178,33 +178,67 @@ a {
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
-		flex-wrap: wrap;
-	}
+		flex-wrap: wrap;}
 
-		// li {
-
-		// 	margin-bottom: 40px;	}	
-
-.speaker div {
-			display: block;
-			// width: 500px;
-			// height: 100px;
-			//  background-color: red;
-			background-image: url("../img/speaker.png");
-		}
-
-	img {
+a [class^="product"] {
 		position: relative;
-		z-index: 1;
+		padding-bottom: 35px;
 
+		.minimal {
+			font-size: 22px;
+			font-weight: 900;
+			color: white;
+			line-height: 30px;
+			text-transform: capitalize;
+			position: absolute;
+			top: 265px;
+			left: 35px;
+			width: 100%;
 
+		}	
+		
+
+	a:not([class $="onright"]) {
+		// display: block;
+		margin-right: 35px;	
 	}
 
-img:hover{
-	position: absolute;
-	z-index: 2;
-	background-color: red;
+
 }
+
+		
+
+// .speaker {
+// 	display: block;
+// 	width: 690px;
+// 	height: 385px;
+// 	background-image: url("../img/speaker.png");
+// 	// background-color: red;
+// 	position: relative;
+// }
+
+// .speaker:hover {
+// 	position: absolute;
+// 	top:0;
+// 	left:0;
+// 	width: 100%;
+// 	background-image: url("../img/red.png");
+// 	background-repeat: no-repeat;
+
+// }
+
+// 	img {
+// 		position: relative;
+// 		z-index: 1;
+
+
+// 	}
+
+// img:hover{
+// 	position: absolute;
+// 	z-index: 2;
+// 	background-color: red;
+// }
 		
 
 	// a:not([class $="onright"]) {
@@ -212,7 +246,12 @@ img:hover{
 	// 	margin-right: 35px;	
 	// }
 
-
+// .speaker {
+// 	display: block;
+// 	width: 690px;
+// 	height: 385px;
+// 	background-image: url("../img/speaker.png");
+// }
 
 
 	

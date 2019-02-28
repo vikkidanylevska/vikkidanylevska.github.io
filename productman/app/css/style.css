@@ -236,23 +236,29 @@ a
         flex-wrap: wrap;
 }
 
-.speaker div
-{
-    display: block;
-
-    background-image: url('../img/speaker.png');
-}
-
-img
+a [class^='product']
 {
     position: relative;
-    z-index: 1;
+
+    padding-bottom: 35px;
 }
-
-img:hover
+a [class^='product'] .minimal
 {
-    position: absolute;
-    z-index: 2;
+    font-size: 22px;
+    font-weight: 900;
+    line-height: 30px;
 
-    background-color: red;
+    position: absolute;
+    top: 265px;
+    left: 35px;
+
+    width: 100%; 
+
+    text-transform: capitalize;
+
+    color: white;
+}
+a [class^='product'] a:not([class$='onright'])
+{
+    margin-right: 35px;
 }
