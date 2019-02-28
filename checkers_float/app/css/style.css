@@ -1,0 +1,67 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+section
+{
+    width: 100%;
+    max-width: 1300px;
+    margin: auto;
+
+    background-color: palegreen;
+}
+
+.checkers
+{
+    max-width: 800px;
+    margin: auto;
+
+    border: 10px solid darkcyan;
+    background-color: white;
+}
+
+.checkers_row:before,
+.checkers_row:after
+{
+    display: table; 
+
+    content: ' ';
+}
+
+.checkers_row:after
+{
+    clear: both;
+}
+
+.checkers_row
+{
+    clear: both;
+
+    width: 100%; 
+
+    *zoom: 1;
+}
+
+.black:not(.black_left)
+{
+    float: left;
+
+    width: 100px;
+    height: 100px;
+    margin: 0 0 0 100px;
+
+    background-color: black;
+}
+
+li.black_left
+{
+    float: left;
+
+    width: 100px;
+    height: 100px;
+    margin: 0 0;
+
+    background-color: black;
+}

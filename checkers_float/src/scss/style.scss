@@ -1,0 +1,51 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+section {
+	max-width: 1300px;	
+	width: 100%;
+	margin: auto;
+	background-color: palegreen;
+}
+
+.checkers {
+	max-width: 800px;
+	margin: auto;
+	border: 10px solid darkcyan;
+	background-color: white;
+}
+
+.checkers_row:before,
+.checkers_row:after {
+	content: " ";
+	display: table;
+}
+
+.checkers_row:after{
+	clear: both;	
+}
+
+.checkers_row {
+	clear: both;
+	*zoom:1;
+	width: 100%;
+}
+
+.black:not(.black_left) { 
+
+		float: left;
+		margin: 0 0 0 100px;
+		width: 100px;
+		height: 100px;
+		background-color: black;
+	}
+
+li.black_left {
+		float: left;
+		margin: 0 0;
+		width: 100px;
+		height: 100px;
+		background-color: black;
+	}
