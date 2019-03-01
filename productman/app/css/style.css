@@ -120,9 +120,10 @@ a
     font-weight: 900;
     line-height: 1;
 
-    padding-bottom: 40px; 
+    padding-bottom: 40px;
 
     text-transform: uppercase;
+    word-wrap: break-word;
 }
 .slider_blackwhite_text
 {
