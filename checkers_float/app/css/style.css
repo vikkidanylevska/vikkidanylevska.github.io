@@ -4,11 +4,9 @@
     padding: 0;
 }
 
-section
+body
 {
     width: 100%;
-    max-width: 1300px;
-    margin: auto;
 
     background-color: palegreen;
 }
@@ -19,7 +17,6 @@ section
     margin: auto;
 
     border: 10px solid darkcyan;
-    background-color: white;
 }
 
 .checkers_row:before,
@@ -50,7 +47,6 @@ section
 
     width: 100px;
     height: 100px;
-    margin: 0 0 0 100px;
 
     background-color: black;
 }
@@ -64,4 +60,14 @@ li.black_left
     margin: 0 0;
 
     background-color: black;
+}
+
+.checkers_row .white
+{
+    float: left;
+
+    width: 100px;
+    height: 100px;
+
+    background-color: white;
 }

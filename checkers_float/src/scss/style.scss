@@ -3,18 +3,15 @@
 	padding: 0;
 }
 
-section {
-	max-width: 1300px;	
+body {
 	width: 100%;
-	margin: auto;
 	background-color: palegreen;
 }
 
 .checkers {
 	max-width: 800px;
 	margin: auto;
-	border: 10px solid darkcyan;
-	background-color: white;
+	border: 10px solid darkcyan;	
 }
 
 .checkers_row:before,
@@ -23,7 +20,7 @@ section {
 	display: table;
 }
 
-.checkers_row:after{
+.checkers_row:after {
 	clear: both;	
 }
 
@@ -34,9 +31,7 @@ section {
 }
 
 .black:not(.black_left) { 
-
-		float: left;
-		margin: 0 0 0 100px;
+		float: left;		
 		width: 100px;
 		height: 100px;
 		background-color: black;
@@ -49,3 +44,10 @@ li.black_left {
 		height: 100px;
 		background-color: black;
 	}
+	
+.checkers_row .white {
+	float: left;
+	width: 100px;
+	height: 100px;
+	background-color: white;
+}
