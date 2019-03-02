@@ -76,12 +76,14 @@ a {
 
 .slider {
 	display: flex;
-	flex-wrap: wrap;	
+	flex-wrap: wrap;
+	font-size: 0;	
 
 	&_blackwhite {
 		width: 50%;
 		text-align: right;
 		padding-bottom: 90px;
+		font-size: 200px;
 
 		&_title {
 			font-family: 'Raleway', sans-serif;
@@ -114,8 +116,20 @@ a {
 	}
 
 	&_image {
-		display: block;
+		width: 50%;
 		margin: auto;
+		font-size: 200px;
+
+		.slider_link {
+			display: block;
+			width: 100%;
+			margin: auto;
+			
+			img {
+				display: block;
+				margin: auto;
+			}
+		}
 	}
 
 	.ellipse {
@@ -148,7 +162,6 @@ a {
 }
 
 .product {
-	padding-top: 110px;
 	background-color: white;
 	padding-bottom: 30px;
 	margin-bottom: 50px;
@@ -156,19 +169,25 @@ a {
 	
 .product_contaner {
 	font-family: 'Raleway', sans-serif;
-	width: 50%;
 	margin: auto;
 	text-align: center;
+	padding-top: 50px;
 	padding-bottom: 75px;
+	width: 50%;
 			
-		h2 {
+		&__title {
 			font-size: 48px;
 			font-weight: 900;
-			line-height: 3.13;
+			line-height: 1.13;
 		}
 
-		img {
-			padding-bottom: 15px;
+		span {
+			display: block;
+			margin: auto;
+			background-image: url("../img/underline.png");
+			background-repeat: no-repeat;
+			background-position: center;
+			padding-bottom: 50px;
 		}
 		
 		p {
@@ -199,7 +218,7 @@ a {
 			top: 265px;
 			left: 35px;			
 
-			span {
+		span {
 				display: block;
 				padding-top: 17px;			
 			}

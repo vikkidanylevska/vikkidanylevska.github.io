@@ -99,6 +99,8 @@ a
 
 .slider
 {
+    font-size: 0; 
+
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -108,8 +110,10 @@ a
 }
 .slider_blackwhite
 {
+    font-size: 200px; 
+
     width: 50%;
-    padding-bottom: 90px; 
+    padding-bottom: 90px;
 
     text-align: right;
 }
@@ -147,6 +151,20 @@ a
     color: red;
 }
 .slider_image
+{
+    font-size: 200px; 
+
+    width: 50%;
+    margin: auto;
+}
+.slider_image .slider_link
+{
+    display: block;
+
+    width: 100%;
+    margin: auto;
+}
+.slider_image .slider_link img
 {
     display: block;
 
@@ -191,7 +209,6 @@ a
 .product
 {
     margin-bottom: 50px; 
-    padding-top: 110px;
     padding-bottom: 30px;
 
     background-color: white;
@@ -201,21 +218,29 @@ a
 {
     font-family: 'Raleway', sans-serif;
 
-    width: 50%;
+    width: 50%; 
     margin: auto;
-    padding-bottom: 75px; 
+    padding-top: 50px;
+    padding-bottom: 75px;
 
     text-align: center;
 }
-.product_contaner h2
+.product_contaner__title
 {
     font-size: 48px;
     font-weight: 900;
-    line-height: 3.13;
+    line-height: 1.13;
 }
-.product_contaner img
+.product_contaner span
 {
-    padding-bottom: 15px;
+    display: block;
+
+    margin: auto;
+    padding-bottom: 50px; 
+
+    background-image: url('../img/underline.png');
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .product_contaner p
 {
