@@ -23,22 +23,20 @@
 			font-weight: 600;
 			background-image: url('lesson_6/images/starry-sky.jpg');
 			background-repeat: no-repeat;
-			background-size: 100%;
-			
+			background-size: 100%;			
 			}
 
 		main{
 			width: 100%;
     		margin: 0 auto;
-    		padding: 20px 50px 0 50px;
+    		padding: 50px 50px 0 50px;
     		max-width: 1170px;
 		}
 
 		div {
 			/* display: flex;
 			flex-direction: column;
-			align-items: flex-start; */
-			margin-top: 40px;
+			align-items: flex-start; */			
 			display: inline-block;
 		}
 
@@ -46,17 +44,13 @@
 			font-size: 25px;
 			font-style: italic;
 			color: coral;
-			margin-bottom: 30px;
+			max-width: 380px;
+			margin-bottom: 50px;
 		}
 
 		.hello{
-			max-width: 150px;
+			margin-bottom: 10px;
 			/* flex-basis: 40px;			 */
-		}
-
-		.about_me {
-			max-width: 380px;
-			/* flex-basis: 150px; */
 		}
 
 		ul {
@@ -68,29 +62,12 @@
 
 		a > img {
 			display: block;
-			margin: auto;
-		/* 	padding: 20px 0; */
-			
+			margin: auto;			
 		}
 
-		ul > *:not(:first-child){
-			margin-left: 20px;
-		}
-
-		figure {
-			min-width: 270px;
-			background-color: rgb(85,173,242);
-			padding-top: 20px;
-			margin-bottom: 20px;
-		}
-
-		figcaption {
-			text-align: center;
-			color: rgb(14,21,109);
-			padding: 20px 0;
-		}
-
-		
+		ul > *:not(:last-child) {
+			margin-right: 30px;
+		}		
 		
 	</style>
 </head>
@@ -104,10 +81,7 @@
 		<section>
 			<ul>
 				<li>
-					<figure>
-					<a href="dinner_list/index.html"><img class="zoom" src="dinner_list/images/dinner_list.png" height="180" width="250"></a>
-					<figcaption>dinner_list</figcaption>
-					</figure>
+					<a href="dinner_list/index.html"><img class="zoom" src="dinner_list/images/dinner_list.png" height="180" width="250"></a>				
 				</li>
 				<li>
 					<a href="weather_forecast/index.html"><img class="zoom" src="weather_forecast/images/weather_forecast.png" height="180" width="250"></a>
@@ -116,7 +90,7 @@
 					<a href="huge_search/index.html"><img class="zoom" src="huge_search/images/huge_search.png" height="180" width="250"></a>
 				</li>
 				<li>
-					<a href="productman/app/index.html"><img class="zoom" src="productman/src/img/productman.jpg" height="250" width="180"></a>
+					<a href="productman/app/index.html"><img class="zoom" src="productman/src/img/productman.jpg" height="260" width="180"></a>
 				</li>
 				<li>
 					<a href="checkers/app/index.html"><img class="zoom" src="checkers/src/img/checkers.png" height="180" width="180"></a>
