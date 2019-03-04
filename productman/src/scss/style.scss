@@ -29,6 +29,7 @@ a {
 
 .navigation { 	
 	display: flex;	
+	justify-content: space-between;	
 	margin-bottom: 105px;
 
 	a:hover{
@@ -40,16 +41,14 @@ a {
 		line-height: 0.5;
 		font-weight: 900;
 		color: black;
-		display: block;
-		width: 30%;
+		display: block;		
 	}
 
-	.menu {	
-		width: 70%;
+	.menu {			
 		display: flex;
-		justify-content: flex-end;			
+		justify-content: flex-end;				
 
-		&__item {
+		&__item {			
 
 			&:first-child {
 				margin-right: 45px;
@@ -163,7 +162,7 @@ a {
 		margin: auto;
 		text-align: center;
 		margin-bottom: 75px;
-		width: 50%;
+		max-width: 50%;
 				
 		.title {
 			font-size: 48px;
@@ -187,11 +186,13 @@ a {
 	}
 
 	.product__list {
-		width: 88%;	
+		width: 100%;	
 		margin: auto;			
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
+		padding-left: 75px;
+		padding-right: 75px;
 
 		.product__item {
 

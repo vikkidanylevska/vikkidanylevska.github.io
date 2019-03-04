@@ -43,7 +43,11 @@ a
     display: -ms-flexbox;
     display: flex;
 
-    margin-bottom: 105px;
+    margin-bottom: 105px; 
+
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 .navigation a:hover
 {
@@ -55,9 +59,7 @@ a
     font-weight: 900;
     line-height: .5;
 
-    display: block;
-
-    width: 30%; 
+    display: block; 
 
     color: black;
 }
@@ -66,8 +68,6 @@ a
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-
-    width: 70%;
 
     -webkit-box-pack: end;
     -ms-flex-pack: end;
@@ -203,7 +203,7 @@ a
 {
     font-family: 'Raleway', sans-serif;
 
-    width: 50%; 
+    max-width: 50%; 
     margin: auto;
     margin-bottom: 75px;
 
@@ -237,8 +237,10 @@ a
     display: -ms-flexbox;
     display: flex;
 
-    width: 88%;
+    width: 100%;
     margin: auto;
+    padding-right: 75px; 
+    padding-left: 75px;
 
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
