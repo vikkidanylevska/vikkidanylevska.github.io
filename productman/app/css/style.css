@@ -102,6 +102,8 @@ a
     display: -ms-flexbox;
     display: flex;
 
+    padding-bottom: 100px; 
+
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
 }
@@ -127,8 +129,10 @@ a
     font-weight: 300;
     line-height: 1.5;
 
-    padding-bottom: 20px; 
-    padding-left: 40px;
+    display: inline-block;
+
+    max-width: 95%;
+    margin-bottom: 20px;
 }
 .slider .blackwhite__link
 {
@@ -136,7 +140,7 @@ a
     font-weight: bold;
     line-height: 1.5; 
 
-    display: block;
+    display: inline-block;
 
     color: black;
 }
@@ -164,7 +168,6 @@ a
     display: flex;
 
     width: 100%;
-    margin-bottom: 100px; 
 
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -194,8 +197,7 @@ a
 {
     width: 100%; 
     margin: auto;
-    padding-top: 100px;
-    padding-bottom: 75px;
+    padding: 100px 70px 75px;
 
     background-color: white;
 }
@@ -203,7 +205,7 @@ a
 {
     font-family: 'Raleway', sans-serif;
 
-    max-width: 50%; 
+    max-width: 60%; 
     margin: auto;
     margin-bottom: 75px;
 
@@ -238,9 +240,6 @@ a
     display: flex;
 
     width: 100%;
-    margin: auto;
-    padding-right: 75px; 
-    padding-left: 75px;
 
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
@@ -288,7 +287,6 @@ a
     left: 25px;
 
     max-width: 230px;
-    margin-bottom: 15px;
 
     -webkit-transition: opacity .2s ease;
             transition: opacity .2s ease; 

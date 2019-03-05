@@ -75,7 +75,8 @@ a {
 
 .slider {
 	display: flex;
-	flex-wrap: wrap;	
+	flex-wrap: wrap;
+	padding-bottom: 100px;	
 
 	.blackwhite {
 		width: 50%;
@@ -91,15 +92,16 @@ a {
 		}
 
 		&__text {
+			display: inline-block;
 			font-size: 24px;
 			font-weight: 300;
 			line-height: 1.5;
-			padding-left: 40px;
-			padding-bottom: 20px;
+			max-width: 95%;			
+			margin-bottom: 20px;
 		}
 
 		&__link {
-			display: block;			
+			display: inline-block;			
 			font-size: 24px;
 			font-weight: bold;
 			color: black;
@@ -124,8 +126,7 @@ a {
 	.ellipse {
 		width: 100%;		
 		display: flex;
-		justify-content: center;
-		margin-bottom: 100px;
+		justify-content: center;		
 
 		&__dot {			
 			
@@ -142,7 +143,7 @@ a {
 			border-radius: 50%;
 			background-color: black;
 
-			&:hover{
+			&:hover {
 				background-color: red;
 			}
 		}		
@@ -151,18 +152,16 @@ a {
 
 .product {
 	background-color: white;
-	padding-top: 100px;
-	padding-bottom: 75px;
+	padding:  100px 70px 75px;
 	margin: auto ;
 	width: 100%;
-
 	
 	.container {
 		font-family: 'Raleway', sans-serif;
 		margin: auto;
 		text-align: center;
 		margin-bottom: 75px;
-		max-width: 50%;
+		max-width: 60%;
 				
 		.title {
 			font-size: 48px;
@@ -187,12 +186,9 @@ a {
 
 	.product__list {
 		width: 100%;	
-		margin: auto;			
 		display: flex;
 		justify-content: space-between;
-		flex-wrap: wrap;
-		padding-left: 75px;
-		padding-right: 75px;
+		flex-wrap: wrap;		
 
 		.product__item {
 
@@ -228,15 +224,14 @@ a {
 					color: white;
 					bottom: 60px;
 					left: 25px;
-					max-width: 230px;
-					margin-bottom: 15px;
+					max-width: 230px;					
 					opacity: 0;
 					transition: opacity .2s ease;
 
 					& > * {
 						display: inline-block;
 						padding-bottom: 15px;
-						border-bottom: 3px solid white;
+						border-bottom: 3px solid white;						
 					}
 				}
 
@@ -246,7 +241,6 @@ a {
 					& > [class*="text"] {
 					opacity: 1;
 					}
-
 				}
 			}			
 		}
