@@ -6,8 +6,6 @@
 	min-width: 50%;
 	font-family: 'Montserrat', sans-serif;
 	background-image: linear-gradient(to bottom right, #555a5c, #191d21);
-	background-position: 100%;
-	background-repeat: no-repeat;
 	padding-top: 25px;
 	padding-bottom: 60px;
 	margin: auto;
@@ -16,8 +14,8 @@
 		max-width: 335px;
 		margin: auto;
 		background-color: white;
-		// padding: 0 25px 20px;
-
+		padding-bottom: 25px;
+		
 		.headline {
 			color: #61726e;
 			background-color: #efe5aa;
@@ -120,8 +118,7 @@
 				border: none;
 				min-width: 100%;
 				padding: 15px 0;
-				margin-bottom: 25px;
-
+				
 				&:hover {
 					cursor: pointer;
 				}
