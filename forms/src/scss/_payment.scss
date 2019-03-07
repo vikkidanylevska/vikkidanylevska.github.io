@@ -1,0 +1,143 @@
+.paymentform a {
+	color: #94a5a8;
+}
+
+.paymentform {
+	min-width: 50%;
+	font-family: 'Montserrat', sans-serif;
+	background-image: linear-gradient(to bottom right, #555a5c, #191d21);
+	background-position: 100%;
+	background-repeat: no-repeat;
+	padding-top: 25px;
+	padding-bottom: 60px;
+	margin: auto;
+
+	.payment {
+		max-width: 335px;
+		margin: auto;
+		background-color: white;
+		// padding: 0 25px 20px;
+
+		.headline {
+			color: #61726e;
+			background-color: #efe5aa;
+			max-width: 100%;
+			padding: 25px;
+			display: flex;
+			justify-content: space-between;
+
+			.user {
+
+				&__name {
+					font-size: 14px;
+					font-weight: bold;
+					text-transform: capitalize;				
+				}
+
+				&__common {
+					font-size: 10px;
+					text-transform: uppercase;
+				}				
+			}
+
+			.total {
+				font-size: 36px;
+			}	
+		}		
+
+		.carddata {
+		padding: 45px 25px 20px;
+		display: flex;
+		flex-direction: column;
+		color: #94a5a8;
+
+			&__label {
+				font-size: 13px;				
+				display: block;
+				margin-bottom: 8px;
+			}
+
+			[id="number"]{
+				font-size: 13px;
+				border: 1.5px solid #94a5a8;
+				padding: 15px 10px;
+				margin-bottom: 30px;
+			}
+
+			.date {
+				margin-bottom: 30px;
+
+				&__select {	
+					font-size: 13px;			 
+					display: inline-block;
+					color: #94a5a8;
+					padding: 15px 10px;
+					border: 1.5px solid #94a5a8;
+				}
+
+				[class*="month"] {
+					margin-right: 15px;
+					min-width: 60%;				
+				}
+
+				[class*="year"]{
+					min-width: 33%;
+				}			
+			}
+
+			.cvv {
+				margin-bottom: 63px;	
+
+				[class*="title"] {
+					text-transform: uppercase;
+				}
+
+				[id="cvv"] {
+					display: inline-block;
+					max-width: 33%;
+					min-height: 45px;
+					border: 1.5px solid #94a5a8;
+					margin-right: 8px;
+				}
+
+				.example {
+					display: inline-block;
+					line-height: 1.3;
+					font-size: 13px;
+
+					& > * {
+						color: #94a5a8;	
+						text-decoration: underline;				
+					}
+				}
+			}
+
+			.pay {
+				font-size: 20px;
+				font-weight: bold;
+				color: white;
+				background-color: #25b167;
+				border: none;
+				min-width: 100%;
+				padding: 15px 0;
+				margin-bottom: 25px;
+
+				&:hover {
+					cursor: pointer;
+				}
+
+				&:active {
+					background-color: #0c8d49;
+					outline: none;
+				}
+			}
+
+			.cancel {
+				display: block;
+				font-size: 12px;
+				text-align: center;
+			}			
+		}		
+	}
+}
+

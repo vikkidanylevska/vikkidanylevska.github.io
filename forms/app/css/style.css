@@ -1,0 +1,310 @@
+*
+{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body
+{
+    min-height: 100vh;
+}
+
+body
+{
+    font-family: Arial, sans-serif;
+}
+body .forms
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.daily a
+{
+    text-decoration: none;
+
+    color: #ea355a;
+}
+
+.daily
+{
+    min-width: 50%;
+    padding-top: 60px;
+    padding-bottom: 60px; 
+
+    background: -webkit-gradient(linear, right top, left bottom, from(#dd2476), to(#ff512f));
+    background: linear-gradient(to bottom left, #dd2476, #ff512f);
+    background-color: pink;
+    background-repeat: no-repeat;
+}
+
+.account
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    max-width: 460px;
+    margin: auto;
+    padding: 30px 30px 60px;
+
+    background-color: white;
+
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+.account__key
+{
+    font-size: 24px; 
+
+    min-width: 24px;
+    min-height: 24px;
+    margin-right: 15px;
+
+    background-image: url('../img/signicon.png');
+    background-repeat: no-repeat;
+}
+.account__title
+{
+    font-size: 24px;
+    font-weight: bold;
+
+    margin-bottom: 20px;
+}
+.account__text
+{
+    font-size: 13px;
+    line-height: 1.5;
+
+    margin-bottom: 40px;
+}
+.account__field
+{
+    max-width: 192.5px;
+    margin-bottom: 15px;
+    padding: 15px;
+
+    border: none;
+    border-radius: 4px;
+    outline: none; 
+    background-color: #f0f0f0;
+}
+.account [class*='first']
+{
+    margin-right: 15px;
+}
+.account [class*='long']
+{
+    min-width: 100%;
+}
+.account .signup
+{
+    font-size: 18px;
+    font-weight: bold;
+
+    min-width: 100%;
+    min-height: 40px;
+    margin-bottom: 25px;
+
+    text-align: center;
+
+    color: white;
+    border: none;
+    border-bottom: 3px solid #bd1962; 
+    border-radius: 4px;
+    background-color: #ea355a;
+}
+.account .signup:hover
+{
+    cursor: pointer;
+}
+.account .signup:active
+{
+    border: none;
+    outline: none;
+}
+
+.paymentform a
+{
+    color: #94a5a8;
+}
+
+.paymentform
+{
+    font-family: 'Montserrat', sans-serif;
+
+    min-width: 50%;
+    margin: auto; 
+    padding-top: 25px;
+    padding-bottom: 60px;
+
+    background-image: -webkit-gradient(linear, left top, right bottom, from(#555a5c), to(#191d21));
+    background-image: linear-gradient(to bottom right, #555a5c, #191d21);
+    background-repeat: no-repeat;
+    background-position: 100%;
+}
+.paymentform .payment
+{
+    max-width: 335px;
+    margin: auto;
+
+    background-color: white;
+}
+.paymentform .payment .headline
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    max-width: 100%;
+    padding: 25px;
+
+    color: #61726e;
+    background-color: #efe5aa;
+
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.paymentform .payment .headline .user__name
+{
+    font-size: 14px;
+    font-weight: bold;
+
+    text-transform: capitalize;
+}
+.paymentform .payment .headline .user__common
+{
+    font-size: 10px;
+
+    text-transform: uppercase;
+}
+.paymentform .payment .headline .total
+{
+    font-size: 36px;
+}
+.paymentform .payment .carddata
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+        flex-direction: column;
+
+    padding: 45px 25px 20px;
+
+    color: #94a5a8; 
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+}
+.paymentform .payment .carddata__label
+{
+    font-size: 13px;
+
+    display: block;
+
+    margin-bottom: 8px;
+}
+.paymentform .payment .carddata [id='number']
+{
+    font-size: 13px;
+
+    margin-bottom: 30px; 
+    padding: 15px 10px;
+
+    border: 1.5px solid #94a5a8;
+}
+.paymentform .payment .carddata .date
+{
+    margin-bottom: 30px;
+}
+.paymentform .payment .carddata .date__select
+{
+    font-size: 13px;
+
+    display: inline-block;
+
+    padding: 15px 10px;
+
+    color: #94a5a8;
+    border: 1.5px solid #94a5a8;
+}
+.paymentform .payment .carddata .date [class*='month']
+{
+    min-width: 60%; 
+    margin-right: 15px;
+}
+.paymentform .payment .carddata .date [class*='year']
+{
+    min-width: 33%;
+}
+.paymentform .payment .carddata .cvv
+{
+    margin-bottom: 63px;
+}
+.paymentform .payment .carddata .cvv [class*='title']
+{
+    text-transform: uppercase;
+}
+.paymentform .payment .carddata .cvv [id='cvv']
+{
+    display: inline-block;
+
+    max-width: 33%;
+    min-height: 45px;
+    margin-right: 8px; 
+
+    border: 1.5px solid #94a5a8;
+}
+.paymentform .payment .carddata .cvv .example
+{
+    font-size: 13px; 
+    line-height: 1.3;
+
+    display: inline-block;
+}
+.paymentform .payment .carddata .cvv .example > *
+{
+    text-decoration: underline; 
+
+    color: #94a5a8;
+}
+.paymentform .payment .carddata .pay
+{
+    font-size: 20px;
+    font-weight: bold;
+
+    min-width: 100%;
+    margin-bottom: 25px; 
+    padding: 15px 0;
+
+    color: white;
+    border: none;
+    background-color: #25b167;
+}
+.paymentform .payment .carddata .pay:hover
+{
+    cursor: pointer;
+}
+.paymentform .payment .carddata .pay:active
+{
+    outline: none; 
+    background-color: #0c8d49;
+}
+.paymentform .payment .carddata .cancel
+{
+    font-size: 12px;
+
+    display: block;
+
+    text-align: center;
+}

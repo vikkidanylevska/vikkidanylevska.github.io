@@ -3,12 +3,106 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<title>Document</title>
-	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+	<title>Forms</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
+	<main class="forms">
+		<section class="daily">
+
+			<form action="#" class="account">				
+				
+				<div class="account__key"></div>
+				<h2 class="account__title">Creat your free account</h2>				
+
+				<p class="account__text">Come and join our cool and amazing community, fill in your details to get started. Already have an account?
+					<a href="#">Log in.</a>
+				</p>
+
+				<input class="account__field first" id="firstname" type="text" placeholder="First name" name="userName" required>				
+				
+				<input class="account__field" id="lastname" type="text" placeholder="Last name" name="userName" required>
+				
+				<input class="account__field long" id="userEmail" type="email" placeholder="Email address" name="userEmail" required>			
+				
+				<input class="account__field long" id="password" type="password" placeholder="Password" name="password" required>
+
+				<input class="signup" type="submit" value="Sign up for free">
+
+				<p class="agree">By clicking on "Sign up for free", you agree to the <a href="#">Terms of Service</a> and the <a href="#">Privacy Policy</a></p>
+
+			</form>
+		</section>
+
+		<section class="paymentform">	
+
+			<form class="payment" action="#">
+
+				<div class="headline">
+
+					<div class="user">
+						<p class="user__name">harold finch</p>
+						<span class="user__common">your total</span>
+					</div>
+
+					<span class="total">$88</span>
+				</div>			
+
+				<div class="carddata">
+
+					<label class="carddata__label" for="number">Credit card number</label>
+					<input id="number" type="text" placeholder="number" name="cardnumber" pattern="[0-9]{16}" maxlength="16" required>
+
+					<div class="date">
+
+						<label class="carddata__label" for="month">Expiration date</label>
+
+						<select class="date__select month" id="month" name="month" required>
+							<option value="" hidden>Month</option>
+							<option value="january">January</option>
+							<option value="february">February</option>
+							<option value="march">March</option>
+							<option value="april">April</option>
+							<option value="may">May</option>
+							<option value="june">June</option>
+							<option value="july">July</option>
+							<option value="august">August</option>
+							<option value="september">September</option>
+							<option value="october">October</option>
+							<option value="november">November</option>
+							<option value="december">December</option>
+						</select>
+
+						<select class="date__select year" name="year" required>
+							<option value="" hidden>Year</option>    
+							<option value="2019">2019</option>
+							<option value="2020">2020</option>
+							<option value="2021">2021</option>
+							<option value="2022">2022</option>
+							<option value="2023">2023</option>      
+						</select>      
+					</div>
+
+					<div class="cvv">
+						<label class="carddata__label title" for="cvv">cvv</label>
+						<input id="cvv" type="text" name="cvv"  pattern="[0-9]{3,4}" minlength="3" maxlength="4" required>
+						
+						<p class="example">3 or 4 digits - <a href="#">view example</a></p>
+					</div>				
+
+					<input class="pay" type="submit" value="Pay">
+
+					<a class="cancel" href="#">Cancel order</a>
+				</div>
+
+			</form>
+		</section>
+	</main>
 
 	<script src="js/script.js"></script>
 </body>

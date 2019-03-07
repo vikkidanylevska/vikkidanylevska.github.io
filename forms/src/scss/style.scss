@@ -1,0 +1,25 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	min-height: 100vh;
+}
+
+body {
+	// display: flex;
+	// justify-content: center;
+	// align-items: center;	
+	font-family: Arial, sans-serif;
+	// background-color: pink;
+
+	.forms {
+	display: flex;
+	justify-content:center;
+	}
+}
+
+@import "daily_form.scss";
+@import "payment.scss";
