@@ -134,7 +134,7 @@ body .forms
 
 .paymentform a
 {
-    color: #94a5a8;
+    color: #9eabad;
 }
 
 .paymentform
@@ -148,13 +148,12 @@ body .forms
 
     background-image: -webkit-gradient(linear, left top, right bottom, from(#555a5c), to(#191d21));
     background-image: linear-gradient(to bottom right, #555a5c, #191d21);
-    background-repeat: no-repeat;
-    background-position: 100%;
 }
 .paymentform .payment
 {
     max-width: 335px;
     margin: auto;
+    padding-bottom: 20px; 
 
     background-color: white;
 }
@@ -167,7 +166,7 @@ body .forms
     max-width: 100%;
     padding: 25px;
 
-    color: #61726e;
+    color: #637570;
     background-color: #efe5aa;
 
     -webkit-box-pack: justify;
@@ -200,7 +199,7 @@ body .forms
 
     padding: 45px 25px 20px;
 
-    color: #94a5a8; 
+    color: #9eabad; 
 
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -221,7 +220,7 @@ body .forms
     margin-bottom: 30px; 
     padding: 15px 10px;
 
-    border: 1.5px solid #94a5a8;
+    border: 1.5px solid #9eabad;
 }
 .paymentform .payment .carddata .date
 {
@@ -232,11 +231,18 @@ body .forms
     font-size: 13px;
 
     display: inline-block;
+    overflow: hidden;
 
     padding: 15px 10px;
 
-    color: #94a5a8;
-    border: 1.5px solid #94a5a8;
+    color: #9eabad;
+    border: 1.5px solid #9eabad;
+    background-image: url('../img/shape.png');
+    background-repeat: no-repeat;
+    background-position: 95% 50%; 
+
+    -webkit-appearance: none;
+       -moz-appearance: none;
 }
 .paymentform .payment .carddata .date [class*='month']
 {
@@ -246,10 +252,12 @@ body .forms
 .paymentform .payment .carddata .date [class*='year']
 {
     min-width: 33%;
+
+    background-position: 90% 50%;
 }
 .paymentform .payment .carddata .cvv
 {
-    margin-bottom: 63px;
+    margin-bottom: 30px;
 }
 .paymentform .payment .carddata .cvv [class*='title']
 {
@@ -257,13 +265,15 @@ body .forms
 }
 .paymentform .payment .carddata .cvv [id='cvv']
 {
+    font-size: 13px;
+
     display: inline-block;
 
     max-width: 33%;
-    min-height: 45px;
     margin-right: 8px; 
+    padding: 12px 10px;
 
-    border: 1.5px solid #94a5a8;
+    border: 1.5px solid #9eabad;
 }
 .paymentform .payment .carddata .cvv .example
 {
@@ -276,7 +286,16 @@ body .forms
 {
     text-decoration: underline; 
 
-    color: #94a5a8;
+    color: #9eabad;
+}
+.paymentform .payment .carddata .line
+{
+    height: 1px; 
+    margin-bottom: 30px;
+
+    color: #e3e6e8;
+    border: none;
+    background-color: #e3e6e8;
 }
 .paymentform .payment .carddata .pay
 {
@@ -305,6 +324,8 @@ body .forms
     font-size: 12px;
 
     display: block;
+
+    min-width: 100%;
 
     text-align: center;
 }

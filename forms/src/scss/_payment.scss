@@ -1,5 +1,5 @@
 .paymentform a {
-	color: #94a5a8;
+	color: #9eabad;
 }
 
 .paymentform {
@@ -14,10 +14,10 @@
 		max-width: 335px;
 		margin: auto;
 		background-color: white;
-		padding-bottom: 25px;
+		padding-bottom: 20px;
 		
 		.headline {
-			color: #61726e;
+			color: #637570;
 			background-color: #efe5aa;
 			max-width: 100%;
 			padding: 25px;
@@ -47,7 +47,7 @@
 		padding: 45px 25px 20px;
 		display: flex;
 		flex-direction: column;
-		color: #94a5a8;
+		color: #9eabad;
 
 			&__label {
 				font-size: 13px;				
@@ -57,7 +57,7 @@
 
 			[id="number"]{
 				font-size: 13px;
-				border: 1.5px solid #94a5a8;
+				border: 1.5px solid #9eabad;
 				padding: 15px 10px;
 				margin-bottom: 30px;
 			}
@@ -68,9 +68,15 @@
 				&__select {	
 					font-size: 13px;			 
 					display: inline-block;
-					color: #94a5a8;
+					color: #9eabad;
 					padding: 15px 10px;
-					border: 1.5px solid #94a5a8;
+					border: 1.5px solid #9eabad;
+					overflow: hidden;
+					-webkit-appearance: none;
+					-moz-appearance: none;
+					background-image: url("../img/shape.png");
+					background-repeat: no-repeat;
+					background-position: 95% 50%;
 				}
 
 				[class*="month"] {
@@ -80,11 +86,12 @@
 
 				[class*="year"]{
 					min-width: 33%;
+					background-position: 90% 50%;
 				}			
 			}
 
 			.cvv {
-				margin-bottom: 63px;	
+				margin-bottom: 30px;	
 
 				[class*="title"] {
 					text-transform: uppercase;
@@ -92,9 +99,10 @@
 
 				[id="cvv"] {
 					display: inline-block;
+					font-size: 13px;
 					max-width: 33%;
-					min-height: 45px;
-					border: 1.5px solid #94a5a8;
+					padding: 12px 10px;
+					border: 1.5px solid #9eabad;
 					margin-right: 8px;
 				}
 
@@ -104,10 +112,18 @@
 					font-size: 13px;
 
 					& > * {
-						color: #94a5a8;	
+						color: #9eabad;	
 						text-decoration: underline;				
 					}
 				}
+			}
+
+			.line {
+				margin-bottom: 30px;
+				color: #e3e6e8;
+				border: none;
+    			background-color: #e3e6e8;
+    			height: 1px; 
 			}
 
 			.pay {
@@ -118,6 +134,7 @@
 				border: none;
 				min-width: 100%;
 				padding: 15px 0;
+				margin-bottom: 25px;
 				
 				&:hover {
 					cursor: pointer;
@@ -131,6 +148,7 @@
 
 			.cancel {
 				display: block;
+				min-width: 100%;
 				font-size: 12px;
 				text-align: center;
 			}			
