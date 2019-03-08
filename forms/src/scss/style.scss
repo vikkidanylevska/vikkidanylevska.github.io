@@ -9,12 +9,9 @@ html, body {
 }
 
 body {
-	// display: flex;
-	// justify-content: center;
-	// align-items: center;	
+	
 	font-family: Arial, sans-serif;
-	// background-color: pink;
-
+	
 	.forms {
 	display: flex;
 	justify-content:center;
@@ -23,3 +20,4 @@ body {
 
 @import "daily_form.scss";
 @import "payment.scss";
+

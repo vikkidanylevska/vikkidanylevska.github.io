@@ -59,34 +59,37 @@
 					<label class="carddata__label" for="number">Credit card number</label>
 					<input id="number" type="text" placeholder="number" name="cardnumber" pattern="[0-9]{16}" maxlength="16" required>
 
-					<div class="date">
+					<label class="carddata__label" for="month">Expiration date</label>
 
-						<label class="carddata__label" for="month">Expiration date</label>
+					<div class="container">				
 
-						<select class="date__select month" id="month" name="month" required>
-							<option value="" hidden>Month</option>
-							<option value="january">January</option>
-							<option value="february">February</option>
-							<option value="march">March</option>
-							<option value="april">April</option>
-							<option value="may">May</option>
-							<option value="june">June</option>
-							<option value="july">July</option>
-							<option value="august">August</option>
-							<option value="september">September</option>
-							<option value="october">October</option>
-							<option value="november">November</option>
-							<option value="december">December</option>
-						</select>
-
-						<select class="date__select year" name="year" required>
-							<option value="" hidden>Year</option>    
-							<option value="2019">2019</option>
-							<option value="2020">2020</option>
-							<option value="2021">2021</option>
-							<option value="2022">2022</option>
-							<option value="2023">2023</option>      
-						</select>      
+						<div class="date month">
+							<select class="date__select" id="month" name="month" required>
+								<option value="" hidden>Month</option>
+								<option value="january">January</option>
+								<option value="february">February</option>
+								<option value="march">March</option>
+								<option value="april">April</option>
+								<option value="may">May</option>
+								<option value="june">June</option>
+								<option value="july">July</option>
+								<option value="august">August</option>
+								<option value="september">September</option>
+								<option value="october">October</option>
+								<option value="november">November</option>
+								<option value="december">December</option>
+							</select>
+						</div>
+						
+						<div class="date year">
+							<select class="date__select" id="year" name="year" required>
+								<option value="" hidden>Year</option>    
+								<option value="2019">2019</option>
+								<option value="2020">2020</option>
+								<option value="2021">2021</option>
+								<option value="2022">2022</option>
+								<option value="2023">2023</option>      
+							</select>    </div>
 					</div>
 
 					<div class="cvv">
@@ -106,7 +109,7 @@
 			</form>
 		</section>
 	</main>
-
+	
 	<script src="js/script.js"></script>
 </body>
 </html>

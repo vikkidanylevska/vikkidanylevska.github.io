@@ -42,7 +42,6 @@ body .forms
 
     background: -webkit-gradient(linear, right top, left bottom, from(#dd2476), to(#ff512f));
     background: linear-gradient(to bottom left, #dd2476, #ff512f);
-    background-color: pink;
     background-repeat: no-repeat;
 }
 
@@ -153,7 +152,6 @@ body .forms
 {
     max-width: 335px;
     margin: auto;
-    padding-bottom: 20px; 
 
     background-color: white;
 }
@@ -197,7 +195,7 @@ body .forms
     display: flex;
         flex-direction: column;
 
-    padding: 45px 25px 20px;
+    padding: 45px 25px 25px;
 
     color: #9eabad; 
 
@@ -222,38 +220,59 @@ body .forms
 
     border: 1.5px solid #9eabad;
 }
-.paymentform .payment .carddata .date
+.paymentform .payment .carddata .container
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
     margin-bottom: 30px;
+
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
-.paymentform .payment .carddata .date__select
+.paymentform .payment .carddata .container .date
+{
+    position: relative;
+
+    min-width: 100%;
+}
+.paymentform .payment .carddata .container .date__select
 {
     font-size: 13px;
 
-    display: inline-block;
     overflow: hidden;
 
+    min-width: 100%;
     padding: 15px 10px;
 
     color: #9eabad;
     border: 1.5px solid #9eabad;
-    background-image: url('../img/shape.png');
-    background-repeat: no-repeat;
-    background-position: 95% 50%; 
 
     -webkit-appearance: none;
        -moz-appearance: none;
 }
-.paymentform .payment .carddata .date [class*='month']
+.paymentform .payment .carddata .container .date::after
 {
-    min-width: 60%; 
-    margin-right: 15px;
+    position: absolute;
+    top: 45%;
+    right: 10%; 
+
+    content: ' ';
+    pointer-events: none;
+
+    border-width: 8px 6px 0 6px;
+    border-style: solid;
+    border-color: #9eabad transparent;
 }
-.paymentform .payment .carddata .date [class*='year']
+.paymentform .payment .carddata .container [class*='month']
+{
+    min-width: 60%;
+}
+.paymentform .payment .carddata .container [class*='year']
 {
     min-width: 33%;
-
-    background-position: 90% 50%;
 }
 .paymentform .payment .carddata .cvv
 {
@@ -266,8 +285,6 @@ body .forms
 .paymentform .payment .carddata .cvv [id='cvv']
 {
     font-size: 13px;
-
-    display: inline-block;
 
     max-width: 33%;
     margin-right: 8px; 
@@ -288,7 +305,7 @@ body .forms
 
     color: #9eabad;
 }
-.paymentform .payment .carddata .line
+.paymentform .payment .line
 {
     height: 1px; 
     margin-bottom: 30px;
@@ -297,7 +314,7 @@ body .forms
     border: none;
     background-color: #e3e6e8;
 }
-.paymentform .payment .carddata .pay
+.paymentform .payment .pay
 {
     font-size: 20px;
     font-weight: bold;
@@ -310,22 +327,19 @@ body .forms
     border: none;
     background-color: #25b167;
 }
-.paymentform .payment .carddata .pay:hover
+.paymentform .payment .pay:hover
 {
     cursor: pointer;
 }
-.paymentform .payment .carddata .pay:active
+.paymentform .payment .pay:active
 {
     outline: none; 
     background-color: #0c8d49;
 }
-.paymentform .payment .carddata .cancel
+.paymentform .payment .cancel
 {
     font-size: 12px;
 
-    display: block;
-
-    min-width: 100%;
-
-    text-align: center;
+    max-width: 30%;
+    margin: auto;
 }

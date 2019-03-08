@@ -14,7 +14,6 @@
 		max-width: 335px;
 		margin: auto;
 		background-color: white;
-		padding-bottom: 20px;
 		
 		.headline {
 			color: #637570;
@@ -44,7 +43,7 @@
 		}		
 
 		.carddata {
-		padding: 45px 25px 20px;
+		padding: 45px 25px 25px;
 		display: flex;
 		flex-direction: column;
 		color: #9eabad;
@@ -62,31 +61,44 @@
 				margin-bottom: 30px;
 			}
 
-			.date {
+			.container {
 				margin-bottom: 30px;
+				display: flex;
+				justify-content: space-between;
 
-				&__select {	
-					font-size: 13px;			 
-					display: inline-block;
-					color: #9eabad;
-					padding: 15px 10px;
-					border: 1.5px solid #9eabad;
-					overflow: hidden;
-					-webkit-appearance: none;
-					-moz-appearance: none;
-					background-image: url("../img/shape.png");
-					background-repeat: no-repeat;
-					background-position: 95% 50%;
-				}
+				.date {
+					position: relative;
+					min-width: 100%;						
 
-				[class*="month"] {
-					margin-right: 15px;
-					min-width: 60%;				
-				}
+					&__select {	
+						font-size: 13px;			 
+						color: #9eabad;
+						padding: 15px 10px;
+						border: 1.5px solid #9eabad;
+						min-width: 100%;
+						overflow: hidden;
+						-webkit-appearance: none;
+						-moz-appearance: none;					
+						}
+
+					&::after {
+						content: " ";
+						border-style: solid;							
+						border-width: 8px 6px 0 6px;
+						border-color: #9eabad transparent;
+						position: absolute;
+						pointer-events: none;
+						top: 45%;
+						right: 10%;
+						}
+					}
+
+				[class*="month"]{
+					min-width: 60%;
+				}									
 
 				[class*="year"]{
 					min-width: 33%;
-					background-position: 90% 50%;
 				}			
 			}
 
@@ -98,7 +110,6 @@
 				}
 
 				[id="cvv"] {
-					display: inline-block;
 					font-size: 13px;
 					max-width: 33%;
 					padding: 12px 10px;
@@ -117,7 +128,7 @@
 					}
 				}
 			}
-
+		}
 			.line {
 				margin-bottom: 30px;
 				color: #e3e6e8;
@@ -147,12 +158,9 @@
 			}
 
 			.cancel {
-				display: block;
-				min-width: 100%;
+				max-width: 30%;
 				font-size: 12px;
-				text-align: center;
+				margin: auto;
 			}			
 		}		
 	}
-}
-
