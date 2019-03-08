@@ -1,5 +1,5 @@
 .portfolio {
-    padding: 70px 0;
+    @include section-padding;
 
     .row:not(:last-child) {
         margin-bottom: 35px;
@@ -51,12 +51,12 @@
             margin-bottom: 0;
         }
 
-        &.small {
-            flex-basis: 40%;
+        &:nth-last-child(2) {
+            order: 1;
+        }
 
-            &:nth-last-child(2) {
-            	order: 1;
-            }
+        &.small {
+            flex-basis: 40%;           
 
             & > * {
                 padding-top: 76.2%;
@@ -80,14 +80,14 @@
         	z-index: 3;  
         	opacity: 0;
         	transition: opacity .2s ease;
+        }
 
         &:hover {
-        	&::before, [class*="__text"] {
+        	&::before, 
+            [class*="__text"] {
         		opacity: 1;
         	}
-        }  	
-
-        }
+        }        
     }
 
     &__img {
@@ -106,13 +106,12 @@
         text-align: center;
         display: inline-block;
         font-size: 30px;
+        opacity: 0;
 
         & > * {
         	font-size: 16px;
         	display: block;
-        	margin-top: 20px;
-        	
-
+        	margin-top: .5rem;
         }
     }
 }

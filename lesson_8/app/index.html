@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>Foliac</title>
 	<link rel="shortcut icon" type="image/x-icon" href="img/faviconka.ico">
-	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
@@ -13,12 +13,10 @@
 <body>
 	<!-- Top Line -->
     <div class="row top-line">
-
     	<div class="container">
-
 	        <div class="logo">
 	            <a class="logo__link" href="/">
-	                <img class="logo__img" src="img/logo.png" alt="logo">
+	                <img class="logo__img" src="img/logo.png" alt="logo">          
 	            </a>
 	        </div>
 	        <nav class="navigation">
@@ -53,7 +51,7 @@
 
         </div>
     </header>
-    <!-- FIRST SCREEN -->
+    <!-- END FIRST SCREEN -->
 
 	<section class="portfolio">
 
@@ -61,33 +59,48 @@
 
 	   	 	<div class="row">
 	   	 		<ul class="portfolio__tabs">
-	   	 			<li class="portfolio__tabs-item"><a href="#" class="portfolio__tabs-link active">item1</a></li>
-	   	 			<li class="portfolio__tabs-item"><a href="#" class="portfolio__tabs-link">item2</a></li>
-	   	 			<li class="portfolio__tabs-item"><a href="#" class="portfolio__tabs-link">item3</a></li>
-	   	 			<li class="portfolio__tabs-item"><a href="#" class="portfolio__tabs-link">item4</a></li>
-	   	 			<li class="portfolio__tabs-item"><a href="#" class="portfolio__tabs-link">item5</a></li>
+	   	 			<li class="portfolio__tabs-item">
+	   	 				<a href="#" class="portfolio__tabs-link active">item1
+	   	 				</a>
+	   	 			</li>
+	   	 			<li class="portfolio__tabs-item">
+	   	 				<a href="#" class="portfolio__tabs-link">item2
+	   	 				</a>
+	   	 			</li>
+	   	 			<li class="portfolio__tabs-item">
+	   	 				<a href="#" class="portfolio__tabs-link">item3
+	   	 				</a>
+	   	 			</li>
+	   	 			<li class="portfolio__tabs-item">
+	   	 				<a href="#" class="portfolio__tabs-link">item4
+	   	 				</a>
+	   	 			</li>
+	   	 			<li class="portfolio__tabs-item">
+	   	 				<a href="#" class="portfolio__tabs-link">item5
+	   	 				</a>
+	   	 			</li>
 	   	 		</ul>
 	   	 	</div>
 	   	 	<div class="row">
 	   	 		<ul class="portfolio__list">
-	   	 			<li class="portfolio__items small">
+	   	 			<li class="portfolio__item small">
 	   	 				<a href="#" class="portfolio__link ">
-	   	 					<img class="portfolio__img" src="" alt="portfolio item" scr="img/item-1.jpg"> <p class="portfolio__text">Loremipsum<span>Lorem3</span></p>
+	   	 					<img class="portfolio__img" src="img/item-1.jpg" alt="portfolio item"> <p class="portfolio__text">Loremipsum<span>Lorem3</span></p>
 	   	 				</a>
 	   	 			</li>
-	   	 			<li class="portfolio__items">
+	   	 			<li class="portfolio__item">
 	   	 				<a href="#" class="portfolio__link">
-	   	 					<img class="portfolio__img" src="" alt="portfolio item" scr="img/item-2.jpg"> <p class="portfolio__text">Loremipsum<span>Lorem3</span></p>
+	   	 					<img class="portfolio__img" src="img/item-2.jpg" alt="portfolio item"> <p class="portfolio__text">Loremipsum<span>Lorem3</span></p>
 	   	 				</a>
 	   	 			</li>
-	   	 			<li class="portfolio__items small">
+	   	 			<li class="portfolio__item small">
 	   	 				<a href="#" class="portfolio__link">
-	   	 					<img class="portfolio__img" src="" alt="portfolio item" scr="img/item-3.jpg"> <p class="portfolio__text">Loremipsum<span>Lorem3</span></p>
+	   	 					<img class="portfolio__img" src="img/item-3.jpg" alt="portfolio item"> <p class="portfolio__text">Loremipsum<span>Lorem3</span></p>
 	   	 				</a>
 	   	 			</li>
-	   	 			<li class="portfolio__items">
+	   	 			<li class="portfolio__item">
 	   	 				<a href="#" class="portfolio__link">
-	   	 					<img class="portfolio__img" src="" alt="portfolio item" scr="img/item-4.jpg"> <p class="portfolio__text">Loremipsum<span>Lorem3</span></p>
+	   	 					<img class="portfolio__img" src="img/item-4.jpg" alt="portfolio item"> <p class="portfolio__text">Loremipsum<span>Lorem3</span></p>
 	   	 				</a>
 	   	 			</li>
 	   	 		</ul>
@@ -95,18 +108,19 @@
 	   	 </div>
    	</section>
 
-   	<sectio class="about">
+   	<section class="about">
    		<div class="container">
    			<div class="row">
    				<div class="about__block">
    					<h2 class="abot__title">Michel Dupont</h2>
-   					<p class="about__prof">Webdisiner</p>
-   					<p class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat dolores dolore esse maiores est error nostrum officiis, deserunt eum recusandae.</p>
-   					<a href="#contacts" class="about__btn">me contacter</a>
+   					<p class="about__prof">Webdisiner, illustrateur, auteur</p>
+   					<p class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga ipsa distinctio vel aspernatur reiciendis excepturi voluptatibus ipsam iste iure odit maiores neque nihil quasi possimus aperiam, illum, sed voluptatum labore blanditiis architecto dolore nisi consectetur at! Incidunt maiores, voluptatibus dicta.
+   					</p>
+   					<a class="about__btn" href="#contacts">me contacter</a>
    				</div>
    			</div>
    		</div>
-   	</sectio>
+   	</section>
 
    	<footer class="footer">
    		<div class="container">
@@ -118,5 +132,5 @@
 </body>
 </html>
 
-<i class="fas fa-pencil-alt"></i>
-<i class="fas fa-user"></i>
+<!-- <i class="fas fa-pencil-alt"></i>
+<i class="fas fa-user"></i> -->

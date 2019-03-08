@@ -23,9 +23,8 @@
 
     &::before {
         content: "";
-        z-index: 1;
         background-color: rgba($first-screen-bg, .7);
-        @include overlay(2);
+        @include overlay;
     }
 
     & > * {

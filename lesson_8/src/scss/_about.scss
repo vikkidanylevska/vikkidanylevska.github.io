@@ -1,5 +1,4 @@
 .about {
-	@include section-padding;
 	background: url("../img/man.jpg") no-repeat 0 0;
 	background-size: cover;
 	position: relative;
@@ -12,8 +11,8 @@
 		&::before {
 			content:"";
 			@include overlay;
-			background-color: grba($first-screen-bg, .7);
-}
+			background-color: rgba($first-screen-bg, .7);
+		}
 
 	.row {
 		justify-content: flex-end;
@@ -28,7 +27,7 @@
 
 	&__title {
 		font-size: 32px;
-		margin: 0 0 5rem;
+		margin: 0 0 .2rem;
 		font-weight: 700;
 	}
 
@@ -38,7 +37,7 @@
 	}
 
 	&__text {
-		font-size: 22px;
+		font-size: 16px;
 		margin: 0 0 1rem;
 		line-height: 1.4;
 	}
