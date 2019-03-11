@@ -1,345 +1,272 @@
-*
-{
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box; 
-    margin: 0;
-    padding: 0;
+* {
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 }
 
 html,
-body
-{
-    min-height: 100vh;
+body {
+	min-height: 100vh;
 }
 
-body
-{
-    font-family: Arial, sans-serif;
+body {
+	font-family: Arial, sans-serif;
 }
-body .forms
-{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+body .forms {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
 }
 
-.daily a
-{
-    text-decoration: none;
-
-    color: #ea355a;
+.daily a {
+	text-decoration: none;
+	color: #ea355a;
 }
 
-.daily
-{
-    min-width: 50%;
-    padding-top: 60px;
-    padding-bottom: 60px; 
-
-    background: -webkit-gradient(linear, right top, left bottom, from(#dd2476), to(#ff512f));
-    background: linear-gradient(to bottom left, #dd2476, #ff512f);
-    background-repeat: no-repeat;
+.daily {
+	min-width: 50%;
+	background: -webkit-gradient(linear, right top, left bottom, from(#dd2476), to(#ff512f));
+	background: linear-gradient(to bottom left, #dd2476, #ff512f);
+	background-repeat: no-repeat;
+	padding-top: 60px;
+	padding-bottom: 60px;
 }
 
-.account
-{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-
-    max-width: 460px;
-    margin: auto;
-    padding: 30px 30px 60px;
-
-    background-color: white;
-
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+.account {
+	max-width: 460px;
+	padding: 30px 30px 60px;
+	margin: auto;
+	background-color: white;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	    flex-direction: column;
 }
-.account__key
-{
-    font-size: 24px; 
-
-    min-width: 24px;
-    min-height: 24px;
-    margin-right: 15px;
-
-    background-image: url('../img/signicon.png');
-    background-repeat: no-repeat;
+.account__headline {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin-bottom: 20px;
 }
-.account__title
-{
-    font-size: 24px;
-    font-weight: bold;
-
-    margin-bottom: 20px;
+.account__headline .key {
+	background-image: url("../img/signicon.png");
+	background-repeat: no-repeat;
+	min-width: 25px;
+	min-height: 30px;
+	margin-right: 10px;
+	font-size: 24px;
 }
-.account__text
-{
-    font-size: 13px;
-    line-height: 1.5;
-
-    margin-bottom: 40px;
+.account__headline .title {
+	font-size: 24px;
+	font-weight: bold;
 }
-.account__field
-{
-    max-width: 192.5px;
-    margin-bottom: 15px;
-    padding: 15px;
-
-    border: none;
-    border-radius: 4px;
-    outline: none; 
-    background-color: #f0f0f0;
+.account__text {
+	font-size: 13px;
+	line-height: 1.5;
+	margin-bottom: 40px;
 }
-.account [class*='first']
-{
-    margin-right: 15px;
+.account__field {
+	background-color: #f0f0f0;
+	border-radius: 4px;
+	padding: 15px;
+	border: none;
+	outline: none;
 }
-.account [class*='long']
-{
-    min-width: 100%;
+.account__fields {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	margin-bottom: 15px;
 }
-.account .signup
-{
-    font-size: 18px;
-    font-weight: bold;
-
-    min-width: 100%;
-    min-height: 40px;
-    margin-bottom: 25px;
-
-    text-align: center;
-
-    color: white;
-    border: none;
-    border-bottom: 3px solid #bd1962; 
-    border-radius: 4px;
-    background-color: #ea355a;
+.account__fields > * {
+	max-width: 193px;
 }
-.account .signup:hover
-{
-    cursor: pointer;
+.account [class*="long"] {
+	min-width: 100%;
+	margin-bottom: 15px;
 }
-.account .signup:active
-{
-    border: none;
-    outline: none;
+.account .signup {
+	font-size: 18px;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	border: none;
+	background-color: #ea355a;
+	min-width: 100%;
+	border-bottom: 3px solid #bd1962;
+	border-radius: 4px;
+	padding: 15px 0;
+	margin-bottom: 25px;
+}
+.account .signup:hover {
+	cursor: pointer;
+}
+.account .signup:active {
+	border: none;
+	outline: none;
 }
 
-.paymentform a
-{
-    color: #9eabad;
+.paymentform a {
+	color: #9eabad;
 }
 
-.paymentform
-{
-    font-family: 'Montserrat', sans-serif;
-
-    min-width: 50%;
-    margin: auto; 
-    padding-top: 25px;
-    padding-bottom: 60px;
-
-    background-image: -webkit-gradient(linear, left top, right bottom, from(#555a5c), to(#191d21));
-    background-image: linear-gradient(to bottom right, #555a5c, #191d21);
+.paymentform {
+	min-width: 50%;
+	font-family: "Montserrat", sans-serif;
+	background-image: -webkit-gradient(linear, left top, right bottom, from(#555a5c), to(#191d21));
+	background-image: linear-gradient(to bottom right, #555a5c, #191d21);
+	padding-top: 25px;
+	padding-bottom: 60px;
+	margin: auto;
 }
-.paymentform .payment
-{
-    max-width: 335px;
-    margin: auto;
-
-    background-color: white;
+.paymentform .payment {
+	max-width: 335px;
+	margin: auto;
+	background-color: white;
 }
-.paymentform .payment .headline
-{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-
-    max-width: 100%;
-    padding: 25px;
-
-    color: #637570;
-    background-color: #efe5aa;
-
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+.paymentform .payment .headline {
+	color: #637570;
+	background-color: #efe5aa;
+	max-width: 100%;
+	padding: 25px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
 }
-.paymentform .payment .headline .user__name
-{
-    font-size: 14px;
-    font-weight: bold;
-
-    text-transform: capitalize;
+.paymentform .payment .headline .user__name {
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: capitalize;
 }
-.paymentform .payment .headline .user__common
-{
-    font-size: 10px;
-
-    text-transform: uppercase;
+.paymentform .payment .headline .user__common {
+	font-size: 10px;
+	text-transform: uppercase;
 }
-.paymentform .payment .headline .total
-{
-    font-size: 36px;
+.paymentform .payment .headline .total {
+	font-size: 36px;
 }
-.paymentform .payment .carddata
-{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-        flex-direction: column;
-
-    padding: 45px 25px 25px;
-
-    color: #9eabad; 
-
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
+.paymentform .payment .carddata {
+	padding: 45px 25px 25px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	    flex-direction: column;
+	color: #9eabad;
 }
-.paymentform .payment .carddata__label
-{
-    font-size: 13px;
-
-    display: block;
-
-    margin-bottom: 8px;
+.paymentform .payment .carddata__label {
+	font-size: 13px;
+	display: block;
+	margin-bottom: 8px;
 }
-.paymentform .payment .carddata [id='number']
-{
-    font-size: 13px;
-
-    margin-bottom: 30px; 
-    padding: 15px 10px;
-
-    border: 1.5px solid #9eabad;
+.paymentform .payment .carddata [id="number"] {
+	font-size: 13px;
+	border: 1.5px solid #9eabad;
+	padding: 15px 10px;
+	margin-bottom: 30px;
 }
-.paymentform .payment .carddata .container
-{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-
-    margin-bottom: 30px;
-
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+.paymentform .payment .carddata .container {
+	margin-bottom: 30px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
 }
-.paymentform .payment .carddata .container .date
-{
-    position: relative;
-
-    min-width: 100%;
+.paymentform .payment .carddata .container .date {
+	position: relative;
+	min-width: 100%;
 }
-.paymentform .payment .carddata .container .date__select
-{
-    font-size: 13px;
-
-    overflow: hidden;
-
-    min-width: 100%;
-    padding: 15px 10px;
-
-    color: #9eabad;
-    border: 1.5px solid #9eabad;
-
-    -webkit-appearance: none;
-       -moz-appearance: none;
+.paymentform .payment .carddata .container .date__select {
+	font-size: 13px;
+	color: #9eabad;
+	padding: 15px 10px;
+	border: 1.5px solid #9eabad;
+	min-width: 100%;
+	overflow: hidden;
+	-webkit-appearance: none;
+	   -moz-appearance: none;
 }
-.paymentform .payment .carddata .container .date::after
-{
-    position: absolute;
-    top: 45%;
-    right: 10%; 
-
-    content: ' ';
-    pointer-events: none;
-
-    border-width: 8px 6px 0 6px;
-    border-style: solid;
-    border-color: #9eabad transparent;
+.paymentform .payment .carddata .container .date::after {
+	content: " ";
+	border-style: solid;
+	border-width: 8px 6px 0 6px;
+	border-color: #9eabad transparent;
+	position: absolute;
+	pointer-events: none;
+	top: 45%;
+	right: 10%;
 }
-.paymentform .payment .carddata .container [class*='month']
-{
-    min-width: 60%;
+.paymentform .payment .carddata .container [class*="month"] {
+	min-width: 60%;
 }
-.paymentform .payment .carddata .container [class*='year']
-{
-    min-width: 33%;
+.paymentform .payment .carddata .container [class*="year"] {
+	min-width: 33%;
 }
-.paymentform .payment .carddata .cvv
-{
-    margin-bottom: 30px;
+.paymentform .payment .carddata .cvv {
+	margin-bottom: 30px;
 }
-.paymentform .payment .carddata .cvv [class*='title']
-{
-    text-transform: uppercase;
+.paymentform .payment .carddata .cvv [class*="title"] {
+	text-transform: uppercase;
 }
-.paymentform .payment .carddata .cvv [id='cvv']
-{
-    font-size: 13px;
-
-    max-width: 33%;
-    margin-right: 8px; 
-    padding: 12px 10px;
-
-    border: 1.5px solid #9eabad;
+.paymentform .payment .carddata .cvv [id="cvv"] {
+	font-size: 13px;
+	max-width: 33%;
+	padding: 12px 10px;
+	border: 1.5px solid #9eabad;
+	margin-right: 8px;
 }
-.paymentform .payment .carddata .cvv .example
-{
-    font-size: 13px; 
-    line-height: 1.3;
-
-    display: inline-block;
+.paymentform .payment .carddata .cvv .example {
+	display: inline-block;
+	line-height: 1.3;
+	font-size: 13px;
 }
-.paymentform .payment .carddata .cvv .example > *
-{
-    text-decoration: underline; 
-
-    color: #9eabad;
+.paymentform .payment .carddata .cvv .example > * {
+	color: #9eabad;
+	text-decoration: underline;
 }
-.paymentform .payment .line
-{
-    height: 1px; 
-    margin-bottom: 30px;
-
-    color: #e3e6e8;
-    border: none;
-    background-color: #e3e6e8;
+.paymentform .payment .line {
+	margin-bottom: 30px;
+	color: #e3e6e8;
+	border: none;
+	background-color: #e3e6e8;
+	height: 1px;
 }
-.paymentform .payment .pay
-{
-    font-size: 20px;
-    font-weight: bold;
-
-    min-width: 100%;
-    margin-bottom: 25px; 
-    padding: 15px 0;
-
-    color: white;
-    border: none;
-    background-color: #25b167;
+.paymentform .payment .pay {
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+	background-color: #25b167;
+	border: none;
+	min-width: 100%;
+	padding: 15px 0;
+	margin-bottom: 25px;
 }
-.paymentform .payment .pay:hover
-{
-    cursor: pointer;
+.paymentform .payment .pay:hover {
+	cursor: pointer;
 }
-.paymentform .payment .pay:active
-{
-    outline: none; 
-    background-color: #0c8d49;
+.paymentform .payment .pay:active {
+	background-color: #0c8d49;
+	outline: none;
 }
-.paymentform .payment .cancel
-{
-    font-size: 12px;
-
-    max-width: 30%;
-    margin: auto;
+.paymentform .payment .cancel {
+	max-width: 30%;
+	font-size: 12px;
+	margin: auto;
 }
