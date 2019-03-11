@@ -159,7 +159,7 @@ body .forms {
 	font-size: 36px;
 }
 .paymentform .payment .carddata {
-	padding: 45px 25px 25px;
+	padding: 45px 25px 0;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -241,14 +241,11 @@ body .forms {
 	color: #9eabad;
 	text-decoration: underline;
 }
-.paymentform .payment .line {
-	margin-bottom: 30px;
-	color: #e3e6e8;
-	border: none;
-	background-color: #e3e6e8;
-	height: 1px;
+.paymentform .payment .action {
+	border-top: 1px solid #e3e6e8;
+	padding: 30px 0 20px;
 }
-.paymentform .payment .pay {
+.paymentform .payment .action .pay {
 	font-size: 20px;
 	font-weight: bold;
 	color: white;
@@ -258,14 +255,15 @@ body .forms {
 	padding: 15px 0;
 	margin-bottom: 25px;
 }
-.paymentform .payment .pay:hover {
+.paymentform .payment .action .pay:hover {
 	cursor: pointer;
 }
-.paymentform .payment .pay:active {
+.paymentform .payment .action .pay:active {
 	background-color: #0c8d49;
 	outline: none;
 }
-.paymentform .payment .cancel {
+.paymentform .payment .action .cancel {
+	display: block;
 	max-width: 30%;
 	font-size: 12px;
 	margin: auto;
