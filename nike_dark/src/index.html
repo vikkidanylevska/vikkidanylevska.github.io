@@ -6,7 +6,7 @@
 	<title>Nike Dark</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">	
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>	
@@ -26,26 +26,25 @@
 					<a href="#" class="slider__link" ><img class="slider__img" src="img/nikeshoe.png" alt="Sneaker"></a>
 				</div>
 				
-					<form class="slider__form" action="#" method="get">
-
+					<div class="slider__form">
 						
-						<input class="slider__radio blue" id="one" type="radio" name="slider" value="one" checked>
+						<input class="slider__radio blue" id="one" type="radio" name="slider" form="choice" value="one" checked>
 						<label class="slider__label" for="one"></label>
 						
 						
-						<input class="slider__radio white" id="two" type="radio" name="slider" value="two">	
+						<input class="slider__radio white" id="two" type="radio" name="slider" form="choice" value="two">	
 						<label class="slider__label " for="two"></label>	
 						
 						
-						<input class="slider__radio red" id="three" type="radio" name="slider" value="three">
+						<input class="slider__radio red" id="three" type="radio" name="slider" form="choice" value="three">
 						<label class="slider__label" for="three"></label>
 
-						<input class="slider__radio green" id="four" type="radio" name="slider" value="four">						
+						<input class="slider__radio green" id="four" type="radio" name="slider" form="choice" value="four">						
 						<label class="slider__label" for="four"></label>		
-					</form>
+					</div>
 				</div>			
 			
-			<form class="choice" action="#">
+			<form class="choice" action="#" id="choice">
 				<h2 class="title">nike sb stefan janoski max</h2>
 				<p class="text">unisex skateboarding shoe</p>
 				<ul class="stars">
@@ -57,8 +56,8 @@
 				</ul>
 				<div class="select">
 					<label class="select__label" for="size">
-					<select class="select__options" name="size" id="size">
-						<option value="size" selected>Size</option>
+					<select class="select__options" name="size" id="size" required>
+						<option value="" selected>Size</option>
 						<option value="1">1</option>
 						<option value="2">2</option>
 						<option value="3">3</option>
@@ -67,8 +66,8 @@
 					</label>
 
 					<label class="select__label" for="quantity">
-					<select class="select__options" name="quantity" id="quantity">
-						<option value="quantity" selected>Qty</option>
+					<select class="select__options" name="quantity" id="quantity" required>
+						<option value="" selected>Qty</option>
 						<option value="1">1</option>
 						<option value="2">2</option>
 						<option value="3">3</option>
