@@ -3,12 +3,85 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<title>Document</title>
+	<title>Nike Dark</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
 	<link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body>	
 
+	<main class="card">
+
+			<a href="#" class="logo" >
+				<img src="img/logo.png" alt="Nike's logo">
+			</a>
+			
+			
+		<section class="container">
+			
+			<div class="slider">
+
+				<div class="slider__block">
+					<a href="#" class="slider__link" ><img class="slider__img" src="img/nikeshoe.png" alt="Sneaker"></a>
+				</div>
+				
+					<form class="slider__form" action="#" method="get">
+
+						
+						<input class="slider__radio blue" id="one" type="radio" name="slider" value="one" checked>
+						<label class="slider__label" for="one"></label>
+						
+						
+						<input class="slider__radio white" id="two" type="radio" name="slider" value="two">	
+						<label class="slider__label " for="two"></label>	
+						
+						
+						<input class="slider__radio red" id="three" type="radio" name="slider" value="three">
+						<label class="slider__label" for="three"></label>
+
+						<input class="slider__radio green" id="four" type="radio" name="slider" value="four">						
+						<label class="slider__label" for="four"></label>		
+					</form>
+				</div>			
+			
+			<form class="choice" action="#">
+				<h2 class="title">nike sb stefan janoski max</h2>
+				<p class="text">unisex skateboarding shoe</p>
+				<ul class="stars">
+					<li class="star yellow"></li>
+					<li class="star yellow"></li>
+					<li class="star yellow"></li>
+					<li class="star grey"></li>
+					<li class="star grey"></li>
+				</ul>
+				<div class="select">
+					<label class="select__label" for="size">
+					<select class="select__options" name="size" id="size">
+						<option value="size" selected>Size</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+					</select>
+					</label>
+
+					<label class="select__label" for="quantity">
+					<select class="select__options" name="quantity" id="quantity">
+						<option value="quantity" selected>Qty</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+					</select>
+					</label>
+				</div>
+
+				<input class="action" id="submit" type="submit" name="submit" value="Add to card">
+			</form>	
+				
+		</section>		
+	</main>
 
 	<script src="js/script.js"></script>
 </body>
