@@ -1,0 +1,275 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html, body{
+	min-height: 100vh;
+}
+
+$orange: #ffcc00;
+$grey: #666;
+
+$font-roboto: 'Roboto', sans-serif;
+$font-raleway: 'Raleway', sans-serif;
+
+.team {
+	max-width: 1115px;
+	margin: 0 auto;
+	padding: 105px 0;
+
+	&__heading {
+		font-family: $font-raleway;
+		font-size: 18px;
+		font-weight: 500;
+		color: #898f8f;
+		text-transform: uppercase;
+		text-align: center;
+		margin-bottom: 15px;
+	}
+
+	&__title {
+		font-family: $font-roboto;
+		font-size: 60px;
+		font-weight: 900;
+		color: $orange;
+		text-transform: uppercase;
+		text-align: center;
+		margin: 0 0 55px;
+	}
+}
+
+.headline {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 40px;
+
+	.line_1 {
+		
+		& > * {
+			stroke: $orange;
+			stroke-width: 1px;
+		}
+	}
+
+	.icon {
+		// display: inline-block;
+		width: 16px;
+		height: 19px;
+		background-image: url("../img/bonfire.png");
+		background-repeat: no-repeat;
+	}
+}
+
+.crewmen {
+	display: flex;
+	// padding: 40px 0;
+	margin-bottom: 40px;	
+
+	&__photo {
+		flex-basis: 50%;			
+		border-right: 1px solid $orange;
+		padding: 75px 0;
+		position: relative;		
+
+		.previous {
+			display: block;
+			position: absolute;
+			width: 20px;
+			height: 20px;
+			top: 50%;
+			left: 2%;
+			border-bottom: 2px solid $orange;
+			border-left: 2px solid $orange;
+			transform: rotate(45deg);
+			transition: .2s ease;				
+
+			&:hover {
+				border-bottom: 2px solid #c78609;
+				border-left: 2px solid #c78609;
+			}
+		}
+
+		.photo {
+			display: block;
+			position: relative;
+			padding-top: 68%;
+			max-width: 68%;
+			border: 1px solid $orange;
+			margin: 0 auto;
+
+			.img {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;			 
+			}
+		}		
+	}
+
+	&__character {
+		flex-basis: 50%;
+		text-align: center;
+		color: $grey;
+		
+		.character {
+			padding: 75px 0;
+			position: relative;
+
+			.next {
+				display: block;
+				position: absolute;
+				width: 20px;
+				height: 20px;
+				top: 50%;
+				right: 2%;
+				border-top: 2px solid $orange;
+				border-right: 2px solid $orange;
+				transform: rotate(45deg);
+				transition: .2s ease;				
+
+				&:hover {
+					border-top: 2px solid #c78609;
+					border-right: 2px solid #c78609;
+				}
+			}
+					
+			&__name {
+				font-family: $font-roboto;
+				font-size: 36px;
+				font-weight: 900;
+				margin-bottom: 30px;
+			}
+
+			.line_2 {
+				display: block;
+				margin: 0 auto 30px;
+
+				& > * {
+					stroke: $orange;
+					stroke-width: 1px;
+				}
+			}
+
+			// &__line {
+			// 	display: block;
+			// 	max-width: 100px;
+			// 	min-height: 30px;
+			// 	margin: 0 auto;
+			// 	border-top: 2px solid $orange;	
+			// }
+
+			&__specialty {
+				font-family: $font-raleway;
+				font-size: 24px;
+				margin-bottom: 30px;			
+			}
+
+			&__social {
+				display: flex;
+				justify-content: space-between;
+				max-width: 30%;
+				margin: 0 auto 30px;
+
+				[class*="social"] {
+					display: block;
+					background-repeat: no-repeat;
+					width: 30px;
+					height: 30px;
+				}
+
+				[class*="facebook"] {
+					background-image: url("../img/facebook.png");
+				}
+
+				[class*="twitter"] {
+					background-image: url("../img/twitter.png");
+				}
+
+				[class*="googlplus"] {
+					background-image: url("../img/googleplus.png");
+				}
+
+				[class*="linkedin"] {
+					background-image: url("../img/linked.png");
+				}
+			}
+
+			&__text {
+				font-family: $font-raleway;
+				font-size: 14px;
+				font-weight: 500;
+				color: #333;
+				line-height: 24px;
+				max-width: 80%;
+				margin: 0 auto 25px;
+			}
+
+			.dotted {
+				display: block;
+				margin: 0 auto 25px;
+
+				& > * {
+					stroke: $orange;
+					stroke-dasharray: 10 5 20 5 10;
+					stroke-width: 4px;
+				}
+			}
+
+			&__link {
+				font-family:  'Open Sans', sans-serif;
+				font-size: 14px;			
+				font-weight: 700;
+				color: $grey;
+				line-height: 24px;
+				text-align: center;
+				text-transform: uppercase;
+				text-decoration: none;
+				padding: 0 10px;
+				border: 1px solid $orange;
+				transition: .2s ease;
+
+				&:hover {
+					color: #fff;
+					background-color: $orange;
+				}
+			}
+		}
+	}
+}
+
+.switch {
+	display: flex;
+	justify-content: space-between;
+	max-width: 6%;
+	margin: 0 auto;
+
+	&__circle {
+
+		& > * {
+		display: block;
+		$size: 15px;
+		width: $size;
+		height: $size;
+		border: 1.5px solid #fff;
+		border-radius: 50%;
+		transition: .2s ease;
+		background-color: $orange;
+
+			&:hover{
+				background-color: #fff;
+				border: 1.5px solid $orange;
+			}
+		}
+	}	
+}
+
+
+
+

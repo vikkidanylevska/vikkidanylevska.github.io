@@ -1,0 +1,245 @@
+* {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	min-height: 100vh;
+}
+
+.team {
+	max-width: 1115px;
+	margin: 0 auto;
+	padding: 105px 0;
+}
+.team__heading {
+	font-family: "Raleway", sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+	color: #898f8f;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 15px;
+}
+.team__title {
+	font-family: "Roboto", sans-serif;
+	font-size: 60px;
+	font-weight: 900;
+	color: #fc0;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 0 0 55px;
+}
+
+.headline {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	margin-bottom: 40px;
+}
+.headline .line_1 > * {
+	stroke: #fc0;
+	stroke-width: 1px;
+}
+.headline .icon {
+	width: 16px;
+	height: 19px;
+	background-image: url("../img/bonfire.png");
+	background-repeat: no-repeat;
+}
+
+.crewmen {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin-bottom: 40px;
+}
+.crewmen__photo {
+	-ms-flex-preferred-size: 50%;
+	flex-basis: 50%;
+	border-right: 1px solid #fc0;
+	padding: 75px 0;
+	position: relative;
+}
+.crewmen__photo .previous {
+	display: block;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top: 50%;
+	left: 2%;
+	border-bottom: 2px solid #fc0;
+	border-left: 2px solid #fc0;
+	-webkit-transform: rotate(45deg);
+	        transform: rotate(45deg);
+	-webkit-transition: .2s ease;
+	        transition: .2s ease;
+}
+.crewmen__photo .previous:hover {
+	border-bottom: 2px solid #c78609;
+	border-left: 2px solid #c78609;
+}
+.crewmen__photo .photo {
+	display: block;
+	position: relative;
+	padding-top: 68%;
+	max-width: 68%;
+	border: 1px solid #fc0;
+	margin: 0 auto;
+}
+.crewmen__photo .photo .img {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	-o-object-fit: cover;
+	   object-fit: cover;
+}
+.crewmen__character {
+	-ms-flex-preferred-size: 50%;
+	flex-basis: 50%;
+	text-align: center;
+	color: #666;
+}
+.crewmen__character .character {
+	padding: 75px 0;
+	position: relative;
+}
+.crewmen__character .character .next {
+	display: block;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top: 50%;
+	right: 2%;
+	border-top: 2px solid #fc0;
+	border-right: 2px solid #fc0;
+	-webkit-transform: rotate(45deg);
+	        transform: rotate(45deg);
+	-webkit-transition: .2s ease;
+	        transition: .2s ease;
+}
+.crewmen__character .character .next:hover {
+	border-top: 2px solid #c78609;
+	border-right: 2px solid #c78609;
+}
+.crewmen__character .character__name {
+	font-family: "Roboto", sans-serif;
+	font-size: 36px;
+	font-weight: 900;
+	margin-bottom: 30px;
+}
+.crewmen__character .character .line_2 {
+	display: block;
+	margin: 0 auto 30px;
+}
+.crewmen__character .character .line_2 > * {
+	stroke: #fc0;
+	stroke-width: 1px;
+}
+.crewmen__character .character__specialty {
+	font-family: "Raleway", sans-serif;
+	font-size: 24px;
+	margin-bottom: 30px;
+}
+.crewmen__character .character__social {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	max-width: 30%;
+	margin: 0 auto 30px;
+}
+.crewmen__character .character__social [class*="social"] {
+	display: block;
+	background-repeat: no-repeat;
+	width: 30px;
+	height: 30px;
+}
+.crewmen__character .character__social [class*="facebook"] {
+	background-image: url("../img/facebook.png");
+}
+.crewmen__character .character__social [class*="twitter"] {
+	background-image: url("../img/twitter.png");
+}
+.crewmen__character .character__social [class*="googlplus"] {
+	background-image: url("../img/googleplus.png");
+}
+.crewmen__character .character__social [class*="linkedin"] {
+	background-image: url("../img/linked.png");
+}
+.crewmen__character .character__text {
+	font-family: "Raleway", sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	color: #333;
+	line-height: 24px;
+	max-width: 80%;
+	margin: 0 auto 25px;
+}
+.crewmen__character .character .dotted {
+	display: block;
+	margin: 0 auto 25px;
+}
+.crewmen__character .character .dotted > * {
+	stroke: #fc0;
+	stroke-dasharray: 10 5 20 5 10;
+	stroke-width: 4px;
+}
+.crewmen__character .character__link {
+	font-family: "Open Sans", sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	color: #666;
+	line-height: 24px;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 0 10px;
+	border: 1px solid #fc0;
+	-webkit-transition: .2s ease;
+	        transition: .2s ease;
+}
+.crewmen__character .character__link:hover {
+	color: #fff;
+	background-color: #fc0;
+}
+
+.switch {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	max-width: 6%;
+	margin: 0 auto;
+}
+.switch__circle > * {
+	display: block;
+	width: 15px;
+	height: 15px;
+	border: 1.5px solid #fff;
+	border-radius: 50%;
+	-webkit-transition: .2s ease;
+	        transition: .2s ease;
+	background-color: #fc0;
+}
+.switch__circle > *:hover {
+	background-color: #fff;
+	border: 1.5px solid #fc0;
+}
