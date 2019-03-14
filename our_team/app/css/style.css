@@ -88,17 +88,31 @@ body {
 	border-bottom: 2px solid #c78609;
 	border-left: 2px solid #c78609;
 }
-.crewmen__photo .fram {
-	position: absolute;
-	left: 13%;
-	top: 10.75%;
-	width: 410px;
-	height: 410px;
-}
-.crewmen__photo .fram__line {
+.crewmen__photo .frame__line {
 	stroke: #fc0;
 	stroke-width: 2px;
 	fill: none;
+}
+.crewmen__photo [class*="frame"] {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+}
+.crewmen__photo [class*="one"] {
+	left: 13%;
+	top: 10%;
+}
+.crewmen__photo [class*="two"] {
+	right: 13%;
+	top: 10%;
+}
+.crewmen__photo [class*="three"] {
+	right: 13%;
+	bottom: 16%;
+}
+.crewmen__photo [class*="four"] {
+	left: 13%;
+	bottom: 16%;
 }
 .crewmen__photo .photo {
 	display: block;

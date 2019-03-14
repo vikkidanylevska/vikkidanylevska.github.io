@@ -90,19 +90,37 @@ $font-raleway: 'Raleway', sans-serif;
 			}
 		}
 
-		.fram {
-			position: absolute;
-			left: 13%;
-			top: 10.75%;
-			width: 410px;
-			height: 410px;
-
-			&__line {
+		.frame__line {
 			stroke: $orange;
 			stroke-width: 2px;
-			fill: none;
-			}
+			fill: none;	
+		}	
+
+		[class*="frame"] {
+			position: absolute;			
+			width: 100px;
+			height: 100px;			
 		}
+
+		[class*="one"] {
+			left: 13%;
+			top: 10%;
+		}
+
+		[class*="two"] {
+			right: 13%;
+			top: 10%;
+		}
+
+		[class*="three"] {
+			right: 13%;
+			bottom: 16%;
+		}
+
+		[class*="four"] {
+			left: 13%;
+			bottom: 16%;
+		}		
 
 		.photo {
 			display: block;
