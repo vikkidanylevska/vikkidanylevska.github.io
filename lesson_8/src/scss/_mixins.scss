@@ -31,11 +31,19 @@
 }
 
 @mixin row {
-	display: flex;
-	@content;
+    display: flex;
+    @content;
 }
 
-
 @mixin section-padding {
-	padding: 70px 0;
+    padding: 70px 0;
+}
+
+@mixin square($size) {
+    width: $size;
+    height: $size;
+}
+
+@mixin transition ($prop: all, $time: .2s, $func: ease) {
+    transition: $prop $time $func;
 }

@@ -1,4 +1,45 @@
 .footer {
-	padding: 50px 0;
-	background-color: $first-screen-bg;	
+    padding: 50px 0;
+    background-color: $first-screen-bg;
+
+    .row {
+        justify-content: space-between;
+    }
+
+    .social {
+
+        &__menu {
+            display: flex;
+        }
+
+        &__item {
+            list-style: none;
+            margin-right: 40px;
+
+            &:last-child {
+                margin-right: 0;                
+            }
+        }
+
+        &__link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $white;
+            text-decoration: none;
+            @include transition(background-color);
+            @include square(50px);
+        }
+    }
+}
+
+@each $class, $color in $soc_icons {
+    .#{$class} {
+        background: $color url('../img/#{$class}.svg') no-repeat center;
+        background-size: 50%;
+
+        &:hover {
+            background-color: lighten($color, 10%);
+        }
+    }
 }
