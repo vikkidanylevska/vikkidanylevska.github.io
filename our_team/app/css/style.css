@@ -88,6 +88,18 @@ body {
 	border-bottom: 2px solid #c78609;
 	border-left: 2px solid #c78609;
 }
+.crewmen__photo .fram {
+	position: absolute;
+	left: 13%;
+	top: 10.75%;
+	width: 410px;
+	height: 410px;
+}
+.crewmen__photo .fram__line {
+	stroke: #fc0;
+	stroke-width: 2px;
+	fill: none;
+}
 .crewmen__photo .photo {
 	display: block;
 	position: relative;
