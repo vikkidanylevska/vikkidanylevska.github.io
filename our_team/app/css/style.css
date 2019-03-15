@@ -124,6 +124,7 @@ body {
 }
 .crewmen__photo .photo .img {
 	position: absolute;
+	display: block;
 	top: 0;
 	right: 0;
 	bottom: 0;
