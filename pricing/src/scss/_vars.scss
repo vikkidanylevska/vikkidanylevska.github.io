@@ -1,3 +1,4 @@
+//colors
 $violet: #9789f9;
 $light-grey: #f5f4f9;
 $pink: #fd8d7b;
@@ -40,11 +41,14 @@ $large-size: px_to_rem(24px);
 $middle-size: px_to_rem(18px);
 $small-size: px_to_rem(11px);
 
+$container-width: 1100px;
+
+
+// mixins
 @mixin circle($diameter) {
 	width: $diameter;
 	height: $diameter;
 	border-radius: 50%;
 	position: absolute;
 	background-color: $pink;
-
 }
