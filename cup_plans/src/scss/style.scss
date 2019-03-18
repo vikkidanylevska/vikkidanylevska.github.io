@@ -47,7 +47,7 @@ body {
 	align-items: center;
 	flex-basis: 31.5%;
 	border-radius: 7px;
-	box-shadow: 1px 3px 10px -3px #333;
+	box-shadow: 1px 2px 10px -5px #333;
 	color: #333;
 	padding: 35px 0;
 
@@ -79,6 +79,7 @@ body {
 
 	&:nth-child(2) {
 		padding: 45px 0 65px;
+		box-shadow: 1px 3px 10px -4px #333;
 
 		.prod-card__price,
 		.prod-card__img {
