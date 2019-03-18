@@ -4,6 +4,16 @@
 
     .row {
         justify-content: space-between;
+        align-items: center;
+    }
+
+    &__copyrights {
+        color: $white;
+
+        & > * {
+            color: $white;
+            text-decoration: none;
+        }
     }
 
     .social {
@@ -28,7 +38,25 @@
             color: $white;
             text-decoration: none;
             @include transition(background-color);
-            @include square(50px);
+            width: 50px;
+            height: 30px;
+            position: relative;
+
+            &::before,
+            &::after {
+                content: "";
+                position: absolute;
+            }
+
+            &::before {
+                top: 0;
+                transform: translateY(-100%) rotate(180deg);
+            }
+
+            &::after {
+                bottom: 0;  
+                transform: translateY(100%);
+            }
         }
     }
 }
@@ -40,6 +68,19 @@
 
         &:hover {
             background-color: lighten($color, 10%);
+
+            &::before,
+            &::after {
+                border-top-color: lighten($color, 10%);
+            }
+        }
+
+        &::before,
+        &::after {
+            @include triangle(25px, $color);
+            @include transition(border-top-color);
+            border-top-width: 12px;
+            border-bottom-width: 12px;
         }
     }
 }
