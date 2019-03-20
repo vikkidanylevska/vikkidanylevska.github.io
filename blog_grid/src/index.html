@@ -3,11 +3,108 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="initial-scale=1.0, width=device-width">
-	<title>Document</title>
-	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+	<title>Blog grid</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Mukta:500,700" rel="stylesheet">
+	<link rel="shortcut icon" type="image/x-icon" href="img/desktop.png">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+	<section class="blog-grid">
+		<div class="container">
+
+			<div class="row">
+
+				<div class="block-car">
+					<a href="#" class="link">
+						<img class="block-car__img" src="img/img.jpg" alt="red car">				
+						<div class="block-car__contant">
+							<date class="date">November 28, 2015</date>
+							<h2 class="title">fantastic designs of 2015<br> concept cars</h2>
+						</div>
+					</a>					
+				</div>
+				<!-- /.block-big -->
+
+				<div class="block">
+
+					<a href="#" class="link">
+						<div class="img">
+							<img src="img/img2.jpg" alt="foto">
+						</div>
+						<div class="content">
+							<date class="date">November 24, 2015</date>
+							
+							<h2 class="content__title">how to find design inspiration in the simple things around you</h2>
+							<img class="" src="img/foto.png" alt="foto">
+						</div>
+					<!-- /.content -->
+					</a>
+				</div>
+				<!-- /.block -->
+
+				<div class="block">
+
+					<a href="#" class="link">
+						<div class="img">
+							<img class="" src="img/img3.jpg" alt="foto">
+						</div>				
+						<div class="content">
+							<date class="date">November 18, 2015</date>
+							
+							<h2 class="content__title">the only guide to choosing website photos you’ll ever need</h2>
+							<img class="" src="img/foto.png" alt="foto">
+						</div>
+					<!-- /.content -->
+					</a>
+				</div>
+				<!-- /.block -->
+				
+				<div class="block">
+
+					<a href="#" class="link">
+						<div class="img">
+							<img class="" src="img/img4.jpg" alt="foto">
+						</div>				
+						<div class="content">
+							<date class="date hidden"></date>
+							
+							<h2 class="content__title">growth hack your way to a successful freelance career</h2>
+							<img src="img/foto.png" alt="foto">
+						</div>
+					<!-- /.content -->
+					</a>
+				</div>
+				<!-- /.block -->
+				<div class="block">
+
+					<a href="#" class="link">
+						<div class="img">
+							<img src="img/img5.jpg" alt="foto">
+						</div>				
+						<div class="content">
+							<date class="date">November 08, 2015</date>
+							
+							<h2 class="content__title">get 80% off DSLR photography course bundle</h2>
+							<img src="img/foto.png" alt="foto">
+						</div>				
+					<!-- /.content -->
+					</a>
+				</div>
+				<!-- /.block -->
+			</div>
+			<!-- /.row -->
+			<div class="loading">
+				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="28" viewBox="0 0 30 28">
+				  	<image id="loading.svg" width="30" height="28" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAcCAMAAABBJv+bAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAclBMVEWJlqP///+JlqOJlqOJlqOJlqOJlqOJlqOJlqOJlqOJlqOJlqOJlqOJlqOJlqOJlqOJlqOJlqOJlqOJlqOJlqOJlqOJlqOJlqOJlqOJlqOJlqOJlqOJlqOJlqOJlqOJlqOJlqOJlqOJlqOJlqOJlqMAAAB5a1gEAAAAJHRSTlMAAPAMJOKBL+uSAbqiAwu9sQdpcAavWqH+a41b0LbgXGygMCW/3r5iAAAAAWJLR0QlwwHJDwAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+MDEhUoIept+ScAAACoSURBVCjPpdPrDoIwDAXgAoIwGHdQUVDxvP8z6oaJC9iB8fza+iWwdB2RGRdwHTO0hT0r7/zAwvsQiATLMV5JJMdppjwviMqqKpf/rhvlrV47SyZ5wPFELJPozmThT37ji04/536qE3SGOQ9TfY1XPv7fyb+25dqJWVNhNPUG3CV7Ja3aNTV3oUWu9lnKjYNMVCV+87gYJhEB4WgZxcB/WAfZ2/4MWH4CLioXWJaeWXAAAAAASUVORK5CYII="/>
+				</svg>
+				<p class="loading__text">loading new content</p>
+			</div>
+			<!-- /.loading -->
+		</div>
+		<!-- end container -->		
+	</section>
 	
 	<script src="js/script.js"></script>
 </body>
