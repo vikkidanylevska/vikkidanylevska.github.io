@@ -6,3 +6,4 @@ package-lock.json
 src/img/**/*.*
 src/libs/**/*.*
 src/fonts/**/*.*
+_snippets.css
