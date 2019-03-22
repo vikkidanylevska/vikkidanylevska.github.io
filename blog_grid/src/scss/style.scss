@@ -28,12 +28,7 @@ body {
 	justify-content: space-between;
 	flex-wrap: wrap;
 	align-content: space-between;
-	margin-bottom: 75px;
-
-	// &:nth-child(2),
-	// &:first-child {
-	// 	margin-bottom: 20px;
-	// }
+	margin-bottom: 75px;	
 }
 
 .link {
@@ -120,7 +115,6 @@ body {
 	}
 
 	&:nth-child(2) {
-	// &:first-child {
 		margin-bottom: 20px;
 	}	
 }
@@ -130,9 +124,12 @@ body {
 	justify-content: center;
 	align-items: center;
 
+	&__img {
+		margin-right: 13px;
+	}
+
 	&__text{
 		font-size: 13px;
 		color:#99a5b0;
-		padding-left: 13px;
 	}
 }

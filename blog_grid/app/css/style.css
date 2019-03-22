@@ -133,8 +133,10 @@ body {
 	-ms-flex-align: center;
 	align-items: center;
 }
+.loading__img {
+	margin-right: 13px;
+}
 .loading__text {
 	font-size: 13px;
 	color: #99a5b0;
-	padding-left: 13px;
 }
