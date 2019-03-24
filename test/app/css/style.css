@@ -1,0 +1,239 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+html,
+body {
+	min-height: 100vh;
+}
+
+body {
+	font-family: sans-serif;
+	font-size: 16px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.container {
+	width: 100%;
+	min-height: 100vh;
+	margin: auto;
+}
+
+.first-screen {
+	background-color: aqua;
+}
+
+.logo {
+	font-size: 40px;
+	color: blue;
+}
+
+.row {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	    flex-direction: column;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	max-width: 60%;
+}
+.row .logo {
+	margin-bottom: 40px;
+}
+.row .text {
+	font-size: 25px;
+	margin-bottom: 50px;
+}
+.row .search-form {
+	font-size: 0;
+	margin-bottom: 40px;
+}
+.row .search-form__input {
+	font-size: 20px;
+	line-height: 2;
+	padding: 0 20px;
+}
+.row .search-form__buttom {
+	font-size: 20px;
+	line-height: 2;
+	max-width: 40px;
+	background-image: url("../img/favicon.png");
+	background-repeat: no-repeat;
+	background-size: 80%;
+	background-position: 70% 50%;
+	border: 2px solid white;
+}
+.row .link {
+	position: relative;
+}
+.row .link::after {
+	content: " ";
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top: 100%;
+	left: 13%;
+	border-bottom: 2px solid blue;
+	border-right: 2px solid blue;
+	-webkit-transform: rotate(45deg);
+	        transform: rotate(45deg);
+	-webkit-transition: all .2s ease;
+	        transition: all .2s ease;
+}
+.row .link:hover {
+	color: red;
+}
+.row .link:hover::after {
+	border-bottom: 2px solid red;
+	border-right: 2px solid red;
+}
+
+.navigation {
+	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	background-color: #ccc;
+	padding: 40px 20px;
+}
+.navigation__list {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+.navigation__item {
+	margin-right: 25px;
+}
+.navigation__link {
+	display: block;
+	font-size: 20px;
+	line-height: 2;
+	color: #fff;
+}
+
+.contant {
+	max-width: 60%;
+	margin: auto;
+	padding-top: 30px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+.contant .description {
+	-ms-flex-preferred-size: 50%;
+	flex-basis: 50%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+.contant__img {
+	-ms-flex-preferred-size: 50%;
+	flex-basis: 50%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	    flex-direction: column;
+}
+.contant .one {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+}
+.contant .two {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: end;
+	-ms-flex-pack: end;
+	justify-content: flex-end;
+}
+
+.row-3 {
+	max-width: 60%;
+	margin: auto;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+.prod-card {
+	width: 100%;
+	min-height: 100vh;
+	background-image: url("../img/fon.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.row-4 {
+	min-width: 60%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	    flex-direction: column;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.prod {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.pfirst {
+	-webkit-box-pack: start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+}
+
+.psecond {
+	-webkit-box-pack: end;
+	-ms-flex-pack: end;
+	justify-content: flex-end;
+}
+
+.prod__link {
+	display: block;
+	background-color: red;
+	opacity: .5;
+	width: 300px;
+	height: 200px;
+}
