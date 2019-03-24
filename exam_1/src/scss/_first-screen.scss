@@ -1,0 +1,84 @@
+.first-screen {
+	background-color: #5474fd;
+	background-image: url("../img/header-bg.png");
+	background-repeat: no-repeat;
+	background-size: cover;	
+}
+
+.logo {
+		font-family: Arial, sans-serif;
+		font-size: 48px;
+		margin-bottom: 15px;
+	}
+
+.text {
+	font-size: 22px;
+	margin-bottom: 50px;
+}
+
+.search-form {
+	font-size: 0;
+	margin-bottom: 115px;
+	border: 2px solid #fff;
+
+
+
+	&__input {
+	font-size: 14px;
+	line-height: 2;
+	text-align: center;
+	min-width: 500px;
+	min-height: 55px;
+	}
+
+	&__buttom {
+		font-family: "Aleo", serif;
+		font-size: 14px;
+		color: #fff;
+		line-height: 2;
+		text-transform: uppercase;
+		min-width: 150px;
+		min-height: 55px;
+		background-color: $light-blue-color;
+		background-image: url("../img/search-icon.svg");
+		background-repeat: no-repeat;
+		background-size: 15%;
+		background-position: 90% 50%;
+		border: none;
+		cursor: pointer;
+		 
+		&:active {
+			border: 1px solid $light-blue-color;
+
+		}
+	}
+}
+
+.link {
+	position: relative;
+	color: #fff;
+
+	&::after {
+		content: " ";
+		position: absolute;		
+		width: 15px;
+		height: 15px;
+		top: 200%;
+		left: 40%;
+		border-bottom: 1px solid $white-color;
+		border-right: 1px solid $white-color;
+		transform: rotate(45deg);
+		transition: all .2s ease;
+	}
+
+	&:hover{
+		color: $dark-blue-color;
+	}
+
+	&:hover::after {
+		border-bottom: 2px solid $dark-blue-color;
+		border-right: 2px solid $dark-blue-color;
+	}
+
+	
+}

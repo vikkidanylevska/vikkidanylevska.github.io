@@ -1,0 +1,35 @@
+.book-now {
+	background-image: url("../img/house.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.contain {
+	display: flex;
+}
+.prod {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 50%;
+	align-items: center;
+}
+
+.pfirst {
+	justify-content: flex-start;
+}
+
+.psecond {
+	justify-content: flex-end;
+}
+
+.prod__link {
+	display: block;
+	background-color: $dark-grey-color;
+	opacity: 0.5;
+	max-width: 540px;
+	min-height: 200px;
+}
+
+.btn {
+	@include btn;
+}
