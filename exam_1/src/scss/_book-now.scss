@@ -6,30 +6,48 @@
 
 .contain {
 	display: flex;
-}
-.prod {
-	display: flex;
-	flex-direction: column;
-	flex-basis: 50%;
+	flex-direction: column;	
+	justify-content: space-between;
 	align-items: center;
 }
 
-.pfirst {
+.book-card {
+	flex-basis: 50%;
+	background-color: $dark-grey-color;
+	opacity: 0.7;
+	width: 100%;
+	max-width: 540px;
+	min-height: 200px;
+	padding: 40px 25px;
+
+	.spain {
+		font-size: 16px;
+		margin-bottom: 30px;
+	}
+
+	&__heading {
+		font-size: 20px;
+		margin-bottom: 30px;
+	}
+
+	&__text {
+		font-size: 16px;
+		margin-bottom: 50px;
+	}
+}
+
+
+.first {
+	display: flex;
 	justify-content: flex-start;
 }
 
-.psecond {
+.second {
+	display: flex;
 	justify-content: flex-end;
 }
 
-.prod__link {
-	display: block;
-	background-color: $dark-grey-color;
-	opacity: 0.5;
-	max-width: 540px;
-	min-height: 200px;
-}
 
 .btn {
-	@include btn;
+	@include btn;	
 }
