@@ -1,0 +1,58 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	min-height: 100vh;
+}
+
+body {
+	font-family: sans-serif;
+	font-size: 16px;
+}
+
+a {
+	text-decoration: none;
+}
+
+section {
+	min-height: 100vh;
+	width: 100%;
+	max-width: 1400px;	
+}
+
+.container {	
+	// margin: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.large {
+	min-height: 100vh;
+}
+
+.row {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 900px;
+}
+
+.column {
+	flex-direction: column;
+}
+
+
+@mixin btn {
+	border: none;
+	max-width: 100px;
+	padding: 20px;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 14px;
+	background-image: linear-gradient(45deg, blue 40%, aqua 40%);
+}
