@@ -1,31 +1,19 @@
 .navigation {
 	width: 100%;
-	// display: flex;
-	// justify-content: space-between;
 	background-color: $light-blue-color;
 	padding: 25px 0;
-
 }
 
-.nav-logo {
-	font-family:  Arial, sans-serif;
-	font-size: 24px;
-	color: #fff;
-}
-
-	.nav {
-		justify-content: space-between;
-		margin: auto;
+.nav {
+	justify-content: space-between;
+	margin: auto;
 
 	&__list {
-		display: flex;
-		// justify-content: center;
-		// max-width: 50%;
+		display: flex;		
 	}
 
-	&__item {
-		margin-right: 25px;
-
+	&__item:not(:last-child) {
+		margin-right: 25px;		
 	}
 
 	&__link {
@@ -33,45 +21,45 @@
 		font-family: "Aleo", serif;
 		font-size: 14px;
 		text-transform: uppercase;
-		color: #fff;
+		color: $white-color;
+
+		&:hover {
+			color : $light-grey-color;
+		}
 	}
 }
 
 .choose-us {
-	background-color: $light-grey-color;
 	background-image: url("../img/choose-bg.png");
-	min-height: 100vh;
+	@include bg-section;
 }
 
-.descrip{
+.choose {
 	justify-content: space-between;
 }
 
-	
-.description {
-	flex-basis: 540px;
-	display: flex;
-	align-items: center;
-}
-
 .descr {
+	flex-basis: 540px;
+	padding-top: 45px;
 
 	&__heading {
+		font-family: $secondary-font;
 		font-size: 36px;
-		margin-bottom:50px;
+		margin-bottom: 50px;
 	}
 
 	&__text {
 		font-size: 16px;
-		margin-bottom: 40px;
+		line-height: 1.6;
+		letter-spacing: .1rem;
+		margin-bottom: 45px;
 
-		&:last-child(2) {
-			margin-bottom: 45px;
-		}
-	}
+		&:nth-child(3) {
+			margin-bottom: 50px;
+		}		
+	}	
 
-	.btn {
-		display: inline-block;		
+	.btn {		
 		@include btn;
 	}
 }
@@ -98,12 +86,12 @@
 	padding: 80px 0 60px;
 }
 
-.arc {
+.select {
 	width: 100%;
-	max-width: 975px;
-	
+	max-width: 900px;	
 
 	&__list {
+		width: 100%;
 		display: flex;
 		justify-content: space-between;
 	}
@@ -111,6 +99,49 @@
 	&__item {
 		display: flex;
 		flex-direction: column;
+		align-items: center;
+
+		// position: relative;
+	 //    z-index: 1;
+	}
+
+	&__link {
+		font-family: $secondary-font;
+		font-size: 36px;
+		color: $white-color;
+	}
+
+	&__img {
+		// background-color: #fff;
+		// width: 95px;
+		// height: 95px;
+		margin-bottom: 25px;
+
+		// & > * {
+		// 	position: absolute;
+		// 	// width: 100%;
+		// 	margin: auto;
+		// }
 	}
 }
+
+
+
+// .wave {
+
+// 	&::after {
+// 		content: "";
+// 		display: block;
+// 		width: 100%;
+// 		background-image: url("../img/wave.svg");
+// 		background-repeat: no-repeat;
+// 		max-width: 690px;
+// 		height: 100px;
+// 		position: absolute;
+// 		z-index: 0;
+// 		background-size: 100%;
+// 	}
+
+
+// }
 

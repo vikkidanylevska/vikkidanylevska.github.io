@@ -20,8 +20,8 @@ $red-color: red;
 $main-color: $white-color;
 $secondary-color: $light-color;
 
-$main-font: 'Aleo', sans-serif;
-$secondary-font: 'Josefin Sans', sans-serif;
+$secondary-font: 'Aleo', sans-serif;
+$main-font: 'Josefin Sans', sans-serif;
 
 $font-size: 16px;
 
@@ -39,13 +39,28 @@ $sections: (
 );
 
 @mixin btn {
-	border: none;
+	display: inline-block;
+	border: none;	
+	width: 100%;
 	max-width: 225px;
-	min-height: 60px;
-	padding: 20px;
-	color: #fff;
+	padding: 20px 0;
+	color: $white-color;
 	text-transform: uppercase;
 	text-align: center;
+	font-family: $secondary-font;
 	font-size: 16px;
+	letter-spacing: .1rem;
 	background-image: linear-gradient(45deg, $dark-blue-color 40%, $light-blue-color 40%);
+	transition: all .2s ease;
+	cursor: pointer;
+
+	&:hover {
+		color: $light-grey-color;
+	}
+}
+
+@mixin bg-section ($background-color: $dark-grey-color){
+	background-color: $background-color;
+	background-repeat: no-repeat;
+	background-size: cover;
 }

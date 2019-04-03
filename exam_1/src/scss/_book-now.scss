@@ -1,27 +1,33 @@
-.book-now {
+.book-house {
 	background-image: url("../img/house.png");
-	background-repeat: no-repeat;
-	background-size: cover;
+	@include bg-section;
+	background-color: #714554;
 }
 
-.contain {
-	display: flex;
-	flex-direction: column;	
-	justify-content: space-between;
-	align-items: center;
+.book-rocks {
+	background-image: url("../img/rocks.png");
+	@include bg-section;
+	background-color: #cf6149;
+}
+
+.card {
+	justify-content: flex-end;
+	align-items: flex-start;
+	flex-direction: column;
+	padding-top: 4%;
+}
+
+.end {
+	align-items: flex-end;
 }
 
 .book-card {
-	flex-basis: 50%;
-	background-color: $dark-grey-color;
-	opacity: 0.7;
-	width: 100%;
 	max-width: 540px;
-	min-height: 200px;
-	padding: 40px 25px;
+	background-color: rgba(0, 0, 0, .7);
+	padding: 50px 30px;
 
 	.spain {
-		font-size: 16px;
+		font-size: 20px;
 		margin-bottom: 30px;
 	}
 
@@ -32,22 +38,11 @@
 
 	&__text {
 		font-size: 16px;
+		line-height: 1.9;		
 		margin-bottom: 50px;
 	}
-}
 
-
-.first {
-	display: flex;
-	justify-content: flex-start;
-}
-
-.second {
-	display: flex;
-	justify-content: flex-end;
-}
-
-
-.btn {
-	@include btn;	
+	.btn {
+		@include btn;
+	}
 }

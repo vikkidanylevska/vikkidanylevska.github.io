@@ -1,0 +1,43 @@
+.reviews {
+	background-color: $dark-blue-color;
+	background-image: url("../img/testimonials-bg.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.reviews-heading {
+	font-family: $secondary-font;
+	font-size: 36px;
+	margin-bottom: 90px;
+}
+
+.testimonial {
+	display: flex;	
+}
+
+.testimonial-description {
+	background-color: $light-grey-color;
+	padding: 50px;
+	
+	&__name {
+		font-size: 20px;
+		margin-bottom: 30px;
+	}
+
+	&__text {
+		font-size: 14px;
+		line-height: 1.9;
+		// max-width: 80%;
+	}
+
+	&__img {
+		display: inline-block;
+		width: 20px;
+		height: 30px;
+		transform: rotate(180deg);
+		margin-right: 5px;
+	}
+
+
+
+}
