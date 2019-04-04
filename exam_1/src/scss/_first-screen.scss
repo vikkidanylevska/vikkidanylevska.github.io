@@ -66,6 +66,7 @@
 	line-height: 3;
 	letter-spacing: .2rem;
 	color: $white-color;
+	transition: all .2s ease;
 
 	&::after {
 		content: " ";
