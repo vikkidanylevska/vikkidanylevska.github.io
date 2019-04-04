@@ -1,6 +1,6 @@
 .footer {
 	background-color: $dark-grey-color;
-	padding: 110px 50px;
+	padding: 110px 0 50px;
 
 	&__logo {
 		margin-bottom: 15px;
@@ -26,6 +26,7 @@
 		display: block;
 		font-size: 16px;
 		color: $white-color;
+		transition: all .2s ease;
 
 		&:hover {
 			color: $light-blue-color;

@@ -47,7 +47,12 @@
 		background-size: 15%;
 		background-position: 90% 50%;
 		border: none;
+		transition: all .2s ease;
 		cursor: pointer;
+
+		&:hover {
+			color: $dark-grey-color;
+		}
 		 
 		&:active {
 			border: 1px solid $light-blue-color;
