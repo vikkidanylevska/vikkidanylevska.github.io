@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700|Open+Sans:300,400");
+@font-face {
+	font-family: "GothamProBold";
+	src: url("../fonts/GothamProBold.eot");
+	src: url("../fonts/GothamProBold.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamProBold.woff") format("woff"), url("../fonts/GothamProBold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: bold;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+html,
+body {
+	min-height: 100vh;
+}
+
+body {
+	font-family: "Open Sans", sans-serif;
+	font-size: 14px;
+	color: #394b50;
+}
+
+.top-nav__list {
+	list-style: none;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
+}
+
+.top-nav__link {
+	font-family: "Lato", sans-serif;
+	font-size: 13,5px;
+	display: block;
+	text-transform: uppercase;
+}
+
+.check-in {
+	background-color: #709dca;
+	padding-top: 100px;
+}
+
+.check-in__heading {
+	font-family: "GothamProBold", sans-serif;
+	font-size: 35px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;
+}
+
+.check-in__text {
+	font-family: "Lato", sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	text-align: center;
+	color: #fff;
+	margin-bottom: 30px;
+}
+
+.check-in-form {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+.check-in-form__field {
+	-ms-flex-preferred-size: 25.5%;
+	flex-basis: 25.5%;
+	font-size: 13px;
+	color: #a9a9a9;
+	border: none;
+}
+.check-in-form__btn {
+	-ms-flex-preferred-size: 21%;
+	flex-basis: 21%;
+	color: #fff;
+	border: none;
+	background-color: #ffbb42;
+}

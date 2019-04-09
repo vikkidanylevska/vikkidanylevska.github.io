@@ -49,3 +49,41 @@
 		z-index: -1;
 	}
 }
+
+@mixin section-button ($color: $white, $bg-color: $corp-green){
+	color: $color;
+	background-color: $bg-color;
+	padding: 15px 0;
+	text-align: center;
+	text-transform: uppercase;
+	@include transition;
+	width: 100%;
+	border: none;
+	@content;
+
+	&:hover {
+		@if($bg-color == $white) {
+			background-color: lighten($corp-green, 5%);
+		} @else {
+		background-color: darken($corp-green, 10%);
+		// color: $white;
+		}
+	}
+}
+
+@mixin placeholder {
+        ::-webkit-input-placeholder {
+            @content;
+        }
+        ::-moz-placeholder {
+            @content;
+        }
+        :-ms-input-placeholder {
+            @content;
+        }
+        :-moz-placeholder {
+            @content;
+        }
+    }
+
+   

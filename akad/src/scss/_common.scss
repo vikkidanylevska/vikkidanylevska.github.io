@@ -54,25 +54,50 @@ a {
 .section {
 	padding: px_to_rem(150px) 0;
 
+	@media all and (max-width: 1200px) {
+		padding: 2rem;	
+	}
+
+	&-heading-row {
+		margin-bottom: px_to_rem(100px);
+		
+		@media all and (max-width: 576px) {
+		padding: 2rem 0;	
+	}
+
+	}
+
 	&-title {
 		@include title($section-title);
 		margin-bottom: px_to_rem(25px);
 		@include green-line(65px, 20px);
+		// text-align: center;
 	}
 
 	&-description {
 		text-align: center;
-		margin-bottom: px_to_rem(100px);
+		margin: 0;
 		line-height: 2;
+		min-width: 66.667%;
+		// flex: 0 0 66.667%;
+
+		@media all and (max-width: 576px) {
+		padding: 2rem 0;	
+		}
 	}	
 }
 
 .marked-list {
 	padding: 0;
+	margin: 0;
 
 	&__item {
 		list-style: none;
 		margin-bottom: px_to_rem(15px);
+
+		&:last-child {
+			margin-bottom: 0;
+		}
 	}
 
 	&__link {
@@ -81,6 +106,41 @@ a {
 			color: $corp-green;
 			margin-right: px_to_rem(10px);
 		}
+
+	}
+}
+
+.section-btn {
+	@include section-button($corp-green, $white);
+	border: none;
+}
+
+.to-top {
+	display: block;
+	justify-content: center;
+	align-items: center;
+	$size: 100;
+	$value: #{$size};
+	width: #{$size}px;
+	height: #{$size}px;
+	background-color: rgba(.3);
+	border: #{$size / 20}px solid $corp-green;
+	border-radius: 50%;
+	position: fixed;
+	bottom: $value;
+	right: $value;
+	cursor: pointer;
+	color: $white;
+	box-shadow: 0 0 0 10px rgba($black, .2);
+	@include transition(transform);
+	position: relative;
+
+	&::before {
+		content: "";
+		$size: 20px;
+		display: block;
+		width: $size;
+		height: $size;
 
 	}
 }

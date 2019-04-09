@@ -1,0 +1,62 @@
+.top-nav {
+
+	&__list {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;	
+	margin: 0;
+	padding: 0;
+	}
+
+	&__item {
+	}
+
+	&__link {
+		font-family: $sec-font;
+		font-size: 13,5px;
+		display: block;
+		text-transform: uppercase;
+	}
+}
+
+.check-in {
+	background-color: $blue;
+	padding-top: 100px;
+}
+
+.check-in__heading {
+		font-family: $hd-font;
+		font-size: 35px;
+		font-weight: bold;
+		text-transform: uppercase;
+		text-align: center;
+		color: $white;
+	}
+
+.check-in__text {
+		font-family: $sec-font;
+		font-size: 16px;
+		font-weight: 300;
+		text-align: center;
+		color: $white;;
+		margin-bottom: 30px;
+	}
+
+.check-in-form {
+	display: flex;
+	justify-content: space-between;
+
+	&__field {
+		flex-basis: 25.5%;
+		font-size: 13px;
+		color: $lt-grey; 
+		border: none;
+	}
+
+	&__btn {
+		flex-basis: 21%;
+		color: $white;
+		border: none;
+		background-color: $orange;
+	}
+}
