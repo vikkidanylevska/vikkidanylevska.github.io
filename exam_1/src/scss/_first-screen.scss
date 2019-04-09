@@ -21,12 +21,15 @@
 	display: flex;
 	margin-bottom: 110px;
 	border: 2px solid $white-color;
+	width: 100%;
+	max-width: 650px;
 
 	&__input {
 	font-size: 14px;
 	letter-spacing: .2rem;
 	text-align: center;
-	min-width: 500px;
+	width: 100%;
+	max-width: 500px;
 	padding: 20px 0;
 	border: none;
 	}
@@ -39,7 +42,8 @@
 		text-transform: uppercase;
 		letter-spacing: .1rem;
 		text-align: left;
-		min-width: 145px;
+		width: 100%;
+		max-width: 145px;
 		padding-left: 30px;
 		background-color: $light-blue-color;
 		background-image: url("../img/search-icon.svg");

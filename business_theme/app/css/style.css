@@ -75,17 +75,71 @@ body {
 	-ms-flex-pack: justify;
 	justify-content: space-between;
 }
-.check-in-form__field {
+.check-in-form__label {
 	-ms-flex-preferred-size: 25.5%;
 	flex-basis: 25.5%;
+	position: relative;
+	margin: 0;
+}
+.check-in-form__field {
 	font-size: 13px;
 	color: #a9a9a9;
+	width: 100%;
 	border: none;
+	padding: 10px 0 10px 35px;
+}
+.check-in-form .fas {
+	position: absolute;
+	top: 32%;
+	left: 5%;
+}
+.check-in-form .fa-phone {
+	-webkit-transform: rotate(90deg);
+	        transform: rotate(90deg);
 }
 .check-in-form__btn {
 	-ms-flex-preferred-size: 21%;
 	flex-basis: 21%;
+	text-transform: uppercase;
 	color: #fff;
 	border: none;
 	background-color: #ffbb42;
+}
+
+.slider {
+	-webkit-transform: translateY(70px);
+	        transform: translateY(70px);
+	position: relative;
+}
+.slider__img {
+	position: absolute;
+	top: 5%;
+	left: 15.7%;
+}
+
+.switch {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	position: absolute;
+	left: 46%;
+	list-style: none;
+	min-width: 60px;
+	margin: 0 auto;
+}
+.switch__circle > * {
+	display: block;
+	width: 12px;
+	height: 12px;
+	border: 1.5px solid #a9a9a9;
+	border-radius: 50%;
+	-webkit-transition: .2s ease;
+	        transition: .2s ease;
+	background-color: #fff;
+}
+.switch__circle > *:hover {
+	border: 1.5px solid #709dca;
 }

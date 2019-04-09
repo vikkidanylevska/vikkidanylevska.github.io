@@ -41,25 +41,57 @@
 					<h1 class="check-in__heading">boost up your local business</h1>
 					<p class="check-in__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum nostrum placeat, fugit praesentium. Suscipit, voluptas.</p>
 				</div>
-			</div>
-				
+			</div>		
 				
 			<div class="row justify-content-center">
 				<div class="col-11">
 					<form action="#" class="check-in-form">
-						<input class="check-in-form__field" id="username" type="text" placeholder="Full Name" name="userName" required>
+						<label class="check-in-form__label" for="username">
+							<i class="fas fa-user"></i>
+							<input class="check-in-form__field text" id="username" type="text" placeholder="Full Name" name="userName" required>
+						</label>
 			
-						<input class="check-in-form__field" id="userEmail" type="email" placeholder="Email Address" name="userEmail" required>
+						<label class="check-in-form__label" for="userEmail">
+							<i class="fas fa-envelope"></i>
+							<input class="check-in-form__field email" id="userEmail" type="email" placeholder="Email Address" name="userEmail" required>
+						</label>
 			
-						<input class="check-in-form__field" id="phoneNumber" type="text" placeholder="Phone Number" name="phoneNumber"  pattern="[0-9]" minlength="13" maxlength="13" required>
+						<label class="check-in-form__label" for="phoneNumber">
+							<i class="fas fa-phone"></i>
+							<input class="check-in-form__field phone" id="phoneNumber" type="text" placeholder="Phone Number" name="phoneNumber"  pattern="[0-9]" minlength="13" maxlength="13" required>
+						</label>
 			
-						<input class="check-in-form__btn" type="submit" value="REQUEST A QUOTE">
+						<input class="check-in-form__btn" type="submit" value="request a quote">
 					</form>
 				</div>
 			</div>	
-		</div>
 	
-		<!-- /.row -->
+			<div class="row justify-content-center">
+				<div class="slider">
+					<div class="slider__tv-set mb-4">
+						<img class="img-tv" src="img/tvset.png" alt="img">
+						<div class="slider__img">
+							<img class="first-img" src="img/tvimg.jpg" alt="img">
+						</div>
+					</div>
+					<ul class="switch">
+						<li class="switch__circle"><a href="#"></a></li>
+						<li class="switch__circle"><a href="#"></a></li>
+						<li class="switch__circle"><a href="#"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>	
+	</section>
+	<section class="services">
+		<div class="container">
+			<div class="row pt-5">
+				<div class="col">
+					<h2 class="services__heading">our services</h2>
+					<p class="services__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum nostrum placeat, fugit praesentium. Suscipit, voluptas.</p>
+				</div>
+			</div>		
+		</div>
 	</section>
 
 	<script src="js/script.js"></script>

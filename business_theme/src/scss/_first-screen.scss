@@ -8,9 +8,6 @@
 	padding: 0;
 	}
 
-	&__item {
-	}
-
 	&__link {
 		font-family: $sec-font;
 		font-size: 13,5px;
@@ -46,17 +43,74 @@
 	display: flex;
 	justify-content: space-between;
 
-	&__field {
+	&__label {
 		flex-basis: 25.5%;
+		position: relative;
+		margin: 0;
+	}
+
+	&__field {	
 		font-size: 13px;
 		color: $lt-grey; 
+		width: 100%;
 		border: none;
+		padding: 10px 0 10px 35px;		
+	}
+
+	.fas {
+		position: absolute;
+		top: 32%;
+		left: 5%;
+	}
+
+	.fa-phone {
+		transform: rotate(90deg);
 	}
 
 	&__btn {
 		flex-basis: 21%;
+		text-transform: uppercase;		
 		color: $white;
 		border: none;
 		background-color: $orange;
 	}
+}
+
+.slider {
+	transform: translateY(70px);
+	position: relative;
+
+	&__img {
+		position: absolute;
+		top: 5%;
+		left: 15.7%; 
+	}
+}
+
+.switch {
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+	left: 46%;
+	list-style: none;
+	min-width: 60px;
+	margin: 0 auto;
+
+	&__circle {
+
+		& > * {
+		display: block;
+		$size: 12px;
+		width: $size;
+		height: $size;
+		border: 1.5px solid $lt-grey;
+		border-radius: 50%;
+		transition: .2s ease;
+		background-color: $white;
+
+			&:hover{
+				border: 1.5px solid $blue;
+			}
+		}
+	}	
 }
