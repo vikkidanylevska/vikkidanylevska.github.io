@@ -17,4 +17,15 @@ function map(multiply, numbers){
 }
 alert ("Числа " + numbers + " умноженные на " + n + " . Результат: " + map(multiply,numbers));
 
+//ЧЕРЕЗ метод MAP
+
+// var numbers = [1,2,3,4,5,6];
+// var n = +prompt("Введите множитель для этих чисел: " + numbers, '2');
+
+// var multiply = numbers.map(function(num){
+// 	return num * n;
+// });
+// alert(multiply);
+
+
 }) ();

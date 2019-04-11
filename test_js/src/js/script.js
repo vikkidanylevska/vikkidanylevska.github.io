@@ -163,23 +163,7 @@
 
 // map (arr, pow())
 
-// var start = +prompt("first number", "1");
-// var end = +prompt("end number", "20");
 
-// function isPrimeNumber(start, end) {
-
-// nextPrime:
-// for (var i = start; i <= end; i++) {
-// 	if (i % 2 == 0) continue;
-
-// 	for (var j = i-1 ; j > 2 ; j--) {
-// 		if (i % j == 0) continue nextPrime;
-// 	}
-// 	alert(i); 
-// }
-// }
-
-// isPrimeNumber(start, end);
 
 
 // var numbers = [1,2,3,4,5,6];
@@ -191,24 +175,7 @@
 // alert(multiply);
 
 
-var number = prompt("Введите числа через запятую", '1,2,3');
-var numbers = number.split(",");
-// var numbers = Number(numbers);
-// alert(numbers);
-// var numbers = [3,4,5,6,7];
-var n = +prompt("Введите множитель для этих чисел: " + numbers, '2');
 
-function multiply(num){
-	return num * n;
-};
-
-function map(multiply, numbers){
-	var newNumbers = [];
- 	for (var i = 0; i < numbers.length; ++i) {
- 		newNumbers.push(multiply(numbers[i]));
- 	} return newNumbers;
-}
-alert (map(multiply,numbers));
 
 // var numbers = [1, 4, 9];
 // var doubles = numbers.map(function(num) {
