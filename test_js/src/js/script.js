@@ -1,4 +1,5 @@
 ;(function IIFE(){
+	"use strict";
 
 // const random = Math.round(Math.random() * 1000000);
 
@@ -103,66 +104,129 @@
 
 // number(5, 15);
 
-var playList = [
-  'I Did It My Way',
-  'Respect',
-  'Imagine',
-  'Born to Run',
-  'Louie Louie',
-  'Maybellene'
-];
+// var playList = [
+//   'I Did It My Way',
+//   'Respect',
+//   'Imagine',
+//   'Born to Run',
+//   'Louie Louie',
+//   'Maybellene'
+// ];
 
 
-function getPrimesFromRange (start, end){
-	if (!Number.isInteger(+start) && !!Number.isInteger(+end)) 
-		return 'Type a number,please!'
+// function getPrimesFromRange (start, end){
+// 	if (!Number.isInteger(+start) && !!Number.isInteger(+end)) 
+// 		return 'Type a number,please!'
+// }
+
+// start = +start;
+// end = +end;
+
+// const primeNumbesArray = [];
+
+// for (i=start; i<=+end;i++){
+// 	if (isPrimeNumber(i)){
+// 		primeNumbesArray.push(i);
+// 	}
+// }
+
+// function isPrimeNumber(n) {
+
+// if (n < 2) {
+// 	return false
+// }
+
+// for (let i=2; i<n;i++)
+// if(n%i===0)
+// 	return false
+// }
+
+// return true
+
+// return primeNumbesArray;
+
+// // var x = prompt("x?", '');
+// // var n = prompt("n?", '');
+// function pow(n,a=2) {
+// 	return n**a;
+// }
+
+// function map(arr, fn=null) {  //arr.map(function())
+
+// 	const resArr = [];
+// 	for (let i = 0; i < arr.length; i++)
+// 		resArr.push (fn(arr[i]))
+// }
+
+// return resArr
+
+
+// map (arr, pow())
+
+// var start = +prompt("first number", "1");
+// var end = +prompt("end number", "20");
+
+// function isPrimeNumber(start, end) {
+
+// nextPrime:
+// for (var i = start; i <= end; i++) {
+// 	if (i % 2 == 0) continue;
+
+// 	for (var j = i-1 ; j > 2 ; j--) {
+// 		if (i % j == 0) continue nextPrime;
+// 	}
+// 	alert(i); 
+// }
+// }
+
+// isPrimeNumber(start, end);
+
+
+// var numbers = [1,2,3,4,5,6];
+// var n = +prompt("Введите множитель для этих чисел: " + numbers, '2');
+
+// var multiply = numbers.map(function(num){
+// 	return num * n;
+// });
+// alert(multiply);
+
+
+var number = prompt("Введите числа через запятую", '1,2,3');
+var numbers = number.split(",");
+// var numbers = Number(numbers);
+// alert(numbers);
+// var numbers = [3,4,5,6,7];
+var n = +prompt("Введите множитель для этих чисел: " + numbers, '2');
+
+function multiply(num){
+	return num * n;
+};
+
+function map(multiply, numbers){
+	var newNumbers = [];
+ 	for (var i = 0; i < numbers.length; ++i) {
+ 		newNumbers.push(multiply(numbers[i]));
+ 	} return newNumbers;
 }
+alert (map(multiply,numbers));
 
-start = +start;
-end = +end;
+// var numbers = [1, 4, 9];
+// var doubles = numbers.map(function(num) {
+//   return num * 2;
+// });
 
-const primeNumbesArray = [];
-
-for (i=start; i<=+end;i++){
-	if (isPrimeNumber(i)){
-		primeNumbesArray.push(i);
-	}
-}
-
-function isPrimeNumber(n) {
-
-if (n < 2) {
-	return false
-}
-
-for (let i=2; i<n;i++)
-if(n%i===0)
-	return false
-}
-
-return true
-
-return primeNumbesArray;
-
-// var x = prompt("x?", '');
-// var n = prompt("n?", '');
-function pow(n,a=2) {
-	return n**a;
-}
-
-function map(arr, fn=null) {  //arr.map(function())
-
-	const resArr = [];
-	for (let i = 0; i < arr.length; i++)
-		resArr.push (fn(arr[i]))
-}
-
-return resArr
-
-
-map (arr, pow())
 
 }) ();
 
 
 
+
+// nextPrime:
+//   for (var i = 2; i <= 10; i++) {
+
+//     for (var j = 2; j < i; j++) {
+//       if (i % j == 0) continue nextPrime;
+//     }
+
+//     alert( i ); // простое
+//   }

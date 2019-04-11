@@ -4,22 +4,17 @@
     padding: 0;
 }
 
-html, body{
-	height: 100%;
-}
-
 body {
 	font-family: “Lucida Sans Unicode”, “Lucida Grande”, sans-serif;
 	font-weight: normal;
-	background: rgb(51,153,204);
-    border: 15px solid rgb(43,129,172);
+	background-color: rgb(51,153,204);
     max-width: 100%;
 }
 
 section {
-	max-width: 70%;
+	max-width: 65%;
     margin: 80px auto;
-    max-height: 100%;	
+
 }
 
 h1 {
