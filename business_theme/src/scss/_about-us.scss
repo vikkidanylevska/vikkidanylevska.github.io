@@ -1,0 +1,42 @@
+.about-us {
+	width: 100%;
+	background-color: $orange;
+
+	&__img {
+		position: relative;
+		width: 100%;
+		padding-top: 73%;
+
+		& > * {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	.description {		
+		max-width: 520px;		
+		color: $white;
+
+		.white {
+			color: $white;
+		}
+
+		&__text {
+			font-size: 13px;
+			line-height: 1.9;
+			margin-bottom: 30px;
+		}
+		
+		.read__btn {	
+			@include section-button;
+			max-width: 145px;		
+			box-shadow: 1px 1px 2px $dk-grey;			
+		}			
+	}
+}

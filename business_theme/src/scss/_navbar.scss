@@ -1,0 +1,26 @@
+.navbar {
+
+	.nav-pills {
+	// list-style: none;
+	// display: flex;
+	// justify-content: space-between;	
+	// margin: 0;
+	// padding: 0;
+	}
+
+	.nav-link {
+		font-family: $sec-font;
+		font-size: 13.5px;
+		color: $nav-color;
+		text-transform: uppercase;
+		// padding-right: 30px;
+
+
+		&:hover,
+		&:active {
+			background-color: $orange;
+			color: $white;
+
+		}
+	}
+}

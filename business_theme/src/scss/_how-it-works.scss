@@ -1,0 +1,68 @@
+.works {	
+	min-height: 100vh; //dbp
+	padding: 150px 0;
+}
+
+.mb-90 {
+	margin-bottom: 90px;
+}
+
+.step {	
+
+	&:nth-child(odd) {
+		position: relative;
+	
+		&::before {
+			content: "";
+			position: absolute;
+			background-image: url("../img/arctop.png");
+			background-repeat: no-repeat;
+			top: -13%;
+			right: -34%;
+			width: 145px;
+			height: 40px;
+		}
+	}
+
+	&:nth-child(2) {
+		position: relative;
+		
+		&::after {
+			content: "";
+			position: absolute;
+			background-image: url("../img/arctop.png");
+			background-repeat: no-repeat;
+			transform: rotate(180deg);
+			top: 23%;
+			right: -26%;
+			width: 145px;
+			height: 40px;
+		}
+	}
+
+	&__heading {
+		font-family: $sec-font;
+		font-size: 20px;
+		font-weight: 700;
+		color: $dk-grey;
+		text-transform: uppercase;
+	}
+
+	&__text {
+		font-size: 13px;
+		line-height: 1.8;
+		color: #7b7b7b;
+		text-align: center;
+	}
+}
+
+.works-btn {
+	@include section-button;
+	max-width: 165px;
+}
+
+
+
+// align-items-center
+// text-align: center;
+// justify-content: center;

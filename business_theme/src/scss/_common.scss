@@ -3,6 +3,7 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+
 html,body {
 	min-height: 100vh;
 }
@@ -11,4 +12,27 @@ body {
 	font-family: $mn-font;
 	font-size: $base-size;
 	color: $dk-grey;
+	position: relative;
+}
+
+section {
+	// min-height: 100vh;
+	}
+
+.heading {
+	font-family: $hd-font;
+	font-size: 30px;
+	font-weight: bold;
+	color: $dk-grey;
+	text-transform: uppercase;
+	text-align: center;	
+	margin-bottom: 0;
+}
+
+.heading__text {
+	font-family: $sec-font;
+	font-size: 18px;
+	font-weight: 300;
+	color: #818b95;	
+	text-align: center;
 }

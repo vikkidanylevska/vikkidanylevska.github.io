@@ -166,34 +166,4 @@
 
 
 
-// var numbers = [1,2,3,4,5,6];
-// var n = +prompt("Введите множитель для этих чисел: " + numbers, '2');
-
-// var multiply = numbers.map(function(num){
-// 	return num * n;
-// });
-// alert(multiply);
-
-
-
-
-// var numbers = [1, 4, 9];
-// var doubles = numbers.map(function(num) {
-//   return num * 2;
-// });
-
-
 }) ();
-
-
-
-
-// nextPrime:
-//   for (var i = 2; i <= 10; i++) {
-
-//     for (var j = 2; j < i; j++) {
-//       if (i % j == 0) continue nextPrime;
-//     }
-
-//     alert( i ); // простое
-//   }

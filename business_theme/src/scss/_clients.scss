@@ -1,0 +1,70 @@
+.clients {
+	background-color: $orange;
+	padding: 135px 0;
+}
+
+.mb-50 {
+	margin-bottom: 50px;
+}
+
+.white {
+	color: $white;
+}
+
+// .reviews {
+// 	display: flex;
+// 	flex-direction: row;
+// }
+
+
+// .review {
+// 	background-color: $white;
+// 	max-width: 500px;
+// 	padding: 45px 0;
+// }
+
+.cls-1 {
+    font-size: 30px;
+    fill: #7b7b7b;
+    font-family: BrandonGrotesque;
+    font-weight: 700;
+}
+
+
+
+.quote {
+
+	.card-text {
+		position: relative;
+		font-size: 13px;
+		color: #7b7b7b;
+	}
+	
+	.quotes-top {
+		position: absolute;	
+		left: -7%;
+	}
+
+	.quotes-btm {
+		position: absolute;
+		bottom: 1%;	
+		right: 50%;
+	}
+	
+}
+
+.client {
+	font-family: $sec-font;
+	font-size: 13px;
+	color: $orange;
+	line-height: 1.8;
+}
+
+.specialty {
+	color: #99a9ae;
+}
+
+
+// justify-content: center;
+// align-items: center;
+// d-flex justify-content-center align-items-center

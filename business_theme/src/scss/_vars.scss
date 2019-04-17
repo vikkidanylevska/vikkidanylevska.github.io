@@ -1,9 +1,9 @@
 @font-face {
-			font-family: "GothamProBold";
-			src: url("../fonts/GothamProBold.eot");
-			src: url("../fonts/GothamProBold.eot?#iefix")format("embedded-opentype"),
-			url("../fonts/GothamProBold.woff") format("woff"),
-			url("../fonts/GothamProBold.ttf") format("truetype");
+			font-family: "GothamProBlack";
+			src: url("../fonts/GothamProBlack.eot");
+			src: url("../fonts/GothamProBlack.eot?#iefix")format("embedded-opentype"),
+			url("../fonts/GothamProBlack.woff") format("woff"),
+			url("../fonts/GothamProBlack.ttf") format("truetype");
 			font-style: normal;
 			font-weight: bold;
 	}
@@ -12,10 +12,7 @@
 
 $mn-font: 'Open Sans', sans-serif;
 $sec-font: 'Lato', sans-serif;
-$hd-font: "GothamProBold", sans-serif;
-// font-family: 'Lato', sans-serif;
-// font-family: 'Open Sans', sans-serif;
-// font-family: "GothamProBold", sans-serif;
+$hd-font: "GothamProBlack", sans-serif;
 
 $white: #fff;
 $black: #000;
@@ -23,6 +20,7 @@ $blue: #709dca;
 $orange: #ffbb42;
 $lt-grey: #a9a9a9;
 $dk-grey:#394b50;
+$nav-color: #868686; 
 
 $base-size: 14px;
 
@@ -37,3 +35,29 @@ $logo-size: px_to_rem(18px);
 $mn-title: px_to_rem(36px);
 $form-title: px_to_rem(24px);
 $section-title: px_to_rem(30px);
+
+@mixin transition($prop: all){
+	transition: $prop .2s ease;
+}
+
+@mixin section-button {
+	display: block;
+	background-color: $orange;
+	font-family: $sec-font;
+	font-size: 14px;
+	color: $white;
+	text-align: center;	
+	text-transform: uppercase;
+	text-decoration: none;
+	border-radius: 2px;		
+	width: 100%;
+	padding: 10px 0;
+	@include transition;
+	@content;
+
+	&:hover {
+		background-color: darken($orange, 15%);
+		text-decoration: none;
+		color: $white;
+	}
+}
