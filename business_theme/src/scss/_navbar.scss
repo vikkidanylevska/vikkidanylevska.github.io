@@ -1,12 +1,5 @@
-.navbar {
-
-	.nav-pills {
-	// list-style: none;
-	// display: flex;
-	// justify-content: space-between;	
-	// margin: 0;
-	// padding: 0;
-	}
+.navigation {
+	background-color: rgba($white, .8);
 
 	.nav-link {
 		font-family: $sec-font;
@@ -15,12 +8,9 @@
 		text-transform: uppercase;
 		// padding-right: 30px;
 
-
-		&:hover,
-		&:active {
+		&:hover {
 			background-color: $orange;
 			color: $white;
-
-		}
+		}	
 	}
 }

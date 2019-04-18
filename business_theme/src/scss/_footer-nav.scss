@@ -1,0 +1,40 @@
+.footer-contacts {
+    padding: 65px 0 50px;    
+}
+
+.footer-link {
+  text-transform: uppercase;
+    color: $dk-grey;
+
+     &:hover {
+      color: $orange;
+      background-color: transparent;
+     }
+ }
+
+.phone-number {
+    font-size: 22.5px;
+    color: $dk-grey;
+} 
+
+.social__list {
+    list-style: none;
+}
+
+.social__link {
+    margin-right: 17px;
+    @include transition;
+
+    &:hover {
+      color: $orange;
+    }
+}
+
+.copyright {
+  background-color: $blue;
+
+    &__text {
+      font-size: 13px;
+      color: $white;
+    }
+}

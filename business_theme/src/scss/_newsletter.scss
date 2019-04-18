@@ -1,0 +1,69 @@
+.newsletter {
+	padding-top: 150px;
+
+	&__map {		
+		min-height: 100vh;
+		background: url("../img/bg_dotted.jpg") no-repeat;
+		background-size: 95%;
+		background-position: center;
+	}
+}
+
+.letter {
+	border: 1px solid $lt-grey;	
+}
+
+.first {
+	flex-basis: 35%;
+}
+
+.second {
+	flex-basis: 38%;
+}
+
+.subscribe {
+	flex-basis: 25%;
+}
+
+.circle {
+	position: relative;
+	height: 280px;
+	width: 280px;
+	background-color: $dk-grey;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	transform: translateY(20%);
+
+	// &::after {
+	// 	content: "";
+	// 	max-width: 15px;
+	// 	// height: 2px;
+	// 	// background-color: red;
+	// 	border: 25px solid transparent;
+	// 	border-top-color: red;
+
+	// }
+
+	& > * {
+		display: block;
+		color: $white;
+	}
+
+	&__link {
+		color: $orange;
+
+		&:hover {
+			text-decoration: none;		
+		}
+	}
+
+	.triangle {
+		position: absolute;
+		fill: $dk-grey; 
+		bottom: -6%;
+	}
+}
+
+

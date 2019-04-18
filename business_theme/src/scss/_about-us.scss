@@ -1,26 +1,33 @@
 .about-us {
-	width: 100%;
+	// min-height: 100vh;
 	background-color: $orange;
 
 	&__img {
-		position: relative;
-		width: 100%;
-		padding-top: 73%;
+		min-height: 100vh;
+		background-image: url("../img/table2.jpg");
+		background-size: cover;
 
-		& > * {
-			position: absolute;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-		}
+
+
+		// position: relative;
+		// width: 100%;
+		// padding-top: 73%;
+
+		// & > * {
+		// 	position: absolute;
+		// 	top: 0;
+		// 	right: 0;
+		// 	bottom: 0;
+		// 	left: 0;
+		// 	width: 100%;
+		// 	height: 100%;
+		// 	object-fit: cover;
+		// }
 	}
 
 	.description {		
-		max-width: 520px;		
+		max-width: 93%;
+		padding-left: 80px;		
 		color: $white;
 
 		.white {
@@ -29,8 +36,8 @@
 
 		&__text {
 			font-size: 13px;
-			line-height: 1.9;
-			margin-bottom: 30px;
+			line-height: 1.9;			
+			// margin-bottom: 30px;
 		}
 		
 		.read__btn {	
