@@ -534,6 +534,10 @@ body {
 	bottom: -6%;
 }
 
+.circle__descr {
+	max-width: 140px;
+}
+
 .brand-bottom {
 	-webkit-transform: translateY(174%);
 	        transform: translateY(174%);
