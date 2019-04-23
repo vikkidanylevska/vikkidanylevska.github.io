@@ -7,6 +7,8 @@
 	<link rel="shortcut icon" type="image/x-icon" href="fav/logo.png">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body >
@@ -75,22 +77,50 @@
 				</div>
 			</div>	
 	
-			<div class="row justify-content-center">
-				<div class="slider">
-					<div class="slider__tv-set mb-4">
-						<img class="img-tv" src="img/tvset.png" alt="img">
-						<div class="slider__img">
-							<img class="first-img" src="img/tvimg.jpg" alt="img">
+			<div class="row slider-row">
+				<div class="col-12">
+					
+					<div class="row justify-content-center tv-set">
+						<div class="col-5 ">
+							<div class="slider">
+	
+								<div class="slider__item">
+									<img class="first-img" src="img/tvimg.jpg" alt="img">
+								</div>
+								<div class="slider__item">
+									<img class="first-img" src="../img/computer.jpg" alt="img">
+								</div>
+								<div class="slider__item">
+									<img class="first-img" src="../img/workplace.jpg" alt="img">
+								</div>
+							</div>
 						</div>
 					</div>
-					<ul class="switch">
-						<li class="switch__circle"><a href="#"></a></li>
-						<li class="switch__circle"><a href="#"></a></li>
-						<li class="switch__circle"><a href="#"></a></li>
-					</ul>
+	
 				</div>
 			</div>
-		</div>	
+	
+			<!-- <div class="row justify-content-center">
+				<div class="slider mb-4">
+						<img class="img-tv" src="img/tvset.png" alt="img">
+						<div class="slider__img">
+							<div class="slider-item">
+								<img class="first-img" src="img/tvimg.jpg" alt="img">
+							</div>
+							<div class="slider-item">
+								<img class="first-img" src="../img/computer.jpg" alt="img">
+							</div>
+							<div class="slider-item">
+								<img class="first-img" src="../img/workplace.jpg" alt="img">
+							</div>
+						</div> -->
+				<!-- 	</div> -->
+					<!-- <ul class="switch">
+						<li class="switch__circle"><a href="#"></a></li>
+						<li class="switch__circle"><a href="#"></a></li>
+						<li class="switch__circle"><a href="#"></a></li>
+					</ul> -->
+		</div>		
 	</section>
 	<section  class="services">
 		<div class="container">
@@ -447,7 +477,7 @@
 					</svg>	
 				</div>
 	
-				 <a class="brand m-0" href="#">
+				 <a class="brand brand-bottom m-0" href="#">
 	      			<img src="img/logo.png" alt="logo">
 	   			</a>
 			</div>
@@ -518,9 +548,22 @@
 	        <p class="copyright__text text-center m-0">All contents © copyright 2014 Business Theme. All rights reserved Designed by : akhilwebfolio</p>
 	      </div>  
 	</footer>
+	
 
+	<!-- <div id="map"></div> -->
 
+	<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7hebjuc07YFys_Ok9ZAaPiZ_j5M4MrhY&callback=initMap"
+    async defer></script> -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <!-- 
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script> -->
 	<script src="js/script.js"></script>
+	
 	
 </body>
 </html>
