@@ -64,8 +64,25 @@ body {
 }
 
 .check-in {
-	background-color: #709dca;
 	padding-top: 100px;
+	background: #709dca url("../img/architecture.jpg") no-repeat;
+	background-size: cover;
+	position: relative;
+	z-index: 0;
+}
+.check-in::before {
+	content: "";
+	background-color: rgba(112, 157, 202, .85);
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+}
+.check-in > * {
+	position: relative;
+	z-index: 2;
 }
 
 .check-in__heading {
@@ -170,8 +187,7 @@ body {
 	margin: 0;
 }
 .slick-dots li.slick-active button::before {
-	border-color: blue;
-	background-color: white;
+	border-color: #709dca;
 }
 .slick-dots li button {
 	padding: 0;
@@ -187,14 +203,11 @@ body {
 }
 .slick-dots li button::before {
 	content: "";
-	width: 12px;
-	height: 12px;
+	width: 14px;
+	height: 14px;
 	display: block;
-	border: 1px solid grey;
-	background-color: white;
+	border: 1.5px solid #a9a9a9;
 	border-radius: 50%;
-	opacity: 1;
-	position: initial;
 }
 
 .services {
@@ -227,13 +240,15 @@ body {
 	background-color: #ffbb42;
 }
 .about-us__img {
-	min-height: 100vh;
+	height: 100%;
+	width: 100%;
 	background-image: url("../img/table.jpg");
+	background-repeat: no-repeat;
 	background-size: cover;
 }
 .about-us .description {
-	max-width: 93%;
-	padding-left: 80px;
+	padding: 160px 0 170px 80px;
+	max-width: 570px;
 	color: #fff;
 }
 .about-us .description .white {
@@ -472,9 +487,9 @@ body {
 	padding-top: 150px;
 }
 .newsletter__map {
-	min-height: 100vh;
+	min-height: 650px;
 	background: url("../img/bg_dotted.jpg") no-repeat;
-	background-size: 95%;
+	background-size: contain;
 	background-position: center;
 }
 
@@ -519,7 +534,7 @@ body {
 	        transform: translateY(20%);
 }
 .circle > * {
-	display: block;
+	line-height: 1.8;
 	color: #fff;
 }
 .circle__link {
@@ -532,10 +547,6 @@ body {
 	position: absolute;
 	fill: #394b50;
 	bottom: -6%;
-}
-
-.circle__descr {
-	max-width: 140px;
 }
 
 .brand-bottom {

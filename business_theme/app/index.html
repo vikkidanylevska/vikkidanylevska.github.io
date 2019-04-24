@@ -11,9 +11,9 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
-<body >
+<body>
 	
-	<div class="navigation sticky-top">
+	<div id="navbar" class="navigation sticky-top">
 	  <div class="container p-0">
 	    <nav id="top-line" class="navbar navbar-light pt-4 pb-4 pl-0 pr-0">
 	      <a class="navbar-brand m-0" href="#">
@@ -59,7 +59,7 @@
 					<form action="#" class="check-in-form">
 						<label class="check-in-form__label" for="username">
 							<i class="fas fa-user"></i>
-							<input class="check-in-form__field text" id="username" type="text" placeholder="Full Name" name="userName" pattern="[A-Za-zА-Яа-яЁё]" required>
+							<input class="check-in-form__field text" id="username" type="text" placeholder="Full Name" name="userName" pattern="[A-Za-z]" required>
 						</label>
 			
 						<label class="check-in-form__label" for="userEmail">
@@ -102,10 +102,10 @@
 			
 		</div>		
 	</section>
-	<section  class="services">
+	<section id="services" class="services">
 		<div class="container">
 			<div class="row">
-				<div id="services" class="col">
+				<div class="col">
 					<h2 class="heading">our services</h2>
 					<p class="heading__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
 				</div>
@@ -189,9 +189,9 @@
 						<!-- <img src="img/table.jpg" alt="img"> -->
 					</div>
 				</div>
-				<div class="col-6 align-self-center">
+				<div class="col-6">
 					<div class="description">
-						<h3 class="heading white mb-4">about us</h3>
+						<h3 class="heading white mb-4 text-left">about us</h3>
 						<p class="description__text mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa expedita fuga dolorum provident debitis, excepturi, repudiandae quam reiciendis, quod magni temporibus libero. Nesciunt nihil exercitationem incidunt. Quibusdam labore amet ullam delectus, officia harum numquam deserunt rerum accusantium dolores voluptatibus magni cupiditate fugit expedita blanditiis sequi fuga libero doloremque consequuntur doloribus.</p>
 						<div class="row">
 							<div class="col-12 col-md-5">
@@ -203,10 +203,10 @@
 			</div>
 		</div>
 	</section>
-	<section class="pricing-table">
+	<section id="pricing-table" class="pricing-table">
 		<div class="container">
 			<div class="row mb-50">
-				<div id="pricing-table" class="col">
+				<div class="col">
 					<h2 class="heading">choos your price</h2>
 					<p class="heading__text">Lorem lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
 				</div>
@@ -260,10 +260,10 @@
 			</div>
 		</div>
 	</section>
-	<section class="works">
+	<section id="how-it-work" class="works">
 		<div class="container">
 			<div class="row mb-90">
-				<div id="how-it-work" class="col">
+				<div class="col">
 					<h2 class="heading">how it works</h2>
 					<p class="heading__text">Lorem lorem ipsum dolor sit amet, consectetur</p>
 				</div>
@@ -301,10 +301,10 @@
 	
 		</div>
 	</section>
-	<section class="clients">
+	<section id="clients" class="clients">
 		<div class="container">
 			<div class="row mb-50">
-				<div id="clients" class="col">
+				<div class="col">
 					<h2 class="heading white">happy clients</h2>
 					<p class="heading__text white">Lorem lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
 				</div>
@@ -414,21 +414,21 @@
 			</div>
 		</div>
 	</section>
-	<section  class="newsletter">
+	<section id="contacts" class="newsletter">
 		<div class="container border-bottom border-#a9a9a9">
 			<div class="row">
-				<div id="contacts" class="newsletter__headline col mb-4">
+				<div class="newsletter__headline col mb-4">
 					<h2 class="heading">newsletter</h2>
-					<p class="heading__text">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+					<p class="heading__text m-0">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
 				</div>
 			</div>
 	
 			<div class="row justify-content-center">
 				<div class="col-10">
-					<form action="#" class="check-in-form pb-5">
+					<form action="#" class="check-in-form">
 						<label class="check-in-form__label letter first" for="username_bottom">
 							<i class="fas fa-user"></i>
-							<input class="check-in-form__field text" id="username_bottom" type="text" placeholder="Full Name" name="userName" pattern="[A-Za-zА-Яа-яЁё]" required>
+							<input class="check-in-form__field text" id="username_bottom" type="text" placeholder="Full Name" name="userName" pattern="[A-Za-z]" required>
 						</label>
 			
 						<label class="check-in-form__label letter second" for="userEmail_bottom">
@@ -441,26 +441,29 @@
 				</div>
 			</div>
 	
-			<div class="newsletter__map d-flex flex-column align-items-center pt-4">
-				<div class="circle rounded-circle">
+			<div class="newsletter__map">
 	
-					<span class="circle__address text-uppercase">address</span>
-					<address class="circle__descr text-center">	
-						Usiness street
-						Econd north section
-						Bavani nagar.88769
-						Call:+987-9976-999					
-						<a class="circle__link" href="mailto:info@businessface.com">info@businessface.com</a>				 
-					</address>
-	
-					 <svg class="triangle" width="16" height="20">
-	    				<polygon  points="0,0 8,20 16,0"/>
-					</svg>	
+				<div class="newsletter__descr  d-flex flex-column align-items-center pt-4">
+					<div class="circle rounded-circle">
+					
+						<span class="circle__address text-uppercase">address</span>
+						<address class="circle__descr text-center">	
+							Usiness street<br>
+							Econd north section<br>
+							Bavani nagar.88769<br>
+							Call:+987-9976-999					
+							<a class="circle__link" href="mailto:info@businessface.com">info@businessface.com</a>				 
+						</address>
+					
+						 <svg class="triangle" width="16" height="20">
+					    	<polygon  points="0,0 8,20 16,0"/>
+						</svg>	
+					</div>
+					
+					<a class="brand brand-bottom m-0" href="#">
+						<img src="img/logo.png" alt="logo">
+					</a>
 				</div>
-	
-				 <a class="brand brand-bottom m-0" href="#">
-	      			<img src="img/logo.png" alt="logo">
-	   			</a>
 			</div>
 		</div>
 	</section>
@@ -468,7 +471,7 @@
 	  <div class="container footer-contacts">
 	    <ul class="nav nav-pills d-flex justify-content-center mb-2">
 	          <li class="nav-item">
-	            <a class="nav-link footer-link" href="#">home</a>
+	            <a class="nav-link footer-link" href="#top-line">home</a>
 	          </li>
 	          <li class="nav-item">
 	            <a class="nav-link footer-link" href="#services">service</a>
@@ -529,22 +532,12 @@
 	        <p class="copyright__text text-center m-0">All contents © copyright 2014 Business Theme. All rights reserved Designed by : akhilwebfolio</p>
 	      </div>  
 	</footer>
-	
 
-	<!-- <div id="map"></div> -->
-
-	<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7hebjuc07YFys_Ok9ZAaPiZ_j5M4MrhY&callback=initMap"
-    async defer></script> -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-    <!-- 
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="slick/slick.min.js"></script> -->
 	<script src="js/script.js"></script>
-	
-	
+  	
 </body>
 </html>

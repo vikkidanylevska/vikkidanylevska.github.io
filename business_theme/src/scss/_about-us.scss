@@ -1,13 +1,12 @@
-.about-us {
-	// min-height: 100vh;
+.about-us {	
 	background-color: $orange;
 
 	&__img {
-		min-height: 100vh;
+		height: 100%;
+		width: 100%;		
 		background-image: url("../img/table.jpg");
+		background-repeat: no-repeat;
 		background-size: cover;
-
-
 
 		// position: relative;
 		// width: 100%;
@@ -25,10 +24,11 @@
 		// }
 	}
 
-	.description {		
-		max-width: 93%;
-		padding-left: 80px;		
+	.description {
+		padding: 160px 0 170px 80px;			
+		max-width: 570px;
 		color: $white;
+
 
 		.white {
 			color: $white;

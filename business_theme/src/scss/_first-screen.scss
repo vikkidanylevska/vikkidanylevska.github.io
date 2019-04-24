@@ -1,6 +1,20 @@
 .check-in {
-	background-color: $blue;
 	padding-top: 100px;
+	background: $blue url("../img/architecture.jpg") no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+
+     &::before {
+        content: "";
+        background-color: rgba($blue, .85);
+        @include overlay;
+    }
+
+    & > * {
+        position: relative;
+        z-index: 2;
+    }
 }
 
 .check-in__heading {
@@ -99,8 +113,8 @@
 			button {
 
 				&::before {
-					border-color: blue;
-					background-color: white;
+					border-color: $blue;
+					// background-color: white;
 					// transform: scale(1.4);
 				}
 			}
@@ -114,14 +128,14 @@
 
 			&::before {
 				content: '';
-				width: 12px;
-				height: 12px;
+				width: 14px;
+				height: 14px;
 				display: block;
-				border: 1px solid grey;
-				background-color: white;
+				border: 1.5px solid $lt-grey;
+				// background-color: white;
 				border-radius: 50%;
-				opacity: 1;
-				position: initial;
+				// opacity: 1;
+				// position: initial;
 			}
 		}
 	}
