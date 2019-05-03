@@ -1,18 +1,13 @@
 .pricing-table {
 	font-family: $sec-font;
 	font-weight: 300;
-	color: #818b95;	
+	color: #818b95;
 	text-align: center;
 	background-color: #e7edf3;
-	padding: 135px 0;
 
 	.heading__text {
-		font-size: 18px;		
+		font-size: 18px;
 	}
-
-	.mb-50 {
-			margin-bottom: 50px;
-		}
 
 	.plan {
 		display: flex;
@@ -23,10 +18,35 @@
 		background-color: $white;
 		min-height: 430px;
 		text-transform: uppercase;
-		transition: all .5s ease;		
+		transition: all .5s ease;
 
-		:nth-child(3) {
-			padding-bottom: 25px;
+		// @media all and (min-width: 768px) and (max-width: 991px) {
+		// 	max-width: 300px;
+		// }
+
+		@media all and (max-width: 991px) {
+			min-height: 400px;
+		}
+
+		// @media all and (min-width: 576px) and (max-width: 991px) {
+		// 	padding: 80px 0 60px;
+		// }
+
+		// :nth-child(3) {
+		// 	padding-bottom: 25px;
+		// }
+
+		&__heading {
+
+			@media all and (max-width: 767px) {
+				font-size: 24px;
+				font-weight: 500;
+			}
+
+			@media all and (min-width: 768px) and (max-width: 991px) {
+				font-size: 18px;
+				font-weight: 600;
+			}
 		}
 
 		.price {
@@ -35,41 +55,77 @@
 			color: $orange;
 			line-height: 1;
 
+			@media all and (max-width: 767px) {
+				font-size: 50px;
+				font-weight: 600;
+			}
+
+			@media all and (min-width: 768px) and (max-width: 991px) {
+				font-size: 40px;
+				font-weight: 500;
+			}
+
 			.currency {
 			font-size: 30px;
 			vertical-align: super;
+
+				@media all and (max-width: 575px) {
+					font-size: 25px;
+					// font-weight: 500;
+				}
+
+				@media all and (min-width: 576px) and (max-width: 991px) {
+					font-size: 20px;
+					// font-weight: 500;
+				}
 			}
 		}
 
 		.brdr {
 			display: block;
 			width: 100%;
-			border-bottom: 1px solid #e2e9f0;
+			line-height: 3;
+			border-top: 1px solid #e2e9f0;
 		}
 
 		&__btn {
 			@include section-button;
-			max-width: 130px;
+				max-width: 210px;
+
+			@media all and (min-width: 576px) {
+				max-width: 130px;
+			}
 		}
 	}
 
 	.middle {
-		color: $white;
-		min-height: 500px;
-		background-color: $blue;
-		// padding: 75px 0;
+		min-height: 430px;
+		background-color: $white;
+
+		@media all and (min-width: 768px) {
+			color: $white;
+			background-color: $blue;
+		}
+
+		@media all and (min-width: 992px) {
+			min-height: 500px;
+		}
+
 
 		.price {
-			color: $white;
+			color: $orange;
+
+			@media all and (min-width: 768px) {
+				color: $white;
+			}
 		}
 	}
 
 	// .plan:hover{
 	// 		color: $white;
 	// 		background-color: $blue;
-			
 	// 		min-height: 500px;
 	// 		// padding: 75px 0;
 	// 	}
 
- }
+}

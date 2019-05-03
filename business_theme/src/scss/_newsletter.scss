@@ -1,50 +1,78 @@
 .newsletter {
 	padding-top: 150px;
 
-	&__map {		
-		min-height: 650px;
-		background: url("../img/bg_dotted.jpg") no-repeat;
-		background-size: contain;
-		background-position: center;
+	@media all and (max-width: 575px) {
+		padding-top: 50px;
+	}
+
+	@media all and (min-width: 576px) and (max-width: 991px) {
+		padding-top: 80px;
+	}
+
+	&__map {
+		min-height: 330px;
+
+		@media all and (min-width: 450px) {
+			background: url("../img/bg_dotted.jpg") no-repeat;
+			background-size: cover;
+			background-position: center;
+		}
+
+		@media all and (min-width: 768px) and (max-width: 991px) {
+			min-height: 450px;
+		}
+
+		@media all and (min-width: 992px) {
+			min-height: 650px;
+			background-size: contain;
+		}
 	}
 }
 
-.letter {
-	border: 1px solid $lt-grey;	
-}
+// .first {
+// 	flex-basis: 35%;
+// }
 
-.first {
-	flex-basis: 35%;
-}
+// .second {
+// 	flex-basis: 38%;
+// }
 
-.second {
-	flex-basis: 38%;
-}
+// .subscribe {
+// 	flex-basis: 25%;
+// }
 
-.subscribe {
-	flex-basis: 25%;
-}
+// .letter {
+// 	border: 1px solid $lt-grey;
+
+// 	@media all and (max-width: 575px) {
+// 		flex-basis: 60%;
+// 	}
+
+// 	@media all and (min-width: 576px) and (max-width: 767px) {
+// 		flex-basis: 70%;
+// 	}
+
+// 	@media all and (min-width: 768px) and (max-width: 991px) {
+// 		flex-basis: 32.5%;
+// 	}
+
 
 .circle {
 	position: relative;
 	height: 280px;
-	width: 280px;
+	max-width: 280px;
 	background-color: $dk-grey;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	transform: translateY(20%);
+	transform: translateY(30%);
 
-	// &::after {
-	// 	content: "";
-	// 	max-width: 15px;
-	// 	// height: 2px;
-	// 	// background-color: red;
-	// 	border: 25px solid transparent;
-	// 	border-top-color: red;
-
-	// }
+	@media all and (max-width: 991px) {
+		height: 210px;
+		max-width: 210px;
+		transform: translateY(10%);
+	}
 
 	& > * {
 		line-height: 1.8;
@@ -55,21 +83,22 @@
 		color: $orange;
 
 		&:hover {
-			text-decoration: none;		
+			text-decoration: none;
 		}
 	}
 
 	.triangle {
 		position: absolute;
-		fill: $dk-grey; 
+		fill: $dk-grey;
 		bottom: -6%;
 	}
 }
 
-// .circle__descr {
-// 	max-width: 145px;
-// }
-
 .brand-bottom {
-	transform: translateY(174%);
+	position: absolute;
+	bottom: -26%;
+
+	@media all and (max-width: 991px) {
+		bottom: -33%;
+	}
 }

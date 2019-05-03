@@ -1,12 +1,42 @@
-.about-us {	
+.about-us {
 	background-color: $orange;
+	// height: 80vh;
+	position: relative;
 
-	&__img {
-		height: 100%;
-		width: 100%;		
-		background-image: url("../img/table.jpg");
-		background-repeat: no-repeat;
+		&::before {
+		content: "";
+		position: absolute;
+		display: block;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: url("../img/table.jpg") no-repeat 100% 0;
 		background-size: cover;
+		width: 100%;
+		max-width: 50%;
+
+		@media all and (max-width: 767px) {
+			display: none;
+		}
+	}
+
+
+// &__img {
+	// 	height: 300px;
+	// 	width: 100%;
+	// 	background-image: url("../img/table.jpg");
+	// 	background-repeat: no-repeat;
+	// 	background-size: cover;
+
+	// 	@media all and (min-width: 768px)  {
+	// 		height: 350px;
+	// 	}
+
+	// 	@media all and (min-width: 992px)  {
+	// 		height: 100%;
+	// 	}
+		// and (max-width: 991px)
 
 		// position: relative;
 		// width: 100%;
@@ -22,28 +52,50 @@
 		// 	height: 100%;
 		// 	object-fit: cover;
 		// }
-	}
+
 
 	.description {
-		padding: 160px 0 170px 80px;			
+		padding: 40px 20px 50px;
 		max-width: 570px;
 		color: $white;
+		text-align: center;
 
+		@media all and (min-width: 576) and (max-width: 767px) {
+			padding: 30px 0 40px;
+		}
 
-		.white {
-			color: $white;
+		@media all and (min-width: 768px) and (max-width: 991px) {
+			padding: 50px 0 60px 30px;
+			// max-width: 100%;
+		}
+
+		@media all and (min-width: 992px) and (max-width: 1199px) {
+			padding: 90px 10px 100px 50px;
+			max-width: 100%;
+		}
+
+		@media all and (min-width: 1200px) {
+			padding: 160px 0 170px 80px;
 		}
 
 		&__text {
 			font-size: 13px;
-			line-height: 1.9;			
-			// margin-bottom: 30px;
+			line-height: 1.9;
 		}
-		
-		.read__btn {	
+
+		.read__btn {
 			@include section-button;
-			max-width: 145px;		
-			box-shadow: 1px 1px 2px $dk-grey;			
-		}			
+			max-width: 80%;
+			box-shadow: 1px 1px 2px $dk-grey;
+
+			@media all and (min-width: 576px) and (max-width: 991px){
+				max-width: 60%;
+			}
+
+			@media all and (min-width: 992px) {
+				max-width: 145px;
+			}
+		}
 	}
 }
+

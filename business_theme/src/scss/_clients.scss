@@ -1,27 +1,6 @@
 .clients {
 	background-color: $orange;
-	padding: 135px 0;
 }
-
-.mb-50 {
-	margin-bottom: 50px;
-}
-
-.white {
-	color: $white;
-}
-
-// .reviews {
-// 	display: flex;
-// 	flex-direction: row;
-// }
-
-
-// .review {
-// 	background-color: $white;
-// 	max-width: 500px;
-// 	padding: 45px 0;
-// }
 
 .cls-1 {
     font-size: 30px;
@@ -30,35 +9,59 @@
     font-weight: 700;
 }
 
+.client-card {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 245px;
+	background-color: $white;
+	border-radius: 4px;
 
+	.client-review {
+		display: flex;
+		max-width: 85%;
+
+		@media all and (max-width: 565px) {
+			flex-direction: column;
+			padding: 10px 0 10px 10px;
+		}
+	}
+}
 
 .quote {
+	font-size: 13px;
+	line-height: 1.8;
+
+	@media all and (max-width: 991px) {
+		font-size: 14px;
+	}
 
 	.card-text {
 		position: relative;
-		font-size: 13px;
 		color: #7b7b7b;
 	}
-	
+
 	.quotes-top {
-		position: absolute;	
+		position: absolute;
 		left: -7%;
 	}
-
-	// .quotes-btm {
-	// 	position: absolute;
-	// 	bottom: 1%;	
-	// 	right: 50%;
-	// }	
 }
 
 .client {
 	font-family: $sec-font;
-	font-size: 13px;
 	color: $orange;
-	line-height: 1.8;
-}
+	text-transform: uppercase;
 
-.specialty {
-	color: #99a9ae;
+	@media all and (min-width: 992px) and (max-width: 1199px) {
+		font-size: 12px;
+	}
+
+
+	&__specialty {
+		color: #99a9ae;
+
+		@media all and (max-width: 450px) {
+			display: block;
+		}
+	}
 }

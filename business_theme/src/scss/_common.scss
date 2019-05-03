@@ -21,23 +21,63 @@ section {
 
 .heading {
 	font-family: $hd-font;
-	font-size: 30px;
+	font-size: 25px;
 	font-weight: bold;
 	color: $dk-grey;
 	text-transform: uppercase;
-	text-align: center;	
+	text-align: center;
 	margin-bottom: 0;
+
+	@media all and (min-width: 576px) {
+		font-size: 27px;
+	}
+
+	@media all and (min-width: 768px) {
+		font-size: 30px;
+	}
+}
+
+.white {
+	color: $white;
 }
 
 .heading__text {
 	font-family: $sec-font;
-	font-size: 18px;
+	font-size: 15px;
 	font-weight: 300;
-	color: #818b95;	
+	color: #818b95;
 	text-align: center;
+
+ 	@media all and (min-width: 576px) {
+		font-size: 18px;
+	}
 }
 
 .fa-phone {
 	transform: rotate(90deg);
+}
+
+.pt-150 {
+	padding: 150px 0;
+
+	@media all and (max-width: 575px) {
+		padding: 50px 0 40px;
+	}
+
+	@media all and (min-width: 576px) and (max-width: 991px) {
+		padding: 80px 0 60px;
+	}
+}
+
+.pt-135 {
+	padding: 135px 0;
+
+	@media all and (max-width: 575px) {
+		padding: 50px 0 40px;
+	}
+
+	@media all and (min-width: 576px) and (max-width: 991px) {
+		padding: 80px 0 60px;
+	}
 }
 
