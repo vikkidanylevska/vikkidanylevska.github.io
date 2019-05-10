@@ -1,0 +1,262 @@
+.vika-latest-news {
+	 min-height: 100vh;
+	 background: linear-gradient(to top right, #4484d6, #24ccfa);
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 padding: 150px 0;
+	 position: relative;
+
+	 @media all and (max-width: 991px) {
+		padding: 100px 0;
+	}
+
+	 &:before {
+	 	content: "";
+        background-image: url("../img/news-bg.png");
+        position: absolute;
+	    top: 0;
+	    right: 0;
+	    bottom: 0;
+	    left: 0;
+	    background-size: contain;
+	}
+}
+
+.mb-90 {
+
+	@media all and (max-width: 991px) {
+		margin-bottom: 50px;
+	}
+
+	@media all and (min-width: 992px) {
+		margin-bottom: 90px;
+	}
+}
+
+.vika-heading {
+	text-transform: uppercase;
+	display: inline-block;
+	font-size: $large-size;
+	letter-spacing: 2px;
+	color: $white;
+	position: relative;
+	margin: 0;
+
+	@media all and (max-width: 767px) {
+		font-size: 35px;
+	}
+
+	&::before {
+		content: "";
+		display: block;
+		position: absolute;
+		top: -60%;
+		left: 32%;
+		width: 105px;
+		height: 1px;
+		border-top: 1px solid $white;
+	}
+}
+
+.vika-card-link {
+
+	&:hover {
+		text-decoration: none;
+	}
+
+	&:hover::before {
+		content: "";
+		position: absolute;
+		z-index: 1;
+		display: block;
+		background: url("../img/hover.png") no-repeat;
+		top: 15%;
+		left: 35%;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.vika-img-wrapper {
+	position: relative;
+	min-width: 100%;
+	display: block;
+	padding-top: 65%;
+
+	.card-img-top {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		object-fit: cover;
+	}
+}
+
+.card-title {
+	line-height: 1.5;
+	color: initial;
+
+	@media all and (min-width: 992px) and (max-width: 1199px) {
+		font-size: 18px;
+		// min-height: 60px;
+	}
+}
+
+.vika-short-descr {
+	line-height: 1.8;
+	color: initial;
+
+	@media all and (min-width: 768px) and (max-width: 991px) {
+		// min-height: 60px;
+	}
+}
+
+.vika-card-user {
+	display: flex;
+	align-items: center;
+}
+
+.vika-user-name {
+	display: flex;
+	flex-direction: column;
+	color: initial;
+
+	@media all and (max-width: 1199px) {
+		font-size: 14px;
+	}
+
+	.vika-user-data {
+		display: block;
+		color: $aqua;
+		font-size: 14px;
+
+		@media all and (max-width: 1199px) {
+			font-size: 12px;
+		}
+	}
+}
+
+.slick-list {
+
+	@media all and (min-width: 768px) {
+		margin-bottom: 50px;
+	}
+}
+
+.slick-arrow {
+	display: block;
+	width: 35px;
+	height: 35px;
+	border: 1.5px solid rgba(255,255,255,.3);
+	border-radius: 50%;
+	transform: translateX(-70%);
+
+	@media all and (max-width: 767px) {
+		display: none!important;
+	}
+
+	@media all and (min-width: 1200px) and (max-width: 1299px) {
+		transform: translateX(13%);
+	}
+
+	&::before {
+		content: "";
+		display: block;
+		width: 7px;
+		height: 7px;
+		border:1px solid $white;
+		border-top: none;
+		border-right: none;
+		transform: rotate(45deg) translate(150%, -150%);
+	}
+
+	// &::after {
+	// 	content: "";
+	// 	display: block;
+	// 	width: 30px;
+	// 	height: 30px;
+	// 	border: 2px solid red;
+	// 	transform: translate(-25%, -74%);
+	// }
+
+	&.slick-next {
+		transform: translateX(70%);
+
+		// @media all and (min-width: 768px) and (max-width: 991px) {
+		// 	transform: translateX(-5%);
+		// }
+
+		@media all and (min-width: 1200px) and (max-width: 1299px) {
+			transform: translateX(-5%);
+		}
+
+		&::before {
+			transform: rotate(-135deg) translate(-110%, 90%);
+		}
+	}
+}
+
+// @keyframes pulse {
+// 	0% {
+// 		transform: scale(1.0);
+// 	}
+
+// 	50% {
+// 		transform: scale(1.2);
+// 	}
+
+// 	100% {
+// 		transform: scale(1.0);
+// 	}
+// }
+
+.slick-dots {
+	position: initial;
+
+	@media all and (max-width: 767px) {
+		display: none!important;
+	}
+
+	li {
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0;
+
+		&:not(:last-child){
+			margin-right: 20px;
+		}
+
+		&.slick-active {
+			button {
+
+				&::before {
+					// border-color: $white;
+					background-color: $white;
+					// transform: scale(1.4);
+				}
+			}
+		}
+
+		button {
+			padding: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			&::before {
+				content: '';
+				width: 8px;
+				height: 8px;
+				display: block;
+				border: 1px solid $white;
+				// background-color: red;
+				border-radius: 50%;
+				// opacity: 1;
+				position: initial;
+			}
+		}
+	}
+}
