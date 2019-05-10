@@ -100,9 +100,9 @@
 .slider-row {
 	transform: translateY(20%);
 
-	@media all and (max-width: 991px) {
-		display: none!important;
-	}
+	// @media all and (max-width: 991px) {
+	// 	display: none!important;
+	// }
 }
 
 .slider {
@@ -122,15 +122,26 @@
 		background-image: url("../img/tvset.png");
 		background-repeat: no-repeat;
 		background-position: center;
+
+		@media all and (max-width: 767px) {
+			display: none!important;
+		}
 	}
+}
+
+.first-img {
+	display: block;
+	min-width: 100%;
+	min-height: 100%;
+	object-fit: cover;
 }
 
 .slick-dots {
 	bottom: -40%;
 
-	// @media all and (max-width: 991px) {
-	// 	display: none!important;
-	// }
+	@media all and (max-width: 767px) {
+		display: none!important;
+	}
 
 	li {
 		display: inline-flex;
@@ -143,8 +154,6 @@
 
 				&::before {
 					border-color: $blue;
-					// background-color: white;
-					// transform: scale(1.4);
 				}
 			}
 		}

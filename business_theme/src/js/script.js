@@ -7,5 +7,16 @@ $(document).ready(function(){
 		slidesToScroll: 1,
 		infinite: true,
 		autoplay: true,
+		responsive: [
+     {
+      breakpoint: 767,
+      settings: {
+      	vertical: true,
+      	verticalSwiping: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
+       }
+    }
+  ]
 	});
 });
