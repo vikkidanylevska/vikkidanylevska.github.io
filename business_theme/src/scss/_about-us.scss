@@ -1,6 +1,5 @@
 .about-us {
 	background-color: $orange;
-	// height: 80vh;
 	position: relative;
 
 		&::before {
@@ -20,39 +19,6 @@
 			display: none;
 		}
 	}
-
-
-// &__img {
-	// 	height: 300px;
-	// 	width: 100%;
-	// 	background-image: url("../img/table.jpg");
-	// 	background-repeat: no-repeat;
-	// 	background-size: cover;
-
-	// 	@media all and (min-width: 768px)  {
-	// 		height: 350px;
-	// 	}
-
-	// 	@media all and (min-width: 992px)  {
-	// 		height: 100%;
-	// 	}
-		// and (max-width: 991px)
-
-		// position: relative;
-		// width: 100%;
-		// padding-top: 73%;
-
-		// & > * {
-		// 	position: absolute;
-		// 	top: 0;
-		// 	right: 0;
-		// 	bottom: 0;
-		// 	left: 0;
-		// 	width: 100%;
-		// 	height: 100%;
-		// 	object-fit: cover;
-		// }
-
 
 	.description {
 		padding: 40px 20px 50px;
