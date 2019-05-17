@@ -14,7 +14,7 @@ a {
 	@include transition(color);
 
 	&:hover {
-		text-decoration: none;		
+		text-decoration: none;
 		color: $corp-green;
 	}
 }
@@ -37,7 +37,7 @@ a {
 		&:last-child {
 			&::after {
 				display: none;
-			}			
+			}
 		}
 	}
 
@@ -55,14 +55,14 @@ a {
 	padding: px_to_rem(150px) 0;
 
 	@media all and (max-width: 1200px) {
-		padding: 2rem 0;		
+		padding: 2rem 0;
 	}
 
 	&-heading-row {
 		margin-bottom: px_to_rem(100px);
 
 		@media all and (max-width: 1200px) {
-			margin-bottom: 2rem;		
+			margin-bottom: 2rem;
 		}
 	}
 
@@ -73,7 +73,7 @@ a {
 
 		&__marker {
 			position: relative;
-			@include green-line(65px, 20px);	
+			@include green-line(65px, 20px);
 		}
 
 		&.inline {
@@ -84,7 +84,7 @@ a {
 	&-description {
 		@media all and (max-width: 576px){
 			text-align: justify;
-		}	
+		}
 		text-align: center;
 		margin: 0;
 		line-height: 2;
@@ -98,7 +98,7 @@ a {
 		@media all and (max-width: 1200px) {
 			max-width: 100%;
 		}
-	}	
+	}
 }
 
 .marked-list {
@@ -110,7 +110,7 @@ a {
 		margin-bottom: px_to_rem(15px);
 
 		&:last-child {
-			margin-bottom: 0;			
+			margin-bottom: 0;
 		}
 
 		@media all and (max-width: 767px) {
@@ -202,5 +202,4 @@ a {
 	@media all and (min-width: 1200px) {
 		margin-bottom: 100px;
 	}
-	
 }

@@ -1,0 +1,174 @@
+<section class="create">
+
+	<header class="header">
+
+		<a href="#" class="logo">
+				//= svg-logo.html
+		</a>
+
+		<p class="name">Igor Filippov</p>
+		<div class="header__links-wrapper">
+			<a href="#" class="header__link settings">
+				//= svg-gear.html
+			</a>
+			<a href="#" class="header__link bell">
+				//= svg-bell.html
+			</a>
+			<a href="#" class="header__link">log out</a>
+		</div>
+	</header>
+	<div class="section-body">
+		<nav class="nav-bar">
+			<ul class="nav-bar__list">
+				<li class="nav-bar__item">
+					<a href="#" class="nav-bar__link">
+						//= svg-user.html
+					</a>
+				</li>
+				<li class="nav-bar__item">
+					<a href="#" class="nav-bar__link">
+						//= svg-wallet.html
+					</a>
+				</li>
+				<li class="nav-bar__item">
+					<a href="#" class="nav-bar__link nav-item-active">
+						//= svg-event.html
+					</a>
+				</li>
+				<li class="nav-bar__item">
+					<a href="#" class="nav-bar__link">
+						//= svg-lifebuoy.html
+					</a>
+				</li>
+			</ul>
+		</nav>
+
+		<div class="new-event">
+			<div class="new-event__title-wrapper">
+				<h2 class="new-event__title">new event</h2>
+			</div>
+			<form action="#" name="new-event__form" class="new-event__form">
+				<a href="#" class="add-picture">
+					<svg class="plus-circle" id="plus.svg" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+						<defs>
+						    <style>
+						      .circle {
+						        fill: #fff;
+						      }
+						      .plus-white {
+						        fill: #0f9982;
+						        fill-rule: evenodd;
+						      }
+						    </style>
+						</defs>
+						<circle id="bg" class="circle" cx="25" cy="25" r="25"/>
+						<path id="plus_2" class="plus-white" d="M251,1285v-8h-1v8h-8v1h8v8h1v-8h8v-1h-8Z" transform="translate(-225 -1261)"/>
+					</svg>
+					<p class="plus-text">add picture</p>
+				</a>
+
+				<div class="form-body">
+					<div class="form-heading-wrapper">
+						<h3 class="form-heading">general information</h3>
+						<p class="form-text">Be concise, this data will be shown on mobile devices, probably with a screen smaller than you expect.</p>
+					</div>
+
+					<label for="input-title" class="label-title">Title<span>*</span></label>
+					<input type="text" name="input-field" class="input-field mb-25" id="input-title" placeholder="Enter title" required>
+
+					<label for="input-descr-field" class="label-title">Description<span>*</span></label>
+					<textarea class="descr-field mb-25" name="descr-field" id="input-descr-field" required></textarea>
+
+					<div class="time-fields-wrapper">
+						<div class="time-wrapper">
+							<label for="input-date" class="label-title">Date<span>*</span></label>
+							<input type="text" class="input-field field-start" id="input-date" placeholder="DD.MM.YY" required>
+							//= svg-calendar.html
+						</div>
+
+						<div class="time-wrapper">
+							<label for="input-starttime" class="label-title">Start time<span>*</span></label>
+							<input type="text" class="input-field field-start" id="input-starttime" placeholder="HH:MM" required>
+							//= svg-clock.html
+						</div>
+
+						<div class="time-wrapper">
+							<label for="input-duration" class="label-title">Duration<span>*</span></label>
+							<div class="select-wrapper">
+					        	<select class="input-field select" name="input-duration" id="input-duration" required>
+					        		<option value="" selected disabled> </option>
+						        	<option value="Personal">One week</option>
+						        	<option value="Business">One month</option>
+							    	<option value="Corporate">One year</option>
+						   		</select>
+					        </div>
+					    </div>
+					</div>
+
+					<label for="input-location" class="label-title">Location<span>*</span></label>
+					<input type="text" name="input-location" class="input-field mb-25" id="input-location" required>
+
+					<div class="check__wrapper">
+			    		<input class="check-input" type="checkbox" value="" id="invalidCheck" required>
+					    <label class="check-text" for="invalidCheck">Simultaneous translation is required</label>
+			    	</div>
+
+			    	<div class="time-wrapper mb-25">
+			    		<label for="select-language" class="label-title">Speaker language</label>
+						<div class="select-wrapper">
+				        	<select class="input-field select" name="select-language" id="select-language">
+					        	<option value="Personal">English</option>
+					        	<option value="Business">French</option>
+						    	<option value="Corporate">Russian</option>
+					   		</select>
+				        </div>
+			    	</div>
+
+			    	<div class="time-fields-wrapper">
+			    		<div class="time-wrapper">
+			    			<label for="select-language" class="label-title">Listeners languages</label>
+							<div class="select-wrapper">
+					        	<select class="input-field select" name="select-language" id="select-language">
+						        	<option value="Personal">English</option>
+						        	<option value="Business">French</option>
+							    	<option value="Corporate">Russian</option>
+						   		</select>
+					        </div>
+			    		</div>
+
+				        <div class="email-wrapper">
+				        	<label for="create-inputEmail-fst" class="label-title">Interpreter email</label>
+				        	<input type="email" name="create-inputEmail-fst" class="input-field" id="create-inputEmail-fst" placeholder="Leave blank to auto assign">
+				        </div>
+			    	</div>
+
+			    	<div class="fields-wrapper">
+			    		<div class="time-wrapper time-wrapper-last">
+			    			<label for="select-language" class="label-title">Listeners languages</label>
+							<div class="select-wrapper">
+					        	<select class="input-field select" name="select-language" id="select-language">
+						        	<option value="Personal">English</option>
+						        	<option value="Business">French</option>
+							    	<option value="Corporate">Russian</option>
+						   		</select>
+					        </div>
+			    		</div>
+
+				        <div class="email-wrapper email-scnd">
+				        	<label for="create-inputEmail-scnd" class="label-title">Interpreter email</label>
+				        	<input type="email" name="create-inputEmail-scnd" class="input-field" id="create-inputEmail-scnd" placeholder="Leave blank to auto assign">
+				        </div>
+
+				       <div class="btn-reset-wrapper">
+				       	 <button type="reset" class="btn-reset"></button>
+				       </div>
+
+			    	</div>
+
+					<input class="form-btn" type="submit" name="schedule" value="schedule">
+
+				</div>
+			</form>
+		</div>
+	</div>
+</section>
