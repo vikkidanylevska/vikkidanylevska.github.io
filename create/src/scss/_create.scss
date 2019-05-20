@@ -53,18 +53,19 @@
 
 	&__links-wrapper {
 		display: flex;
-		justify-content: space-between;
-		align-items: flex-start;
-		width: 100%;
-		max-width: 140px;
 	}
 
 	&__link {
-		text-decoration: none;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		font-size: 13px;
 		font-weight: 700;
 		color: $col-dark;
+		text-decoration: none;
 		text-transform: capitalize;
+		width: 45px;
+		height: 45px;
 
 		&:hover > svg * {
 			fill: $col-green;
