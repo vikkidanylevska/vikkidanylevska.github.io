@@ -2,21 +2,25 @@
 
 	<header class="header">
 
-		<a href="#" class="logo">
-				//= svg-logo.html
-		</a>
+		<div class="header__container">
+			<a href="#" class="logo">
+					//= svg-logo.html
+			</a>
 
-		<p class="name">Igor Filippov</p>
-		<div class="header__links-wrapper">
-			<a href="#" class="header__link settings">
-				//= svg-gear.html
-			</a>
-			<a href="#" class="header__link bell">
-				//= svg-bell.html
-			</a>
-			<a href="#" class="header__link">log out</a>
+			<p class="name">Roman Yerin</p>
+
+			<div class="header__links-wrapper">
+				<a href="#" class="header__link">
+					//= svg-gear.html
+				</a>
+				<a href="#" class="header__link">
+					//= svg-bell.html
+				</a>
+				<a href="#" class="header__link log-out">log out</a>
+			</div>
 		</div>
 	</header>
+
 	<div class="section-body">
 		<nav class="nav-bar">
 			<ul class="nav-bar__list">
@@ -44,24 +48,20 @@
 		</nav>
 
 		<div class="new-event">
-			<div class="new-event__title-wrapper">
-				<h2 class="new-event__title">new event</h2>
-			</div>
+			<h2 class="new-event__title">new event</h2>
 			<form action="#" name="new-event__form" class="new-event__form">
 				<a href="#" class="add-picture">
 					<svg class="plus-circle" id="plus.svg" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
 						<defs>
 						    <style>
-						      .circle {
-						        fill: #fff;
-						      }
+						      .circle { fill: #fff; }
 						      .plus-white {
 						        fill: #0f9982;
 						        fill-rule: evenodd;
 						      }
 						    </style>
 						</defs>
-						<circle id="bg" class="circle" cx="25" cy="25" r="25"/>
+						<circle id="white-circle" class="circle" cx="25" cy="25" r="25"/>
 						<path id="plus_2" class="plus-white" d="M251,1285v-8h-1v8h-8v1h8v8h1v-8h8v-1h-8Z" transform="translate(-225 -1261)"/>
 					</svg>
 					<p class="plus-text">add picture</p>
@@ -73,29 +73,29 @@
 						<p class="form-text">Be concise, this data will be shown on mobile devices, probably with a screen smaller than you expect.</p>
 					</div>
 
-					<label for="input-title" class="label-title">Title<span>*</span></label>
-					<input type="text" name="input-field" class="input-field mb-25" id="input-title" placeholder="Enter title" required>
+					<label for="inputTitle" class="label-title">Title<span>*</span></label>
+					<input type="text" name="inputTitle" class="input-field mb-20" id="inputTitle" placeholder="Enter title" required>
 
-					<label for="input-descr-field" class="label-title">Description<span>*</span></label>
-					<textarea class="descr-field mb-25" name="descr-field" id="input-descr-field" required></textarea>
+					<label for="descrField" class="label-title">Description<span>*</span></label>
+					<textarea class="descr-field mb-20" name="descrField" id="descrField" required></textarea>
 
 					<div class="time-fields-wrapper">
 						<div class="time-wrapper">
-							<label for="input-date" class="label-title">Date<span>*</span></label>
-							<input type="text" class="input-field field-start" id="input-date" placeholder="DD.MM.YY" required>
+							<label for="inputDate" class="label-title">Date<span>*</span></label>
+							<input type="text" class="input-field field-start" id="inputDate" placeholder="DD.MM.YY" required>
 							//= svg-calendar.html
 						</div>
 
 						<div class="time-wrapper">
-							<label for="input-starttime" class="label-title">Start time<span>*</span></label>
-							<input type="text" class="input-field field-start" id="input-starttime" placeholder="HH:MM" required>
+							<label for="startTime" class="label-title">Start time<span>*</span></label>
+							<input type="text" class="input-field field-start" id="startTime" placeholder="HH:MM" required>
 							//= svg-clock.html
 						</div>
 
 						<div class="time-wrapper">
-							<label for="input-duration" class="label-title">Duration<span>*</span></label>
+							<label for="inputDuration" class="label-title">Duration<span>*</span></label>
 							<div class="select-wrapper">
-					        	<select class="input-field select" name="input-duration" id="input-duration" required>
+					        	<select class="input-field select" name="inputDuration" id="inputDuration" required>
 					        		<option value="" selected disabled> </option>
 						        	<option value="Personal">One week</option>
 						        	<option value="Business">One month</option>
@@ -106,14 +106,14 @@
 					</div>
 
 					<label for="input-location" class="label-title">Location<span>*</span></label>
-					<input type="text" name="input-location" class="input-field mb-25" id="input-location" required>
+					<input type="text" name="input-location" class="input-field mb-20" id="input-location" placeholder="Enter location" required>
 
 					<div class="check__wrapper">
-			    		<input class="check-input" type="checkbox" value="" id="invalidCheck" required>
-					    <label class="check-text" for="invalidCheck">Simultaneous translation is required</label>
+			    		<input class="check-input" type="checkbox" value="" id="inputCheck" required>
+					    <label class="check-text" for="inputCheck">Simultaneous translation is required</label>
 			    	</div>
 
-			    	<div class="time-wrapper mb-25">
+			    	<div class="time-wrapper mb-20">
 			    		<label for="select-language" class="label-title">Speaker language</label>
 						<div class="select-wrapper">
 				        	<select class="input-field select" name="select-language" id="select-language">
