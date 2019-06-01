@@ -1,0 +1,44 @@
+.first-screen {
+	min-height: 100vh;
+	background: $corp-col url("../img/fs-bg.jpg") no-repeat center/cover;
+	background-attachment: fixed;
+	position: relative;
+    color: $white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+
+    &__title {
+        font-size: 70px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+    }
+
+    &__text {
+        font-size: 26px;
+        font-style: italic;
+        line-height: 1.5;
+        margin-bottom: 90px;
+    }
+
+    &__scroll {
+        display: block;
+        align-self: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #fff;
+
+        &::before {
+            content: " ";
+            display: block;
+            width: 15px;
+            height: 15px;
+            border: 4px solid $corp-col;
+            border-left-color: transparent;
+            border-top-color: transparent;
+            transform: rotate(45deg) translate(100%, -20%);
+        }
+    }
+}
