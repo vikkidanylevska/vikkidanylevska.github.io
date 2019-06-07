@@ -1,0 +1,142 @@
+.team {
+	min-height: 100vh;
+	background-color: $bg-team;
+	padding-bottom: 80px;
+
+	@media all and (max-width: 767px) {
+		padding-bottom: 50px;
+	}
+
+	.section-title {
+		color: $text-col;
+		margin-bottom: 60px;
+
+		@media all and (max-width: 767px) {
+			margin-bottom: 35px;
+		}
+
+		&::before {
+			width: 60px;
+			height: 60px;
+			background: url("../img/team-icon.svg") no-repeat center/cover;
+			bottom: 70px;
+			left: 48%;
+
+			@media all and (max-width: 767px) {
+				bottom: 50px;
+				left: 46%;
+			}
+		}
+	}
+
+	.slider-team {
+		position: relative;
+	}
+
+	 .owl-nav.disabled {
+		display: block;
+	}
+
+	.arrow-slider-team {
+		display: block;
+		position: absolute;
+		top: 50%;
+		width: 25px;
+		height: 25px;
+		border: 1px solid $text-col;
+		border-bottom-color: transparent;
+		border-right-color: transparent;
+
+		@media all and (max-width: 1400px) {
+			top: 105%;
+		}
+	}
+
+	.slider-team-left {
+		left: -50px;
+		transform: rotate(-45deg);
+
+		@media all and (max-width: 1400px) {
+			left: 35%;
+		}
+	}
+
+	.slider-team-right {
+		right: -50px;
+		transform: rotate(135deg);
+
+		@media all and (max-width: 1400px) {
+			right: 35%;
+		}
+	}
+
+	.slider-item {
+		width: 100%;
+		max-width: 350px;
+		height: 490px;
+		position: relative;
+		background-color: $bg-team;
+		padding-top: 140px;
+	}
+
+	.team-img-wrapper {
+		border-radius: 50%;
+		padding: 10px;
+		position: absolute;
+		width: 255px;
+		height: 255px;
+		top: -2%;
+		left: 14%;
+		background-color: $bg-team;
+
+		@media all and (max-width: 767px) {
+			left: 12%;
+		}
+
+		.team-img {
+			border-radius: 50%;
+		}
+	}
+
+	.team-block-wrapper {
+		padding-top: 160px;
+		background-color: $white;
+	}
+
+	.crewman-name {
+		font-family: $title-font;
+		font-size: $nav-size;
+		color: $corp-col;
+		text-transform: uppercase;
+		text-align: center;
+		margin-bottom: 25px;
+	}
+
+	.crewman-position {
+		font-size: $nav-size;
+		font-style: italic;
+		color: $text-col;
+		text-transform: capitalize;
+		text-align: center;
+		margin-bottom: 50px;
+	}
+
+	.social-block {
+		display: flex;
+		justify-content: center;
+		background-color: $corp-col;
+		padding: 20px 0;
+	}
+
+	.social-item:not(:last-child) {
+		margin-right: 25px;
+	}
+
+	.shp0 {
+		transition: all .5s ease;
+
+		&:hover {
+			fill: $violet;
+		}
+	}
+}

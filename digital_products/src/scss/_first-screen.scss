@@ -1,0 +1,98 @@
+.first-screen {
+	min-height: 100vh;
+    padding-top: 100px;
+	background: #b9b2ce url("../img/ftsc-bg.jpg") no-repeat;
+    background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+    z-index: 0;
+    color: $white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+
+    &::before {
+        content: "";
+        background-color: rgba($corp-col, .4);
+        position: absolute;
+        top: 0; right: 0;
+        bottom: 0; left: 0;
+        z-index: 1;
+    }
+
+    & > * {
+        position: relative;
+        z-index: 2;
+    }
+
+    @media all and (max-width: 991px) {
+         padding-top: 80px;
+         min-height: 70vh;
+    }
+
+     @media all and (max-width: 767px) {
+         padding-bottom: 40px;
+    }
+
+    &__title {
+        font-family: $title-font;
+        font-size: 72px;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+
+        @media all and (min-width: 768px) and (max-width: 991px) {
+             font-size: 60px;
+        }
+
+        @media all and (max-width: 767px) {
+             font-size: 35px;
+        }
+    }
+
+    &__text {
+        font-size: 26px;
+        font-style: italic;
+        line-height: 1.5;
+
+        @media all and (max-width: 991px) {
+             font-size: 20px;
+        }
+    }
+
+    &__scroll {
+        display: block;
+        align-self: center;
+        width: 50px;
+        height: 60px;
+        border: 1px solid $corp-col;
+        border-radius: 50%;
+        background-color: transparent;
+        position: relative;
+        left: 0;
+        top: 70%;
+
+        @media all and (max-width: 1199px) {
+             top: 20%;
+        }
+
+        &::before {
+            content: " ";
+            display: block;
+            position: absolute;
+            left: 30%;
+            bottom: 25%;
+            width: 18px;
+            height: 18px;
+            border: 4px solid $violet;
+            border-left-color: transparent;
+            border-top-color: transparent;
+            transform: rotate(45deg);
+        }
+
+        &:hover::before {
+            border: 4px solid $white;
+            border-left-color: transparent;
+            border-top-color: transparent;
+        }
+    }
+}

@@ -1,0 +1,151 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+	font-family: $main-font;
+	font-size: 14px;
+	letter-spacing: 1px;
+	scroll-behavior: smooth;
+}
+
+a {
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: none;
+		color: $white;
+	}
+}
+
+.pt-140 {
+	padding-top: 140px;
+
+	@media all and (max-width: 767px) {
+		padding-top: 90px;
+	}
+}
+
+.strong {
+	font-weight: 700;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.section-img-block {
+	width: 100%;
+}
+
+.section-title {
+	font-family: $sec-title-font;
+	font-size: $sect-size;
+	font-weight: 700;
+	color: $white;
+	text-align: center;
+	text-transform: uppercase;
+	position: relative;
+
+	@media all and (max-width: 767px) {
+		font-size: 30px;
+	}
+
+	&::before {
+		content: " ";
+		width: 50px;
+		height: 54px;
+		display: block;
+		position: absolute;
+		bottom: 70px;
+		left: 42%;
+
+		@media all and (min-width: 768px) and (max-width: 991px) {
+			bottom: 80px;
+			left: 38%;
+		}
+	}
+}
+
+.section-descr {
+	font-size: $text-size;
+	color: $text-col;
+	line-height: 1.5;
+}
+
+.section__btn {
+	display: block;
+	width: 100%;
+	max-width: 195px;
+	font-size: $text-size;
+	font-style: italic;
+	background-color: transparent;
+	text-transform: capitalize;
+	text-align: center;
+	padding: 15px 0;
+	transition: all .5s ease;
+
+	@media all and (max-width: 767px) {
+		max-width: 280px;
+	}
+
+	&:hover, &:focus {
+		color: $white;
+		background-color: $corp-col;
+	}
+}
+
+.social-list {
+	display: flex;
+}
+
+.scroll-up {
+	display: none;
+	position: fixed;
+	bottom: 25%;
+	right: 5%;
+	z-index: 10;
+	border: none;
+	outline: none;
+	background-color: $corp-col;
+	opacity: .6;
+	width: 60px;
+	height: 60px;
+	cursor: pointer;
+	border-radius: 1px;
+	transition: all .3s ease;
+
+	&::before {
+		content: " ";
+		$size: 18px;
+		display: block;
+		width: $size;
+		height: $size;
+		border: 2px solid $white;
+		border-top: none;
+		border-right: none;
+		transform: rotate(135deg);
+		position: relative;
+		top: 5px;
+		left: 20px;
+		transition: all .3s ease;
+	}
+
+	&:hover {
+		transform: scale(1.1);
+		opacity: .8;
+	}
+
+	&:hover::before {
+		border: 3px solid $violet;
+		border-top: none;
+		border-right: none;
+	}
+}

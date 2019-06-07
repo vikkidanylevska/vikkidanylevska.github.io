@@ -1,0 +1,38 @@
+@font-face {
+    font-family: "ProximaNovaRegular";
+    src: url("../fonts/ProximaNovaRegular/ProximaNovaRegular.eot");
+    src: url("../fonts/ProximaNovaRegular/ProximaNovaRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/ProximaNovaRegular/ProximaNovaRegular.woff") format("woff"),
+    url("../fonts/ProximaNovaRegular/ProximaNovaRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "ProximaNovaBold";
+    src: url("../fonts/ProximaNovaBold/ProximaNovaBold.eot");
+    src: url("../fonts/ProximaNovaBold/ProximaNovaBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/ProximaNovaBold/ProximaNovaBold.woff") format("woff"),
+    url("../fonts/ProximaNovaBold/ProximaNovaBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700&display=swap');
+
+$title-font: "ProximaNovaBold", sans-serif;
+$sec-title-font: "ProximaNovaRegular", sans-serif;
+$main-font: 'PT Sans', sans-serif;
+
+$nav-size: 24px;
+$sect-size: 36px;
+$text-size: 18px;
+
+$white: #fff;
+$corp-col: #9f9acf;
+$text-col: #665f60;
+$light-text: #7d7a7c;
+$light-violet: #c1bfd9;
+$violet: #52506c;
+$gray: #dbdbdb;
+$bg-team: #ebebeb;

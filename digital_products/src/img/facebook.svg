@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 32" width="33" height="32">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #ebebeb } 
+	</style>
+	<g id="Section - Our Team">
+		<g id="Person 1">
+			<g id="Btn-Personal-Socmed">
+				<path id="facebook" fill-rule="evenodd" class="shp0" d="M16 0C24.84 0 32 7.16 32 16C32 24.84 24.84 32 16 32C7.16 32 0 24.84 0 16C0 7.16 7.16 0 16 0ZM18.13 6C14.25 6 15 10 15 10L15 13L13 13L13 17L15 17L15 26L19 26L19 17L21 17L22 13L19 13C19 13 19 11.82 19 11C19 10.18 20 10 20 10L22 10L22 6C22 6 22 6 18.13 6Z" />
+			</g>
+		</g>
+	</g>
+</svg>

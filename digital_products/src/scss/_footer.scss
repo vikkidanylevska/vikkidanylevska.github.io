@@ -1,0 +1,22 @@
+.footer {
+	padding: 75px 0;
+	background-color: $corp-col;
+
+	@media all and (max-width: 999px) {
+		padding: 35px 20px;
+	}
+
+	&__text {
+		font-size: $text-size;
+		color: $white;
+		text-align: center;
+
+		@media all and (min-width: 576px) and (max-width: 991px) {
+			max-width: 175px;
+		}
+	}
+
+	.social-list {
+		justify-content: space-between;
+	}
+}

@@ -1,0 +1,132 @@
+.header {
+	width: 100%;
+	background-color: transparent;
+	position: fixed;
+	z-index: 3;
+	padding-top: 25px;
+
+	@media all and (max-width: 767px) {
+		padding-top: 0;
+	}
+
+	&.fixed {
+		padding: 0;
+		background-color: rgba($corp-col, .7);
+	}
+}
+
+.navbar {
+
+	.nav-logo {
+		font-family: serif;
+		font-size: 30px;
+		font-weight: 400;
+		font-style: italic;
+		line-height: .2;
+		text-transform: capitalize;
+		color: $violet;
+		max-width: 110px;
+
+		@media all and (max-width: 767px) {
+			margin-bottom: 40px;
+		}
+	}
+
+	.navbar-nav {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		width: 570px;
+
+		@media all and (max-width: 767px) {
+			width: 120px;
+		}
+
+		 @media all and (min-width: 768px) and (max-width: 991px) {
+            width: 350px;
+        }
+	}
+
+	.nav-link {
+		display: block;
+		font-family: $sec-title-font;
+		font-size: $nav-size;
+		font-weight: 600;
+		color: $white;
+		letter-spacing: 1px;
+		line-height: 3;
+		text-transform: uppercase;
+		position: relative;
+
+		@media all and (max-width: 767px) {
+			background-color: rgba($corp-col, .6);
+			line-height: 2.5;
+		}
+
+		&::after {
+			content: " ";
+			display: block;
+			position: absolute;
+			bottom: 25%;
+			width: 0;
+			height: 3px;
+			border-bottom: 3px solid $violet;
+			transition: width .5s;
+		}
+
+		&:hover::after,
+		&:active::after,
+		&:focus::after {
+			width: 100%;
+		}
+	}
+}
+
+.navbar-toggler {
+	background-color: #fff;
+	border: none;
+	outline: transparent;
+}
+
+.navigation-menu {
+		$border: 1.5px solid $violet;
+		background-color: $white;
+		border: none;
+		width: 100%;
+		min-width: 30px;
+		height: 25px;
+		display: block;
+		border-top: $border;
+		float: right;
+		position: relative;
+		transition: all .5s;
+
+		&::before,
+		&::after {
+			content: "";
+			border-top: $border;
+			display: inline-block;
+			position: absolute;
+			left: 0;
+			transition: all .5s;
+		}
+
+		&::before {
+			width: 50%;
+			top: 50%;
+		}
+
+		&::after {
+			bottom: 0;
+			width: 75%;
+		}
+
+		&:hover {
+			border-color: $corp-col;
+
+			&::before,
+			&::after {
+				border-color: $corp-col;
+			}
+		}
+	}
