@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 73" width="31" height="24">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="30" height="24">
 	 <style>
 		tspan { white-space:pre }
-		.facebook { fill: #9f9acf} 
+		.facebook { fill: red} 
 	</style>
 <g id="facebook">
 	<g>
