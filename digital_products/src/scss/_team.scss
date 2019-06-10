@@ -1,19 +1,11 @@
 .team {
 	min-height: 100vh;
 	background-color: $bg-team;
-	padding-bottom: 80px;
-
-	@media all and (max-width: 767px) {
-		padding-bottom: 50px;
-	}
+	padding-bottom: 100px;
 
 	.section-title {
 		color: $text-col;
-		margin-bottom: 60px;
-
-		@media all and (max-width: 767px) {
-			margin-bottom: 35px;
-		}
+		line-height: 1.8;
 
 		&::before {
 			width: 60px;
@@ -31,6 +23,11 @@
 
 	.slider-team {
 		position: relative;
+
+		@media all and (max-width: 767px) {
+			width: 100%;
+			max-width: 350px;
+		}
 	}
 
 	 .owl-nav.disabled {
@@ -130,13 +127,5 @@
 
 	.social-item:not(:last-child) {
 		margin-right: 25px;
-	}
-
-	.shp0 {
-		transition: all .5s ease;
-
-		&:hover {
-			fill: $violet;
-		}
 	}
 }

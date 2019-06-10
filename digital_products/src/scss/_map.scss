@@ -1,17 +1,16 @@
 .contacts {
 	position: relative;
-	// min-height: 900px;
 
 	.section-title {
 
- 		@media all and (max-width: 992px) {
-			margin-bottom: 50px;
-		}
-
- 		&::before {
+		&::before {
  			width: 42px;
  			height: 60px;
 			background: url("../img/contact-icon.svg") no-repeat center/cover;
+
+			@media all and (max-width: 767px) {
+				bottom: 50px;
+			}
 		}
  	}
 }
@@ -19,13 +18,13 @@
 #map {
     height: 850px;
 
-    @media all and (max-width: 1199px) {
-		height: 650px;
+    @media all and (max-width: 767px) {
+		height: 100vh;
 	}
-}
 
-.gmnoprint {
-  	display: none;
+    @media all and (min-width: 768px) and (max-width: 1199px) {
+		height: 900px;
+	}
 }
 
 .get-in-touch {
@@ -43,9 +42,9 @@
 	padding-bottom: 55px;
 	pointer-events: none;
 
-	@media all and (max-width: 991px) {
-		justify-content: center;
-		padding: 0 20px;
+	@media all and (max-width: 767px) {
+		min-height: 840px;
+		position: relative;
 	}
 
 	&__form {
@@ -56,12 +55,18 @@
 		max-width: 860px;
 		pointer-events: auto;
 
-		.input-wrapper{
+		.input-wrapper {
 			display: flex;
 			justify-content: space-between;
-			flex-wrap: wrap;
 			width: 100%;
 			margin-bottom: 25px;
+
+			@media all and (max-width: 767px) {
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+				margin-bottom: 0;
+			}
 		}
 
 		.input-label {
@@ -69,8 +74,15 @@
 			position: relative;
 			max-width: 415px;
 
-			@media all and (max-width: 991px) {
-				margin-bottom: 40px;
+			@media all and (max-width: 767px) {
+				max-width: 860px;
+			}
+
+			&:first-child {
+
+				@media all and (min-width: 768px) and (max-width: 860px) {
+					margin-right: 25px;
+				}
 			}
 		}
 
@@ -93,24 +105,24 @@
 			}
 		}
 
-		.input-field:focus ~ .star,
-		.input-field:focus ~ .star-message {
-		    display:none;
-		}
+		// .input-field:focus ~ .star,
+		// .input-field:focus ~ .star-message {
+		//     display:none;
+		// }
 
-		.star {
-			font-size: $text-size;
-			position: absolute;
-			top: 34%; left: 31%;
-			color: $violet;
-		}
+		// .star {
+		// 	font-size: $text-size;
+		// 	position: absolute;
+		// 	top: 34%; left: 31%;
+		// 	color: $violet;
+		// }
 
-		.star-message {
-			font-size: $text-size;
-			position: absolute;
-			top: 11%; left: 18%;
-			color: $violet;
-		}
+		// .star-message {
+		// 	font-size: $text-size;
+		// 	position: absolute;
+		// 	top: 11%; left: 18%;
+		// 	color: $violet;
+		// }
 
 		.user-data {
 			border: none;
@@ -119,7 +131,13 @@
 		}
 
 		.label-message {
+			position: relative;
 			max-width: 860px;
+			margin-bottom: 55px;
+
+			@media all and (max-width: 767px) {
+				margin-bottom: 40px;
+			}
 		}
 
 		.input-message {
@@ -127,7 +145,7 @@
 			padding: 25px;
 			border: none;
 			outline: transparent;
-			margin-bottom: 55px;
+			resize: horizontal;
 		}
 
 		.form-btn {
@@ -152,6 +170,10 @@
 				max-width: 200px;
 			}
 
+			&:hover {
+				background-color: darken($corp-col, 5%);
+			}
+
 			&:active {
 				box-shadow: inset 0 1px 2px $violet;
 			}
@@ -161,46 +183,76 @@
 	.contact-block {
 		position: absolute;
 		z-index: 3;
-	    top: 217px;
+	    top: 215px;
 	    right: 0;
 	    width: 90px;
 	    height: 90px;
+	    overflow: hidden;
+	    white-space: nowrap;
 		background-color: rgba($white, .5);
 	    display: flex;
 	    pointer-events: auto;
-	    transition: width .7s;
+	    transition: width 1s ease;
 
-	    &:hover{
+	    @media all and (max-width: 767px) {
+			top: 130px;
+		}
+
+	    @media all and (min-width: 768px) and (max-width: 991px) {
+			top: 185px;
+		}
+
+		@media all and (min-width: 1200px) and (max-width: 1550px) {
+			top: 185px;
+		}
+
+	    &:hover {
 			width: 345px;
 	    }
 
 		.panel {
 			min-width: 90px;
 			height: 90px;
-		    background: $corp-col url("../img/address-icon.svg") no-repeat center;
+		    background: url("../img/address-icon.svg") no-repeat center;
+			background-color: $corp-col;
+		}
+
+		 &:hover div.panel {
+			 background-color: darken($corp-col, 10%);
 		}
 
 		.contact-info {
-			display: none;
-			width: 255px;
+			font-size: $text-size;
+			color: $text-col;
+			display: flex;
+			width: 100%;
 			justify-content: center;
 			align-items: center;
 			text-align: center;
-			transition: all 1s;
+			overflow: hidden;
+			flex-direction: column;
 	    }
 
 	    .contact-info address{
-	    	display: none;
+	    	display: flex;
 	    	flex-direction: column;
 	    }
-
-	     &:hover > .contact-info {
-	     	display: flex;
-		}
 	}
 
 	.phone {
-		top: 307px;
+		top: 305px;
+
+		 @media all and (max-width: 767px) {
+			top: 220px;
+		}
+
+		 @media all and (min-width: 768px) and (max-width: 991px) {
+			top: 275px;
+		}
+
+		@media all and (min-width: 1200px) and (max-width: 1550px) {
+			top: 275px;
+		}
 
 		&>.panel {
 		    background: $corp-col url("../img/phone-icon.svg") no-repeat center;

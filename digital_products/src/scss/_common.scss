@@ -25,11 +25,11 @@ a {
 	}
 }
 
-.pt-140 {
-	padding-top: 140px;
+.pt-125 {
+	padding-top: 125px;
 
 	@media all and (max-width: 767px) {
-		padding-top: 90px;
+		padding-top: 80px;
 	}
 }
 
@@ -110,17 +110,21 @@ a {
 	display: none;
 	position: fixed;
 	bottom: 25%;
-	right: 5%;
+	right: 3%;
 	z-index: 10;
 	border: none;
-	outline: none;
-	background-color: $corp-col;
-	opacity: .6;
+	outline: transparent;
+	background-color: rgba($corp-col, .7);
 	width: 60px;
 	height: 60px;
 	cursor: pointer;
+	pointer-events: auto;
 	border-radius: 1px;
 	transition: all .3s ease;
+
+	@media all and (max-width: 1023px) {
+		bottom: 15%;
+	}
 
 	&::before {
 		content: " ";
@@ -140,7 +144,6 @@ a {
 
 	&:hover {
 		transform: scale(1.1);
-		opacity: .8;
 	}
 
 	&:hover::before {
@@ -149,3 +152,11 @@ a {
 		border-right: none;
 	}
 }
+
+.shp0 {
+		transition: all .5s ease;
+
+		&:hover {
+			fill: $violet;
+		}
+	}

@@ -1,6 +1,5 @@
 .first-screen {
 	min-height: 100vh;
-    padding-top: 100px;
 	background: #b9b2ce url("../img/ftsc-bg.jpg") no-repeat;
     background-size: cover;
 	background-attachment: fixed;
@@ -10,6 +9,7 @@
     text-align: center;
     display: flex;
     align-items: center;
+    justify-content: center;
 
     &::before {
         content: "";
@@ -25,14 +25,13 @@
         z-index: 2;
     }
 
-    @media all and (max-width: 991px) {
-         padding-top: 80px;
-         min-height: 70vh;
-    }
+    // @media all and (max-width: 767px) {
+    //      min-height: 80vh;
+    // }
 
-     @media all and (max-width: 767px) {
-         padding-bottom: 40px;
-    }
+    //  @media all and (max-width: 767px) {
+    //      padding-bottom: 50px;
+    // }
 
     &__title {
         font-family: $title-font;
@@ -59,6 +58,13 @@
         }
     }
 
+    .scroll-down {
+        position: absolute;
+        z-index: 3;
+        bottom: 15%;
+        left: 50%;
+    }
+
     &__scroll {
         display: block;
         align-self: center;
@@ -68,12 +74,10 @@
         border-radius: 50%;
         background-color: transparent;
         position: relative;
-        left: 0;
-        top: 70%;
 
-        @media all and (max-width: 1199px) {
-             top: 20%;
-        }
+        // @media all and (max-width: 1199px) {
+        //      top: 20%;
+        // }
 
         &::before {
             content: " ";

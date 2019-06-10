@@ -6,12 +6,12 @@
 
 	.section-img-block {
 		min-height: 800px;
-		padding: 0 30px;
+		padding: 0 20px;
 		background: $corp-col url("../img/services-img.jpg") no-repeat center/cover;
 
 		@media all and (max-width: 767px) {
 			min-height: 300px;
-			margin-bottom: 20px;
+			margin-bottom: 15px;
 		}
 
 		@media all and (min-width: 768px) and (max-width: 991px) {
@@ -25,15 +25,22 @@
 	}
 
 	.title-wrapper {
+		height: 240px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
 		position: relative;
 		top: 165px;
 
-		@media all and (max-width: 575px) {
+		@media all and (max-width: 475px) {
+			height: 170px;
 			top: 100px;
 		}
 
-		@media all and (min-width: 576px) and (max-width: 767px) {
-			top: 120px;
+		@media all and (min-width: 476px) and (max-width: 767px) {
+			height: 150px;
+			top: 100px;
 		}
 
 		.quote {
@@ -53,22 +60,18 @@
 	}
 
 	.section-title {
-		margin-bottom: 100px;
-
-		@media all and (max-width: 767px) {
-			margin-bottom: 30px;
-		}
-
-		@media all and (min-width: 768px) and (max-width: 991px) {
-			margin-bottom: 50px;
-		}
 
 		&::before {
 			background: url("../img/services-icon.svg") no-repeat center/cover;
 
-			@media all and (max-width: 767px) {
-				bottom: 60px;
-				left: 42%;
+
+			@media all and (max-width: 575px) {
+				bottom: 45px;
+			}
+
+			@media all and (min-width: 576px) and (max-width: 767px) {
+				bottom: 50px;
+				left: 46%;
 			}
 
 			@media all and (min-width: 768px) and (max-width: 991px) {
