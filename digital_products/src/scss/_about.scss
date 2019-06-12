@@ -69,6 +69,11 @@
 	.section__btn {
 		color: $light-text;
 		border: 1px solid $text-col;
+
+		&:hover {
+			color: $white;
+			border: 1px solid $white;
+			background-color: $corp-col;
+		}
 	}
 }
-

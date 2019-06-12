@@ -8,6 +8,10 @@
  			height: 60px;
 			background: url("../img/contact-icon.svg") no-repeat center/cover;
 
+			// @media all and (max-width: 575px) {
+			// 	bottom: 30px;
+			// }
+
 			@media all and (max-width: 767px) {
 				bottom: 50px;
 			}
@@ -105,25 +109,6 @@
 			}
 		}
 
-		// .input-field:focus ~ .star,
-		// .input-field:focus ~ .star-message {
-		//     display:none;
-		// }
-
-		// .star {
-		// 	font-size: $text-size;
-		// 	position: absolute;
-		// 	top: 34%; left: 31%;
-		// 	color: $violet;
-		// }
-
-		// .star-message {
-		// 	font-size: $text-size;
-		// 	position: absolute;
-		// 	top: 11%; left: 18%;
-		// 	color: $violet;
-		// }
-
 		.user-data {
 			border: none;
 			outline: transparent;
@@ -218,7 +203,7 @@
 		}
 
 		 &:hover div.panel {
-			 background-color: darken($corp-col, 10%);
+			background-color: darken($corp-col, 10%);
 		}
 
 		.contact-info {

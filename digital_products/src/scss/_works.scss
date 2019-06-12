@@ -27,7 +27,6 @@
 	}
 
 	.section-title {
-       line-height: 1.8;
 
 		&::before {
 			width: 40px;
@@ -46,6 +45,11 @@
 	.section__btn {
 		color: $white;
 		border: 1px solid $white;
+
+		&:hover {
+			color: $corp-col;
+			background-color: $white;
+		}
 	}
 
 	.carousel-img-wrapper {

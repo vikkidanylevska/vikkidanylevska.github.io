@@ -52,6 +52,7 @@ a {
 	color: $white;
 	text-align: center;
 	text-transform: uppercase;
+	line-height: 1.8;
 	position: relative;
 
 	@media all and (max-width: 767px) {
@@ -94,11 +95,6 @@ a {
 
 	@media all and (max-width: 767px) {
 		max-width: 280px;
-	}
-
-	&:hover, &:focus {
-		color: $white;
-		background-color: $corp-col;
 	}
 }
 
