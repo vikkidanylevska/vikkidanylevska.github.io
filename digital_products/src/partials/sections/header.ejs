@@ -4,29 +4,29 @@
 		<div class="row">
 			<div class="col">
 				<nav id="top-line" class="navbar navbar-expand-md">
-				
+
 					<div class="navbar-brand mb-4 m-md-0 pt-4 p-md-0">
 						<a href="#" class="nav-logo">
 							creative project
 						</a>
 					</div>
-				
+
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
 					        <span class="navigation-menu"></span>
 					        </button>
-				
+
 					<% const navMenu = ["home","about","services","works","contact"]%>
-				
+
 					<div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo03">
 						<ul class="navbar-nav ">
-				
+
 							<% navMenu.forEach(item => { %>
 							<li class="nav-item">
 								<a href="#<%=item %>" class="nav-link p-0"><%=item %>
 								</a>
 							</li>
 							<% }) %>
-				
+
 						</ul>
 					</div>
 				</nav>

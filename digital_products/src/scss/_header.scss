@@ -36,6 +36,15 @@
 		@media all and (max-width: 767px) {
 			margin-bottom: 40px;
 		}
+
+		&:before {
+			content: "";
+			width: 15px;
+			height: 15px;
+			display: block;
+			background: url("../fav/favicon.ico");
+			filter: sepia(70%);
+		}
 	}
 
 	.navbar-nav {

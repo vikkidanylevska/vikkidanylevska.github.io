@@ -112,8 +112,10 @@ a {
 	background-color: $bg-team;
 	transition: all .5s ease;
 
-	&:hover {
-		background-color: $violet;
+	&:hover,
+	&:hover > svg * {
+		background-color: darken($corp-col, 15%);
+		fill: $white;
 	}
 }
 
