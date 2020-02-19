@@ -1,0 +1,201 @@
+//HEADER
+.header {
+	min-height: 350px;
+	position: relative;
+	z-index: 0;
+	padding: 20px 0 0;
+	background: $col-blue;
+	color: $col-white;
+
+	@media screen and (min-width: 1200px) {
+		min-height: 320px;
+		padding: 40px 0 0;
+	}
+
+	&::after {
+	    bottom: -10px; left: 0;
+	    z-index: 1;
+	}
+}
+
+.header-logo {
+	display: block;
+	width: 150px;
+	height: 60px;
+	position: absolute;
+	top: 0; left: 0;
+
+	@media screen and (min-width: 768px) {
+		width: 200px;
+		height: 90px;
+	}
+
+	@media screen and (min-width: 1550px) {
+			width: 270px;
+			height: 130px;
+			left: -35px;
+		}
+}
+
+.feedback {
+	display: flex;
+	justify-content: space-between;
+	line-height: 1.5;
+	padding: 30px 0 5px;
+
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		padding: 50px 0 20px;
+	}
+
+		@media screen and (min-width: 1200px) {
+		padding-bottom: 20px;
+	}
+}
+
+.header-contacts {
+	visibility: hidden;
+
+	@media screen and (min-width: 768px) {
+		visibility: visible;
+	}
+
+	& > a {
+		display: inline-flex;
+	}
+
+	& > a::before {
+		content: " ";
+		display: block;
+	}
+
+	&__phone {
+		margin-right: 30px;
+	}
+
+	&__phone::before {
+		background: url("../img/phone.svg") center/contain no-repeat;
+		@include square(20px);
+	}
+
+	&__email::before {
+		background: url("../img/email.svg") center/contain no-repeat;
+		@include square(20px);
+		margin-right: 5px;
+	}
+}
+
+.registration {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 100%;
+	max-width: 230px;
+
+	@media screen and (min-width: 576px) {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	@media screen and (min-width: 992px) {
+		max-width: 300px;
+	}
+
+	& > a {
+		position: relative;
+	}
+
+	&__search {
+		width: 25px;
+		height: 25px;
+		background: url("../img/search.svg") no-repeat;
+		background-size: contain;
+		align-self: flex-end;
+		order: 3;
+
+		@media screen and (min-width: 576px) {
+			align-self: center;
+			order: inherit;
+		}
+	}
+
+	&__register::before {
+		content: "";
+		display: block;
+		position: absolute;
+		left: -23px;
+		top: 0;
+		width: 20px;
+		height: 20px;
+		background: url("../img/register.svg") no-repeat;
+		background-size: contain;
+
+		@media screen and (min-width: 576px) {
+			left: -20px;
+		}
+	}
+
+	&__login::before {
+		content: "";
+		display: block;
+		position: absolute;
+		left: -25px;
+		top: 0;
+		width: 20px;
+		height: 20px;
+		background: url("../img/login.svg") no-repeat;
+		background-size: contain;
+	}
+}
+
+.navigation {
+	border-top: 1px solid $col-white;
+
+	&__list {
+	 	display: flex;
+	 	flex-wrap: wrap;
+	 	justify-content: center;
+
+	 	@media screen and (min-width: 768px) {
+	 		flex-wrap: nowrap;
+		}
+	 }
+
+	&__item {
+		position: relative;
+		&::after {
+			content: " ";
+			position: absolute;
+			bottom: 5px;
+			left: 0;
+			width: 0;
+			height: 3px;
+			border-bottom: 2px solid $col-violet;
+			transition: width .5s;
+
+				@media screen and (max-width: 991px) {
+			 		display: none;
+				}
+		}
+
+		&:hover::after {
+			width: 100%;
+		}
+	}
+
+	&__link {
+	 	display: block;
+	 	font-size: $small-size;
+	 	text-transform: uppercase;
+	 	padding: 10px 10px 0;
+
+	 	@media screen and (min-width: 992px) {
+			padding: 20px;
+		}
+
+	 	&:hover {
+	 		color: $col-violet;
+	 		font-weight: 500;
+	 	}
+	 }
+}

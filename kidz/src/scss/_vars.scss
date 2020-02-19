@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis:400,500,700|Roboto+Slab|Roboto:400,500&display=swap');
+
+// font-family: 'Dosis', sans-serif;
+// font-family: 'Roboto Slab', serif;
+// font-family: 'Roboto', sans-serif;
+
+$main-font: 'Roboto', sans-serif;
+$heading-font: 'Dosis', sans-serif;
+$sec-font: 'Roboto Slab', serif;
+
+$base-size: 16px;
+$small-size: 14px;
+
+$col-white: #fbfcff;
+$col-blue: #00a4d3;
+$col-violet: #c92d8e;
+$col-gray: #f7f3f3;
+// $col-orange: #f68135;
+$font-color: #210e02;
+
+
+@mixin transition($prop: all, $sec: .3s){
+	transition: $prop $sec ease;
+}
+
+@mixin square($value) {
+	width: $value;
+	height: $value;
+}

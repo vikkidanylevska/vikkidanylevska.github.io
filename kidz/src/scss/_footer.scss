@@ -1,0 +1,210 @@
+footer {
+	width: 100%;
+	background-color: $col-blue;
+	padding-top: 170px;
+	position: relative;
+
+	@media screen and (min-width: 768px) {
+		padding-top: 210px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		padding-top: 260px;
+	}
+
+	&::before {
+		content: " ";
+		position: absolute;
+		top: 5px; right: 15px;
+		width: 300px;
+		height: 160px;
+		background: url("../img/rainbow.png") no-repeat;
+		background-size: contain;
+
+		@media screen and (min-width: 768px) {
+			top: 20px; right: 55px;
+			width: 395px;
+			height: 200px;
+		}
+
+		@media screen and (min-width: 1200px) {
+			top: 50px; right: 110px;
+			width: 440px;
+			height: 230px;
+		}
+	}
+
+	&::after {
+	    top: 40px; left: 0;
+
+	     @media screen and (min-width: 768px) {
+			top: 80px;
+		}
+
+	    @media screen and (min-width: 1200px) {
+	    	top: 125px;
+		}
+	}
+}
+
+.mb-80 {
+	margin-bottom: 40px;
+
+	@media screen and (min-width: 992px) {
+		margin-bottom: 80px;
+	}
+}
+
+.footer {
+	width: 100%;
+	min-height: 810px;
+	background: #fff url("../img/bg-footer.jpg") no-repeat;
+	background-position-y: bottom;
+	line-height: 1.8;
+	text-transform: uppercase;
+	position: relative;
+	z-index: 2;
+	margin-top: -50px;
+
+	@media screen and (min-width: 768px) {
+		margin-top: 0;
+	}
+
+	a:hover {
+		color: $col-violet;
+	}
+
+	&__title {
+		font-size: 16px;
+		color: $col-blue;
+		font-weight: 500;
+		line-height: 1.7;
+		text-transform: uppercase;
+		text-align: center;
+
+		@media screen and (min-width: 768px) {
+			text-align: left;
+		}
+	}
+
+	&__input-wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		@media screen and (min-width: 768px) {
+			flex-direction: row;
+			align-items: inherit;
+		}
+	}
+
+	&__input-email {
+		width: 100%;
+		max-width: 375px;
+		font-size: 20px;
+		line-height: 1.8;
+		border: 1px solid $col-blue;
+		outline: transparent;
+		padding-left: 20px;
+		margin-right: 10px;
+	}
+
+	&__contacts, &__links p {
+		font-weight: 700;
+		color: $col-blue;
+	}
+
+	&__contacts {
+
+		span, a {
+			font-weight: 400;
+			color: $font-color;
+		}
+	}
+
+	&__links {
+		a {
+			display: block;
+		}
+	}
+
+	&__logo {
+		display: block;
+		width: 275px;
+		height: 145px;
+		background: url("../img/logo-color.png") no-repeat;
+	}
+
+	&__button {
+		width: 100%;
+		max-width: 145px;
+		text-transform: uppercase;
+		border: none;
+		outline: transparent;
+		border-radius: initial;
+		padding: 5px 0;
+
+		@media screen and (min-width: 768px) {
+			padding: 10px 0;
+		}
+	}
+
+	&__copyright {
+		font-family: $sec-font;
+		font-size: $small-size;
+		font-weight: 700;
+		color: $col-blue;
+		margin-right: 100px;
+	}
+}
+
+.footer-soclinks {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	align-self: center;
+	width: 100%;
+	max-width: 340px;
+
+	&__link {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		@include square(50px);
+		border-radius: 10px;
+		background-color: $col-blue;
+		position: relative;
+
+		@media screen and (min-width: 768px) {
+			@include square(60px);
+			border-radius: 20px;
+		}
+
+		& > span {
+			font-family: $heading-font;
+			font-weight: 700;
+			color: $col-blue;
+			opacity: 0;
+			position: absolute;
+			top: -50%; left: -20%;
+			transition: all .3s ease;
+		}
+
+		& > svg {
+			opacity: 1;
+			transition: all .3s ease;
+		}
+
+		&:hover > svg {
+			fill: $col-violet;
+		}
+	}
+
+	&__link:hover {
+		box-shadow: 0 3px 10px #064253;
+	}
+
+	&__link:hover > span {
+		opacity: 1;
+	}
+}

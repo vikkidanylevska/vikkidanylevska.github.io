@@ -1,0 +1,139 @@
+.facilities {
+	min-height: 625px;
+	background: $col-blue url("../img/bg-facilities.jpg") no-repeat;
+	background-size: cover;
+	position: relative;
+	padding: 40px 0;
+
+	@media screen and (min-width: 1200px) {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+
+	&__left {
+		display: flex;
+		position: relative;
+
+		@media screen and (min-width: 1200px) {
+			align-items: flex-end;
+		}
+	}
+
+	&__left::after {
+		content: " ";
+		width: 400px;
+		height: 350px;
+		position: absolute;
+		bottom: 30%; left: 10%;
+		background: url("../img/facilities.png") no-repeat;
+		background-size: contain;
+
+		@media screen and (max-width: 1199px) {
+			display: none;
+		}
+	}
+
+	.title-wrapper {
+		margin-bottom: 40px;
+		color: $col-white;
+		text-align: center;
+
+		@media screen and (min-width: 1200px) {
+			transform: translateY(70%);
+		}
+
+		@media screen and (min-width: 992px) {
+			text-align: left;
+		}
+	}
+
+	&__title {
+		text-transform: capitalize;
+		margin-bottom: 15px;
+
+		@media screen and (min-width: 1200px) {
+			margin-bottom: 25px;
+		}
+	}
+
+	&__list {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+
+		@media screen and (min-width: 500px) {
+			justify-content: space-between;
+		}
+
+		@media screen and (min-width: 768px) {
+			justify-content: center;
+		}
+
+		@media screen and (min-width: 992px) {
+			justify-content: flex-start;
+		}
+	}
+
+	&__item:not(:nth-child(even)){
+		@media screen and (min-width: 480px) and (max-width: 499px) {
+			margin-right: 25px;
+		}
+	}
+
+	&__item:not(:nth-last-child(-n+2)) {
+		@media screen and (max-width: 575px) {
+			margin-bottom: 25px;
+		}
+	}
+
+	&__item:not(:nth-child(3n)) {
+		@media screen and (min-width: 768px) {
+			margin-right: 37px;
+		}
+	}
+
+	&__item:not(:nth-last-child(-n+3)) {
+		@media screen and (min-width: 576px) {
+			margin-bottom: 37px;
+		}
+	}
+
+	&__link {
+		display: block;
+		@include square(140px);
+		text-align: center;
+		background-color: $col-white;
+		border-radius: 20px;
+		padding: 35px 5px;
+		@include transition;
+
+		@media screen and (min-width: 540px) {
+			@include square(160px);
+		}
+
+		& > span {
+			display: block;
+			font-weight: 500;
+			color: $col-blue;
+			line-height: 3.5;
+			@include transition;
+		}
+
+		& > svg .cls-1 {
+			@include transition;
+		}
+
+		&:hover {
+			transform: translate(-10px, -10px);
+			box-shadow: 5px 5px 20px #064253;
+		}
+
+		&:hover > svg .cls-1 {
+			fill:  $col-violet;
+		}
+		&:hover > span {
+			color: $col-violet;
+		}
+	}
+}
